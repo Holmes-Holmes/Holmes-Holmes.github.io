@@ -2,6 +2,9 @@
 layout: default
 ---
 
+![Octocat](approach.png)
+
+
 Software composition analysis (SCA) tools have been widely adopted to identify vulnerable libraries used in software applications. Such SCA tools depend on a vulnerability database to know affected libraries of each vulnerability. However, it is labor-intensive and error-prone for a security team to manually maintain the vulnerability database. While
 several approaches adopt extreme multi-label learning to predict affected libraries for vulnerabilities, they are practically ineffective due to the limited library labels and the unawareness of ecosystems. To address these problems, we first conduct an empirical study to assess the quality of two fields, i.e., affected libraries and their ecosystems, for four vulnerability databases. Our study reveals notable inconsistency and inaccuracy in these two fields. Then, we propose
 Holmes to identify affected libraries and their ecosystems for vulnerabilities via a learning-to-rank technique. The key idea of Holmes is to gather various evidences about affected libraries and their ecosystems from multiple sources, and learn to rank a pool of libraries based on their relevance to evidences. Our extensive experiments haveshown the effectiveness, efficiency and usefulness of Holmes.
@@ -43,8 +46,15 @@ The evaluation contains RQ3, RQ4, RQ5, RQ6 and RQ7
 ```
 
 ## RQ4 Ablation Study
+
+* Random-Order
 ```
-./run.sh Ablation
+./run.sh Ablation_Random
+```
+
+* Chronological-Order
+```
+./run.sh Ablation_Chronological
 ```
 
 ## RQ5 Efficiency Evaluation
@@ -66,33 +76,39 @@ To replicate our results for RQ5, please use:
 
 * Human Study
 
-```
-./run.sh HumanStudy
-```
+    ```
+    ./run.sh HumanStudy
+    ```
 
 * Vendor Reporting
 
-- xxx inaccurate CVEs for GitHub: [Inaccurate-Affected-Components-in-GitHub]()
-- xxx inaccurate CVEs for GitLab: [Inaccurate-Affected-Components-in-GitHub]()
-- xxx inaccurate CVEs for Snyk: [Inaccurate-Affected-Components-in-GitHub]()
-- xxx inaccurate CVEs for Veracode: [Inaccurate-Affected-Components-in-GitHub]()
+    > xxx inaccurate CVEs for GitHub: [Inaccurate-Affected-Components-in-GitHub]()
+    > xxx inaccurate CVEs for GitLab: [Inaccurate-Affected-Components-in-GitHub]()
+    > xxx inaccurate CVEs for Snyk: [Inaccurate-Affected-Components-in-GitHub]()
+    > xxx inaccurate CVEs for Veracode: [Inaccurate-Affected-Components-in-GitHub]()
 
 
 
 # Approach Implement
 
-# Chronos Lightxml Fastxml Dataset Subset
+## Lucene
 
+## Evidence Gathering
 
-## data preparing
-We follow [chronos], [lightxml] and [fastxml], and replace the dataset with our's. 
- - The script of full list of veracode libraries mentioned in xxx.
- - The website of the referenced data's script is released in xxx.
-To be convenient, we copyed their code into our repo for fastxml and lightxml. And pull a docker image for chronos, then we create a table for you to reproducce the tranging and testing data for random, chrono and geneal dataset
+# Chronos Lightxml Fastxml
+
+## Dataset
+    -   data preparing
+        We follow [chronos], [lightxml] and [fastxml], and replace the dataset with our's. 
+        - The script of full list of veracode libraries mentioned in xxx.
+        - The website of the referenced data's script is released in xxx.
+        To be convenient, we copyed their code into our repo for fastxml and lightxml. And pull a docker image for chronos, then we create a table for you to reproducce the tranging and testing data for random, chrono and geneal dataset
 
 
 | head1        | Random-Order        | chronological-order   | Generality | 
-|:-------------|:------------------  |:------                | three      | 
+|:-------------|:-------------|:-------------|:-------------| 
 | Chronos      | path   | path          | path    | 
 | Lightxml     | path     | path           | path    | 
 | Fastxml      | path       | path               | path   |
+
+## Ranking
