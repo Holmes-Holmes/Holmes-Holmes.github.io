@@ -9,10 +9,10 @@ Holmes to identify affected libraries and their ecosystems for vulnerabilities v
 # Dataset
 
 * large scale dataset
-    - [xxx](https://github.com/)
-    - [large scale dataset with same eco](https://github.com/)
+    > [xxx](https://github.com/)
+    > [large scale dataset with same eco](https://github.com/)
 * GroundTruth
-    - [Ground Truth](https://github.com/)
+    > [Ground Truth](https://github.com/)
 
 # Empirical Study
 
@@ -31,12 +31,12 @@ The evaluation contains RQ3, RQ4, RQ5, RQ6 and RQ7
 
 ## RQ3 Effectiveness Evaluation
 
-### Random-Order
+* Random-Order
 ```
 ./run.sh random_order
 ```
 
-### Chronological-Order
+* Chronological-Order
 ```
 ./run.sh chronological-order
 ```
@@ -63,13 +63,13 @@ To replicate our results for RQ5, please use:
 
 ## RQ7 Usefulness Evaluation
 
-### Human Study
+* Human Study
 
 ```
 ./run.sh HumanStudy
 ```
 
-### Vendor Reporting
+* Vendor Reporting
 
 - xxx inaccurate CVEs for GitHub: [Inaccurate-Affected-Components-in-GitHub]()
 - xxx inaccurate CVEs for GitLab: [Inaccurate-Affected-Components-in-GitHub]()
