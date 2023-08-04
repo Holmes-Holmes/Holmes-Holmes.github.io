@@ -10,7 +10,7 @@ Holmes to identify affected libraries and their ecosystems for vulnerabilities v
 
 * large scale dataset
     > [xxx](https://github.com/)
-    >
+    
     > [large scale dataset with same eco](https://github.com/)
 * GroundTruth
     > [Ground Truth](https://github.com/)
@@ -83,5 +83,16 @@ To replicate our results for RQ5, please use:
 
 # Chronos Lightxml Fastxml Dataset Subset
 
-We follow [chronos], [lightxml] and [fastxml], and replace the dataset with our's.
-To be convenient, we copyed their code into our repo for fastxml and lightxml. And pull a docker image for chronos, then we create a 
+
+## data preparing
+We follow [chronos], [lightxml] and [fastxml], and replace the dataset with our's. 
+ - The script of full list of veracode libraries mentioned in xxx.
+ - The website of the referenced data's script is released in xxx.
+To be convenient, we copyed their code into our repo for fastxml and lightxml. And pull a docker image for chronos, then we create a table for you to reproducce the tranging and testing data for random, chrono and geneal dataset
+
+
+| head1        | Random-Order        | chronological-order   | Generality | 
+|:-------------|:------------------  |:------                | three      | 
+| Chronos      | path   | path          | path    | 
+| Lightxml     | path     | path           | path    | 
+| Fastxml      | path       | path               | path   |
