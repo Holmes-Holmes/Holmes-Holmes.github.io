@@ -49,6 +49,35 @@ The evaluation contains RQ3, RQ4, RQ5, RQ6 and RQ7
 ```
 
 ## RQ5 Efficiency Evaluation
-We count the time
+
+We count the time costs in evidence gathering, relevance calculation and library ranking.
+To replicate our results for RQ5, please use:
+
+```
+./run.sh Efficiency
+```
+
+## RQ6 Generality Evaluation
+
+```
+./run.sh Generality
+```
+
+## RQ7 Usefulness Evaluation
+
+### Human Study
+
+```
+./run.sh HumanStudy
+```
+
+### Vendor Reporting
+
+- xxx inaccurate CVEs for GitHub: [Inaccurate-Affected-Components-in-GitHub]()
+- xxx inaccurate CVEs for GitLab: [Inaccurate-Affected-Components-in-GitHub]()
+- xxx inaccurate CVEs for Snyk: [Inaccurate-Affected-Components-in-GitHub]()
+- xxx inaccurate CVEs for Veracode: [Inaccurate-Affected-Components-in-GitHub]()
+
+
 
 # Approach Implement
