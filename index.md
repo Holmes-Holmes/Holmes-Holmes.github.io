@@ -7,16 +7,14 @@ several approaches adopt extreme multi-label learning to predict affected librar
 Holmes to identify affected libraries and their ecosystems for vulnerabilities via a learning-to-rank technique. The key idea of Holmes is to gather various evidences about affected libraries and their ecosystems from multiple sources, and learn to rank a pool of libraries based on their relevance to evidences. Our extensive experiments haveshown the effectiveness, efficiency and usefulness of Holmes.
 
 # Dataset
-## large scale dataset
 
-## GroundTruth
+* large scale dataset
+    - [xxx](https://github.com/)
+    - [large scale dataset with same eco](https://github.com/)
+* GroundTruth
+    - [Ground Truth](https://github.com/)
 
 # Empirical Study
-The large scale of our component_dataset are releaed in [GroundTruth](https://github.com) and [GroundTruth](https://github.com)
-There are three parts of our component_dataset:
-  1. [](https://github.com/)
-  2. [large scale dataset with same eco](https://github.com/)
-  3. [Ground Truth](https://github.com/)
 
 To replicate our results for RQ1, please use:
 ```
