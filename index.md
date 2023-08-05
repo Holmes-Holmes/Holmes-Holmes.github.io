@@ -30,6 +30,14 @@ To replicate our results for RQ2, please use:
 python xx/xx/xx accuracy
 ```
 
+# Approach Implement
+
+
+## Evidence Gathering
+
+
+## Lucene
+
 # Evaluation
 The evaluation contains RQ3, RQ4, RQ5, RQ6 and RQ7
 
@@ -88,21 +96,16 @@ To replicate our results for RQ5, please use:
     > xxx inaccurate CVEs for Veracode: [Inaccurate-Affected-Components-in-GitHub]()
 
 
-
-# Approach Implement
-
-## Lucene
-
-## Evidence Gathering
-
 # Chronos Lightxml Fastxml
 
 ## Dataset
-    -   data preparing
-        We follow [chronos], [lightxml] and [fastxml], and replace the dataset with our's. 
-        - The script of full list of veracode libraries mentioned in xxx.
-        - The website of the referenced data's script is released in xxx.
-        To be convenient, we copyed their code into our repo for fastxml and lightxml. And pull a docker image for chronos, then we create a table for you to reproducce the tranging and testing data for random, chrono and geneal dataset
+- data preparing
+    We follow [chronos], [lightxml] and [fastxml], and replace the dataset with our's. 
+    - The script of full list of veracode libraries mentioned in xxx.
+
+    - The website of the referenced data's script is released in xxx.
+
+    To be convenient, we copyed their code into our repo for fastxml and lightxml. And pull a docker image for chronos, then we create a table for you to reproducce the tranging and testing data for random, chrono and geneal dataset
 
 
 | head1        | Random-Order        | chronological-order   | Generality | 
@@ -110,5 +113,3 @@ To replicate our results for RQ5, please use:
 | Chronos      | path   | path          | path    | 
 | Lightxml     | path     | path           | path    | 
 | Fastxml      | path       | path               | path   |
-
-## Ranking
