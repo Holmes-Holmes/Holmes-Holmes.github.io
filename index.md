@@ -3,11 +3,13 @@ layout: default
 ---
 
 ![Octocat](approach.png)
-*Framework of Holmes*
+            *Framework of Holmes*
 
 Software composition analysis (SCA) tools have been widely adopted to identify vulnerable libraries used in software applications. Such SCA tools depend on a vulnerability database to know affected libraries of each vulnerability. However, it is labor-intensive and error-prone for a security team to manually maintain the vulnerability database. While
 several approaches adopt extreme multi-label learning to predict affected libraries for vulnerabilities, they are practically ineffective due to the limited library labels and the unawareness of ecosystems. To address these problems, we first conduct an empirical study to assess the quality of two fields, i.e., affected libraries and their ecosystems, for four vulnerability databases. Our study reveals notable inconsistency and inaccuracy in these two fields. Then, we propose
 Holmes to identify affected libraries and their ecosystems for vulnerabilities via a learning-to-rank technique. The key idea of Holmes is to gather various evidences about affected libraries and their ecosystems from multiple sources, and learn to rank a pool of libraries based on their relevance to evidences. Our extensive experiments haveshown the effectiveness, efficiency and usefulness of Holmes.
+
+This paper has been submitted to ICSE 2024.
 
 # Dataset
 
@@ -17,10 +19,11 @@ Holmes to identify affected libraries and their ecosystems for vulnerabilities v
     > [Ground Truth](Holmes/GroundTruth/pypimavennpmgo_component_tagging_2023_0720_wss.xlsx)
 
 # Empirical Study
-
-To replicate our results for RQ1, please use:
 ```
 cd Holmes/Empirical_Study
+```
+To replicate our results for RQ1, please use:
+```
 ./run.sh Eco
 ./run.sh Name
 ```
@@ -45,24 +48,28 @@ The evaluation contains RQ3, RQ4, RQ5, RQ6 and RQ7
 
 * Random-Order
 ```
-./run.sh random_order
+cd Holmes/Evaluation/tool_compare/MAP_Metric_random
+python map_score.py
 ```
 
 * Chronological-Order
 ```
-./run.sh chronological-order
+cd Holmes/Evaluation/tool_compare/MAP_Metric_chronological
+python map_score.py
 ```
 
 ## RQ4 Ablation Study
 
 * Random-Order
 ```
-./run.sh Ablation_Random
+cd MAP_Metric_ablation_random
+python map_score.py
 ```
 
 * Chronological-Order
 ```
-./run.sh Ablation_Chronological
+cd MAP_Metric_ablation_chronological
+python map_score.py
 ```
 
 ## RQ5 Efficiency Evaluation
@@ -77,16 +84,16 @@ To replicate our results for RQ5, please use:
 ## RQ6 Generality Evaluation
 
 ```
-./run.sh Generality
+cd MAP_Metric_general
+python map_score.py
 ```
 
 ## RQ7 Usefulness Evaluation
 
 * Human Study
 
-    ```
-    ./run.sh HumanStudy
-    ```
+    The detailed result of human study is stored in [with tool]("Holmes/Evaluation/human_study/wizot_tool and Holmes/Evaluation/human_study/wizot_tool") and [without tool]("Holmes/Evaluation/human_study/wizot_tool and Holmes/Evaluation/human_study/wizot_tool").
+    And the summary of the humanstudy is stored in [xxx](xxx)
 
 * Vendor Reporting
 
@@ -139,7 +146,3 @@ After changing the data path, you can use the following command to train and tes
 ```
 For generality test, we use `/data/tenfold/fold_0/train_general_texts.txt` and `/data/tenfold/fold_0/train_general_labels.txt` to train the model, and test the model on `/data/general_data/general_test_texts.txt` and `/data/general_data/general_test_labels.txt`. <br>
 Please refer to https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master for more details. <br>
-
-
-
-This paper has been submitted to ICSE 2024.
