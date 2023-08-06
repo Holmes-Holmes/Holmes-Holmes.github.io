@@ -46,13 +46,13 @@ The evaluation contains RQ3, RQ4, RQ5, RQ6 and RQ7
 
 ## RQ3 Effectiveness Evaluation
 
-* Random-Order
+**Random-Orde**
 ```
 cd Holmes/Evaluation/tool_compare/MAP_Metric_random
 python map_score.py
 ```
 
-* Chronological-Order
+**Chronological-Order**
 ```
 cd Holmes/Evaluation/tool_compare/MAP_Metric_chronological
 python map_score.py
@@ -60,13 +60,13 @@ python map_score.py
 
 ## RQ4 Ablation Study
 
-* Random-Order
+**Random-Order**
 ```
 cd MAP_Metric_ablation_random
 python map_score.py
 ```
 
-* Chronological-Order
+**Chronological-Order**
 ```
 cd MAP_Metric_ablation_chronological
 python map_score.py
