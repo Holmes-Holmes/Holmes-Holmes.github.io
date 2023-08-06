@@ -165,3 +165,5 @@ Our source data are: `/workspace/Chronos/dataset/description_data/dataset_merged
 1. Run `/workspace/Chronos/reference_processing/generate_new_csv.py` and copy the output file `/workspace/Chronos/reference_processing/reference_data_raw_0.5_15_total_general_test.csv` to `/workspace/Chronos/dataset/reference_data/`. 
 2. Run functions `zero_shot_data_splitting`, `zero_shot_data_splitting_chronological` and `zero_shot_data_splitting_general` in `/workspace/Chronos/prepare_data.py` to process data. 
 3. Use the commands mentioned before to get certain results.  -->
+
+The output of all the reproductions are `MAP_result.json` files. 
