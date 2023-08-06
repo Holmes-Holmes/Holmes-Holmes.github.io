@@ -119,9 +119,9 @@ python map_score.py
 
 | head1        | Random-Order        | chronological-order   | Generality | 
 |:-------------|:-------------|:-------------|:-------------| 
-| Chronos      | path   | path          | path    | 
-| Lightxml     | data/tenfold     | data/chronological           | data/general_data    | 
-| Fastxml      | dataset/tenfold_generate/       | dataset/chronological               | dataset/general   |
+| Chronos      | workspace/Chronos/zero_shot_dataset/tenfold/   | workspace/Chronos/zero_shot_dataset/chronological/          | workspace/Chronos/zero_shot_dataset/general/    | 
+| Lightxml     | data/tenfold/     | data/chronological/           | data/general_data/    | 
+| Fastxml      | dataset/tenfold_generate/       | dataset/chronological/               | dataset/general   |
 
 To train FastXML, you can use the following command:<br>
 ```
@@ -148,3 +148,20 @@ After changing the data path, you can use the following command to train and tes
 ```
 For generality test, we use `/data/tenfold/fold_0/train_general_texts.txt` and `/data/tenfold/fold_0/train_general_labels.txt` to train the model, and test the model on `/data/general_data/general_test_texts.txt` and `/data/general_data/general_test_labels.txt`. <br>
 Please refer to https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master for more details. <br> -->
+
+For CHRONOS, you can train and test the model by the following command: <br> 
+```
+bash auto_run.sh -d [description data: "merged" or "description_and_reference"]
+                 -t [type of data used in training and testing progress: 'general' or 'chronological' or 'random' or 'fold_X'(X = 0, 1, ..., 9)]
+                 -l [label processing: "splitting" or "none"]
+                 -m [the M parameter on Equation (6) for adjustment] 
+                 -i [top-i highest labels for adjustment]
+``` 
+For example, to reproduce the general test, you can use the following command: <br>
+```
+bash auto_run.sh -d 'description_and_reference' -t'general' -l 'splitting' -m 0 -i 0
+```
+Our source data are: `/workspace/Chronos/dataset/description_data/dataset_merged_cleaned_total_general_test.csv` and `/workspace/Chronos/dataset/reference_data/reference_data_raw_total_general_test.csv`. You can generate the test data from scrach by steps below: 
+1. Run `/workspace/Chronos/reference_processing/generate_new_csv.py` and copy the output file `/workspace/Chronos/reference_processing/reference_data_raw_0.5_15_total_general_test.csv` to `/workspace/Chronos/dataset/reference_data/`. 
+2. Run functions `zero_shot_data_splitting`, `zero_shot_data_splitting_chronological` and `zero_shot_data_splitting_general` in `/workspace/Chronos/prepare_data.py` to process data. 
+3. Use the commands mentioned before to get certain results. 
