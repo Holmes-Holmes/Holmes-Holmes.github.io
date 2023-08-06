@@ -33,20 +33,20 @@ cd Holmes/Empirical_Study
 ./run.sh Acc
 ```
 
-# Approach Implement
+<!-- # Approach Implement
 
 
 ## Evidence Gathering
 
 
-## Lucene
+## Lucene -->
 
 # Evaluation
 The evaluation contains RQ3, RQ4, RQ5, RQ6 and RQ7
 
 ## RQ3 Effectiveness Evaluation
 
-**Random-Orde**
+**Random-Order**
 ```
 cd Holmes/Evaluation/tool_compare/MAP_Metric_random
 python map_score.py
@@ -74,12 +74,8 @@ python map_score.py
 
 ## RQ5 Efficiency Evaluation
 
-We count the time costs in evidence gathering, relevance calculation and library ranking.
-To replicate our results for RQ5, please use:
-
-```
-./run.sh Efficiency
-```
+We count the time costs in **evidence gathering**, **relevance calculation** and **library ranking**.
+You can find those part in our [source code](./Holmes/ApproachImp)
 
 ## RQ6 Generality Evaluation
 
@@ -90,19 +86,19 @@ python map_score.py
 
 ## RQ7 Usefulness Evaluation
 
-* Human Study
+* **Human Study**
 
-    The detailed result of human study is stored in [with tool]("Holmes/Evaluation/human_study/wizot_tool and Holmes/Evaluation/human_study/wizot_tool") and [without tool]("Holmes/Evaluation/human_study/wizot_tool and Holmes/Evaluation/human_study/wizot_tool").
-    And the summary of the humanstudy is stored in [xxx](xxx)
+    The detailed result of human study is stored in [with tool](Holmes/Evaluation/human_study/wiz_tool) and [without tool](Holmes/Evaluation/human_study/wizot_tool);
+    The results are calculated and stored in [quality_wztl.json](Holmes/Evaluation/quality_wztl.json) and [quality_wiztl.json](Holmes/Evaluation/quality_wiztl.json).
 
-* Vendor Reporting
+* **Vendor Reporting**
 
-    > xxx inaccurate CVEs for GitHub: [Inaccurate-Affected-Components-in-GitHub]()
-    > xxx inaccurate CVEs for GitLab: [Inaccurate-Affected-Components-in-GitHub]()
-    > xxx inaccurate CVEs for Snyk: [Inaccurate-Affected-Components-in-GitHub]()
-    > xxx inaccurate CVEs for Veracode: [Inaccurate-Affected-Components-in-GitHub]()
+    > 64 inaccurate CVEs for GitHub: [Inaccurate-Affected-Components-in-GitHub](Holmes/Evaluation/Reproting/Github-Inaccurate-Affected-Components.csv)
+    > 51 inaccurate CVEs for GitLab: [Inaccurate-Affected-Components-in-GitLab](Holmes/Evaluation/Reproting/Gitlab-Inaccurate-Affected-Components.csv)
+    > 35 inaccurate CVEs for Snyk: [Inaccurate-Affected-Components-in-Snyk](Holmes/Evaluation/Reproting/Snyk-Inaccurate-Affected-Components.csv)
+    > 62 inaccurate CVEs for Veracode: [Inaccurate-Affected-Components-in-Veracode](Holmes/Evaluation/Reproting/Veracode-Inaccurate-Affected-Components.csv)
 
-
+<!-- 
 # Chronos Lightxml Fastxml
 
 ## Dataset
@@ -145,4 +141,4 @@ After changing the data path, you can use the following command to train and tes
 ./run.sh cve_data
 ```
 For generality test, we use `/data/tenfold/fold_0/train_general_texts.txt` and `/data/tenfold/fold_0/train_general_labels.txt` to train the model, and test the model on `/data/general_data/general_test_texts.txt` and `/data/general_data/general_test_labels.txt`. <br>
-Please refer to https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master for more details. <br>
+Please refer to https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master for more details. <br> -->
