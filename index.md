@@ -112,4 +112,22 @@ To replicate our results for RQ5, please use:
 |:-------------|:-------------|:-------------|:-------------| 
 | Chronos      | path   | path          | path    | 
 | Lightxml     | path     | path           | path    | 
-| Fastxml      | path       | path               | path   |
+| Fastxml      | dataset/tenfold_generate/       | dataset/chronological               | dataset/general   |
+
+To train FastXML, you can use the following command:
+```
+python baseline.py model/model_name.model {training_data_path} --verbose train --iters 200 --gamma 30 --trees 64 --min-label-count 1 --blend-factor 0.5  --re_split 0 --leaf-probs
+```
+You can change the third parameter to change the path of training data, for example: 
+```
+python baseline.py model/model_name.model dataset/tenfold_generate/fold_0/train.json --verbose train --iters 200 --gamma 30 --trees 64 --min-label-count 1 --blend-factor 0.5  --re_split 0 --leaf-probs
+```
+
+To test the model, you can use the following command: 
+```
+python baseline.py model/model_name.model {test_data_path} inference --score
+python util.py
+```
+Also, you can change the third parameter to change the path of test data. 
+
+
