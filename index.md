@@ -129,11 +129,13 @@ python baseline.py model/model_name.model {test_data_path} inference --score
 python util.py
 ```
 Also, you can change the third parameter to change the path of test data. <br>
+For generality test, we use `FastXML/dataset/tenfold_generate/fold_0/train.json` to train the model, and `FastXML/dataset/general/deepvul_test_total_general.json` to test the model. <br>
 Please refer to https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master for more details. <br>
 
-For LightXML, you can manually change the path of training and test data in `/Users/songwenyan/SupplyChain/holmes/SOTA-compare/LightXML/src/dataset.py`, line 30, 36, 42, 49. <br>
+For LightXML, you can manually change the path of training and test data in `/LightXML/src/dataset.py`, line 30, 36, 42, 49. <br>
 After changing the data path, you can use the following command to train and test the model. <br>
 ```
 ./run.sh cve_data
 ```
+For generality test, we use `/data/tenfold/fold_0/train_general_texts.txt` and `/data/tenfold/fold_0/train_general_labels.txt` to train the model, and test the model on `/data/general_data/general_test_texts.txt` and `/data/general_data/general_test_labels.txt`. <br>
 Please refer to https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master for more details. <br>
