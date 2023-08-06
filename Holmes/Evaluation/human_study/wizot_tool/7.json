@@ -1,0 +1,68 @@
+{
+    "CVE-2021-28681": {
+        "timescope": [
+            [
+                "11h12m00s",
+                "11h14m00s"
+            ]
+        ],
+        "tagged_library": [
+            "go__split__github.com:pion:webrtc"
+        ]
+    },
+    "CVE-2021-29451": {
+        "timescope": [
+            [
+                "11h17m00s",
+                "11h23m12s"
+            ]
+        ],
+        "tagged_library": [
+            "maven__split__com.manydesigns:portofino"
+        ]
+    },
+    "CVE-2013-6430": {
+        "timescope": [
+            [
+                "11h31m12s",
+                "11h34m00s"
+            ]
+        ],
+        "tagged_library": [
+            "maven__split__org.springframework:spring"
+        ]
+    },
+    "CVE-2020-14343": {
+        "timescope": [
+            [
+                "12h18m17s",
+                "12h25m15s"
+            ]
+        ],
+        "tagged_library": [
+            "pypi__split__PyYAML"
+        ]
+    },
+    "CVE-2020-2305": {
+        "timescope": [
+            [
+                "14h20m13s",
+                "14h22m45s"
+            ]
+        ],
+        "tagged_library": [
+            "maven__split__org.jenkins-ci.plugins:mercurial"
+        ]
+    },
+    "CVE-2017-1000043": {
+        "timescope": [
+            [
+                "14h24m17s",
+                "14h28m34s"
+            ]
+        ],
+        "tagged_library": [
+            "npm__split__mapbox.js"
+        ]
+    }
+}

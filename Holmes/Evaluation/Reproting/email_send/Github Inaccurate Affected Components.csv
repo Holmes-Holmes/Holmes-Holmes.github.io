@@ -1,0 +1,144 @@
+Vulnerability ID,Suggested Component,Erroneous Affected Component,Evidence
+"CVE-2019-15477
+GHSA-f5f4-m7qp-w6gc",maven__split__org.jooby:jooby,maven__split__io.jooby:jooby,"the truly affected component may be org.jooby:jooby, according to the patch: https://github.com/jooby-project/jooby/pull/1368/commits/34856a738829d8fedca4ed27bd6ff413af87186f, the current version is io.jooby:jooby, but the affected version is org.jooby:jooby"
+"CVE-2018-20094
+GHSA-8j39-fgfp-vxh8",maven__split__com.xuxueli:xxl-conf-admin,maven__split__com.xuxueli:xxl-conf,"as mentioned in the poc, https://github.com/xuxueli/xxl-conf/issues/61, the ConfController.java line 150 are affected, and this method is located in https://github.com/xuxueli/xxl-conf/blob/6726dfe7979ea6d8fb983771471cde69789de632/xxl-conf-admin/src/main/java/com/xxl/conf/admin/controller/ConfController.java, the scope can be more specific: com.xuxueli:xxl-conf-admin"
+"CVE-2021-29451
+GHSA-6g3c-2mh5-7q6x","maven__split__com.manydesigns:portofino-core
+maven__split__com.manydesigns:portofino-dispatcher",maven__split__com.manydesigns:portofino,"according to the cve desc: 'not properly verify the signature of JSON Web Tokens', and in the patch: https://github.com/ManyDesigns/Portofino/commit/8c754a0ad234555e813dcbf9e57d637f9f23d8fb#diff-8a8b092c544d8d29123de4a051fc204cf45c9b463382e93f9e24f443a22fa987, we can fine the affected components are portofino-core and portofino-dispatcher"
+"CVE-2019-12421
+GHSA-fmqw-vqh5-cwq9","maven__split__org.apache.nifi:nifi-web-security
+maven__split__org.apache.nifi:nifi-web-api",maven__split__org.apache.nifi:nifi,"according to the advisory(https://nifi.apache.org/security.html#CVE-2019-12421) and patch(https://github.com/apache/nifi/commit/cf6f5172503ce438c6c22c334c9367f774db7b24), the affected compoents are in nifi-web, more specifically, nifi-web-security and nifi-web-api"
+"CVE-2019-10357
+GHSA-9x5v-8352-244g",maven__split__org.jenkins-ci.plugins.workflow:workflow-cps-global-lib,maven__split__org.jenkins-ci.plugins.workflow:workflow-cps,"the advisory is: https://www.jenkins.io/security/advisory/2019-07-31/#SECURITY1422, the patch is: https://github.com/jenkinsci/workflow-cps-global-lib-plugin/commit/6fce1e241d82641e8648c546bc63c22a5e07e96b, the artifact id is org.jenkins-ci.plugins.workflow:workflow-cps-global-lib(https://github.com/jenkinsci/workflow-cps-global-lib-plugin/blob/6fce1e241d82641e8648c546bc63c22a5e07e96b/pom.xml)"
+"CVE-2018-17194
+GHSA-43fp-vwwg-qgv6",maven__split__org.apache.nifi:nifi-framework-cluster,maven__split__org.apache.nifi:nifi,"according to the patch: https://github.com/apache/nifi/pull/3035/commits/1baead6f525046a613fc4fe494a0d193776ea70f, the affected component is org.apache.nifi:nifi-framework-cluster"
+"CVE-2017-1000034
+GHSA-mm57-9j6q-rxm2",maven__split__com.typesafe.akka:akka-actor,"maven__split__com.typesafe.akka:akka-actor_2.12
+maven__split__com.typesafe.akka:akka-actor_2.11","the affected maven component may not contain information about version, it is not standardized"
+"CVE-2021-33609
+GHSA-qcgx-crrx-38v5",maven__split__com.vaadin:vaadin-server,maven__split__com.vaadin:vaadin-bom,Missing check in `DataCommunicator` class in `com.vaadin:vaadin-server` cause this problem (https://github.com/vaadin/framework/pull/12415/files)
+"CVE-2016-9878
+GHSA-2m8h-fgr8-2q9w",maven__split__org.springframework:spring-webmvc,maven__split__org.springframework:spring-core,"Paths provided to the ResourceServlet were not properly sanitized and as a result exposed to directory traversal attacks, and the affected ResourceServletis are located in spring-webmvc not spring-core"
+"CVE-2007-4556
+GHSA-h7mf-qrm9-2848",maven__split__opensymphony:xwork,maven__split__com.opensymphony:xwork,"we found the opensymphony xwork affected version is below 2.0.4, and com.opensymphony:xwork is > 2.0.4, the affected ga is opensymphony:xwork actually."
+"CVE-2021-26118
+GHSA-q7fr-vqhq-v5xr",maven__split__org.apache.activemq:artemis-openwire-protocol,maven__split__org.apache.activemq:apache-artemis,"OpenWire protocol head of Apache ActiveMQ Artemis 2.15.0 (artifactid: artemis-openwire-protocol) bypassed policy based access control for the entire session, https://github.com/apache/activemq-artemis/pull/3315/files"
+"CVE-2021-23267
+GHSA-r6fx-55x3-f9x6",maven__split__org.craftercms:crafter-studio,maven__split__org.craftercms:craftercms,Improper control of code resources vulnerability in Crafter Studio of Crafter CMS allows authenticated developers to execute OS commands via FreeMarker static methods in org.craftercms:crafter-engine
+"CVE-2020-8828
+GHSA-h8jc-jmrf-9h8f",go__split__github.com:argoproj:argo-cd,go__split__github.com:argoproj:argo,"the advisory is https://argo-cd.readthedocs.io/en/stable/security_considerations/#cve-2020-8828-insecure-default-administrative-password, the github repo is: https://github.com/argoproj/argo, and the module name in go.mod is github.com/argoproj/argo-workflows"
+"CVE-2021-41766
+GHSA-jh5g-9m4v-9vv9",maven__split__org.apache.karaf.management:org.apache.karaf.management.server,maven__split__org.apache.karaf:apache-karaf,"Whereas the default JMX implementation is hardened against unauthenticated deserialization attacks, the implementation used by Apache Karaf is not protected against this kind of attack. this is the advisory: https://issues.apache.org/jira/browse/KARAF-7312; this is the patch to avoid deserialization: https://github.com/apache/karaf/pull/1475/files"
+"CVE-2020-1954
+GHSA-ffm7-7r8g-77xm","maven__split__org.apache.cxf:cxf-rt-management
+maven__split__org.apache.cxf:cxf-bundle",maven__split__org.apache.cxf:cxf,"Apache CXF can integrate with JMX using an InstrumentationManager extension. If the 'createMBServerConnectorFactory' property of the default InstrumentationManagerImpl is not disabled, it is vulnerable to MITM attacks. And the 'createMBServerConnectorFactory' property of the default InstrumentationManagerImpl is in org.apache.cxf:cxf-rt-management (https://github.com/apache/cxf/blob/5c64b7a10227d59cd61f9e61a64496e57bf2e1b6/rt/management/src/main/java/org/apache/cxf/management/jmx/InstrumentationManagerImpl.java#L59) and artifact org.apache.cxf:cxf-bundle contain org.apache.cxf:cxf-rt-management which is also affected"
+"CVE-2021-28165
+GHSA-26vr-8j45-3r4w",maven__split__org.eclipse.jetty:jetty-server,maven__split__org.eclipse.jetty:jetty-io,"The server may receive an invalid TLS frame, leading to 100% CPU usage. and jetty-server is clearly impacted. The workaroud of the vulnerability can refer https://github.com/eclipse/jetty.project/security/advisories/GHSA-26vr-8j45-3r4w"
+"CVE-2017-14868
+GHSA-2mp8-qvqm-3xwq",maven__split__org.restlet.jse:org.restlet.ext.jaxrs,maven__split__org.restlet.jse:org.restlet,This affects use of org.restlet.ext.jaxrs (Jax-rs extension). Ref: https://github.com/restlet/restlet-framework-java/wiki/XEE-security-enhancements
+"CVE-2021-34371
+GHSA-pc4w-8v5j-29w9",maven__split__org.neo4j:neo4j-shell,maven__split__org.neo4j:neo4j,"Neo4j through 3.4.18 exposes an RMI service that arbitrarily deserializes Java objects, the exploit is worked with shellserver in neo4j-shell-3.4.18.jar: https://www.exploit-db.com/exploits/50170"
+"CVE-2018-11788
+GHSA-92wj-x78c-m4fx",maven__split__org.apache.karaf.specs:org.apache.karaf.specs.java.xml,maven__split__org.apache.karaf:karaf,"Apache Karaf has a features deployer for hot deploying features XML via the deploy folder, the key of this cve is the XMLInputFactory class in org.apache.karaf.specs.java.xml lacks XXE mitigation codes and be vulnerable https://github.com/apache/karaf/pull/611/files#diff-10d58eff148ff1f902579e2a23ca30669aae268c0337070374c3fdc9c9461833."
+"CVE-2016-5000
+GHSA-pmqq-7wfv-jfff",maven__split__org.apache.poi:poi-examples,maven__split__org.apache.poi:poi,"The XLSX2CSV example in Apache POI < 3.14 allows remote attackers to read arbitrary files. org.apache.poi:poi-examples is affected actually, the org.apache.poi:poi even not have the XLSX2CSV.class (https://mvnrepository.com/artifact/org.apache.poi/poi-examples)"
+"CVE-2019-10868
+GHSA-f6f2-pwrj-64h3",pypi__split__trytond,pypi__split__tryton,"In trytond/model/modelstorage.py in Tryton, an authenticated user can order records based on a field for which he has no access right. It would be more appropriate to adjust the affected component to trytond(https://pypi.org/project/trytond/) instead of tryton(https://pypi.org/project/tryton/)."
+"CVE-2021-41190
+GHSA-mc8v-mgrf-8f4m",go__split__github.com:opencontainers:distribution-spec:specs-go,go__split__github.com:opencontainers:distribution-spec,"affected modul is github.com:opencontainers:distribution-spec:specs-go, place in github repo: https://github.com/opencontainers/distribution-spec/blob/main/specs-go/go.mod, place in go website: https://pkg.go.dev/github.com/opencontainers/distribution-spec/specs-go"
+"CVE-2015-2913
+GHSA-v6wr-fch2-vm5w",maven__split__com.orientechnologies:orientdb-server,maven__split__com.orientechnologies:orientdb-studio,"actually orientdb-studio contain many small compoents, and orientdb-server is the affected one as cve says: server/network/protocol/http/OHttpSessionManager.java in the Studio component in OrientDB Server, the patch path: https://github.com/orientechnologies/orientdb/commit/668ece96be210e742a4e2820a3085b215cf55104"
+"CVE-2021-43841
+GHSA-9jq9-c2cv-pcrj","maven__split__org.xwiki.platform:xwiki-platform-oldcore
+maven__split__org.xwiki.platform:xwiki-platform-tool-configuration-resources",maven__split__org.xwiki.platform:xwiki-platform-oldcore,"as mentioned in path https://github.com/xwiki/xwiki-platform/commit/5853d492b3a274db0d94d560e2a5ea988a271c62#diff-f16636e21658a0cc4675a4b2e67b352e62316cfc55898888bdffda291edd19c6, the svg is forbidden not only in xwiki-platform-oldcore but in xwiki-platform-tool-configuration-resources, so the affected components contain org.xwiki.platform:xwiki-platform-tool-configuration-resources"
+"CVE-2020-9487
+GHSA-3pp3-77j6-8ph6",maven__split__org.apache.nifi:nifi-web-security,maven__split__org.apache.nifi:nifi,"In Apache NiFi, the download token mechanism had a fixed cache size and lacked authentication for token creation and the unauthenticated code is located in nifi-web-security component as you can seen in the patch: https://github.com/apache/nifi/pull/4271/files"
+"CVE-2020-9486
+GHSA-g644-pr5v-vppf",maven__split__org.apache.nifi:nifi-stateless,maven__split__org.apache.nifi:nifi,"as this cve says, the NiFi stateless execution engine produced log output which included sensitive property values, so we think the org.apache.nifi:nifi-stateless is the truly one of affected components and the patch can be considered: https://github.com/apache/nifi/pull/4222/files#diff-eb305cbea432a90d9f07a7ace6471952eae1d41a85be46733574f0c47a92c991"
+"CVE-2016-6816
+GHSA-jc7p-5r39-9477",maven__split__org.apache.tomcat:tomcat-coyote,maven__split__org.apache.tomcat:tomcat,"the affected component in tomcat may be tomcat-coyote, there are advisory and patch: https://tomcat.apache.org/security-6.html#Fixed_in_Apache_Tomcat_6.0.48, https://svn.apache.org/viewvc?view=revision&revision=1767683"
+"CVE-2015-3192
+GHSA-6v7w-535j-rq5m",maven__split__org.springframework:spring-web,maven__split__org.springframework:spring-core,"the component affected by this vulnerability definitely includes spring-web, the advisory and patch: https://spring.io/security/cve-2015-3192, https://github.com/spring-projects/spring-framework/commit/e4651d6b50c5bc85c84ff537859c212ac4e33434"
+"CVE-2015-3271
+GHSA-ccjp-w723-2jf2",maven__split__org.apache.tika:tika-server,maven__split__org.apache.tika:tika-core,"according to https://lists.apache.org/thread/6jgff6fcpok5b5vl39dqbyc5s76v4642, the affected component is https://repo1.maven.org/maven2/org/apache/tika/tika-server/1.9/tika-server-1.9.jar, and it says: Usage of Apache Tika as a standard library is not affected."
+"CVE-2021-26920
+GHSA-793h-6f7r-6qvm",maven__split__org.apache.druid:druid-core,maven__split__org.apache.druid:druid,"as cve says: However, HTTP InputSource allows authenticated users to read data from other sources than intended, and the InputSource.class is located in druid-core"
+"CVE-2009-4269
+GHSA-fh32-35w2-rxcc",maven__split__org.apache.derby:derby,maven__split__org.apache.derby:derby.10.6.1.0,"the affected maven component may not contain information about version, it is not standardized"
+"CVE-2017-18349
+GHSA-xjrr-xv9m-4pw5",maven__split__ro.pippo:pippo-fastjson,maven__split__com.alibaba:fastjson,"as cve desc: parseObject in Fastjson, as used in FastjsonEngine in Pippo and other products allows remote attackers to execute arbitrary code, pippo-fastjson may be one of the affected components"
+"CVE-2020-9484
+GHSA-344f-f5vg-2jfj",maven__split__org.apache.tomcat:tomcat-catalina,maven__split__org.apache.tomcat.embed:tomcat-embed-core,"the advisory is: https://bugzilla.suse.com/show_bug.cgi?id=1171928, the patch is: https://github.com/apache/tomcat/commit/3aa8f28db7efb311cdd1b6fe15a9cd3b167a2222.patch"
+"CVE-2022-23913
+GHSA-pr38-qpxm-g88x",maven__split__org.apache.activemq:artemis-core-client,maven__split__org.apache.activemq:artemis-commons,"the advisory: https://lists.apache.org/thread/fjynj57rd99s814rdn5hzvmx8lz403q2, the patch: https://github.com/apache/activemq-artemis/pull/3862/files"
+"CVE-2012-0213
+GHSA-jqx5-h2hw-5q4f","maven__split__org.apache.poi:poi-scratchpad
+maven__split__org.apache.poi:poi",maven__split__org.apache.poi:poi,"the UnhandledDataStructure function in hwpf/model/UnhandledDataStructure.java in Apache POI allows remote attackers to cause a denial of service, the UnhandledDataStructure function in hwpf/model/UnhandledDataStructure.java are in both of org.apache.poi:poi-scratchpad and org.apache.poi:poi"
+"CVE-2021-22118
+GHSA-gfwj-fwqj-fp3v",maven__split__org.springframework:spring-web,maven__split__org.springframework:spring-core,"the true affected components may contain org.springframework:spring-web. There are the advisory and patch: https://spring.io/security/cve-2021-22118/, spring-projects/spring-framework@cce60c4."
+"CVE-2010-2057
+GHSA-4fv4-cq5v-x45m","maven__split__org.apache.myfaces.shared:myfaces-shared-core
+maven__split__org.apache.myfaces.core:myfaces-impl",maven__split__org.apache.myfaces.core:myfaces-api,the patch is: http://svn.apache.org/viewvc/myfaces/shared/trunk/core/src/main/java/org/apache/myfaces/shared/util/StateUtils.java?r1=943327&r2=951801&view=patch and shared/util/StateUtils.java in Apache MyFaces contains in org.apache.myfaces.shared:myfaces-shared-core and myfaces.core:myfaces-impl both
+"CVE-2021-25930
+GHSA-p63h-7hw8-5cw4","maven__split__org.opennms:opennms-config
+maven__split__org.opennms:opennms",maven__split__org.opennms:opennms,"as the cve says: 'since there is no validation of an existing user name while renaming a user', validation of an existing user name actually exist in opennms-config, we consider the org.opennms:opennms-config is the direct affected component, and the patch is: https://github.com/OpenNMS/opennms/commit/607151ea8f90212a3fb37c977fa57c7d58d26a84#diff-dda388de00d44f44045e179a017347e7f9ebb09c4b855ec1f88ff611616a9217"
+"CVE-2020-17527
+GHSA-vvw4-rfwf-p6hx",maven__split__org.apache.tomcat:tomcat-coyote,maven__split__org.apache.tomcat:tomcat,"the coyote is direct affcted by this vulnerability, tha patch is: https://github.com/apache/tomcat/commit/d56293f816d6dc9e2b47107f208fa9e95db58c65"
+"CVE-2021-44878
+GHSA-xhw6-hjc9-679m",maven__split__org.pac4j:pac4j-oidc,maven__split__org.pac4j:pac4j-core,"the direct afftcted component is org.pac4j:pac4j-oidc, the patch is: https://github.com/pac4j/pac4j/commit/22b82ffd702a132d9f09da60362fc6264fc281ae"
+"CVE-2020-21125
+GHSA-729f-wvj3-c4pj",maven__split__com.bstek.ureport:ureport2-core,maven__split__com.bstek.ureport:ureport2-console,"as the issue in cve: the affected class is ureport2-core/src/main/java/com/bstek/ureport/provider/report/ReportProvider.java, and located in com.bstek.ureport:ureport2-core"
+"CVE-2019-10184
+GHSA-w69w-jvc7-wjgv",maven__split__io.undertow:undertow-servlet,maven__split__io.undertow:undertow-core,"the direct affected component is io.undertow:undertow-servlet, there is the patch: https://github.com/undertow-io/undertow/pull/794/commits/d2715e3afa13f50deaa19643676816ce391551e9"
+"CVE-2021-39236
+GHSA-5993-wwpg-m92c",maven__split__org.apache.hadoop:hadoop-ozone-ozone-manager,maven__split__org.apache.ozone:ozone-main,"the patch is: https://github.com/apache/ozone/commit/60e078729e18ef1be276f35659957ac553d266f7, and the affected component is org.apache.ozone:hadoop-ozone-ozone-manager in https://github.com/apache/ozone/blob/60e078729e18ef1be276f35659957ac553d266f7/hadoop-ozone/ozone-manager/pom.xml"
+"CVE-2020-8551
+GHSA-qhm4-jxv7-j9pq",go__split__k8s.io:kubernetes,go__split__github.com:kubernetes:kubernetes:pkg:kubelet:server,"versions 1.15.0-1.15.9, 1.16.0-1.16.6, and 1.17.0-1.17.2 are located in https://pkg.go.dev/k8s.io/kubernetes?tab=versions not https://pkg.go.dev/github.com/kubernetes/kubernetes?tab=versions"
+"CVE-2020-1714
+GHSA-m6mm-q862-j366","maven__split__org.keycloak:keycloak-common
+maven__split__org.keycloak:keycloak-core",maven__split__org.keycloak:keycloak-parent,"in the patch (https://github.com/keycloak/keycloak/pull/7053/files#diff-0e2be7153ad8d3c0750e5f355de884baa6f518d6d5c4ca152680ce2a11f2298d), keycloak-common and keycloak-core contains usages of ObjectInputStream without type checks"
+"CVE-2021-26544
+GHSA-74qp-233x-p5j8",maven__split__org.apache.livy:livy-server,maven__split__org.apache.livy:livy-main,"in the patch (https://github.com/apache/incubator-livy/commit/4d8a912699683b973eee76d4e91447d769a0cb0d), the affected component is org.apache.livy:livy-server"
+"CVE-2020-13943
+GHSA-f268-65qc-98vg",maven__split__org.apache.tomcat:tomcat-coyote,maven__split__org.apache.tomcat:tomcat,"in the patch (https://github.com/apache/tomcat/commit/1bbc650cbc3f08d85a1ec6d803c47ae53a84f3bb), the affected component is org.apache.tomcat:tomcat-coyote"
+"CVE-2019-20444
+GHSA-cqqj-4p63-rrmm","maven__split__io.netty:netty-codec-http
+maven__split__io.netty:netty-all",maven__split__io.netty:netty-handler,"netty-all contains the artifact netty-codec-http, netty-codec-http is affected (https://github.com/netty/netty/pull/9871/commits/6ad40c8c17199299b75a04225da10ebda5b377f2), netty-codec-http is affected as well."
+"CVE-2015-5175
+GHSA-3357-829x-m9pr","maven__split__org.apache.cxf.fediz:fediz-idp
+maven__split__org.apache.cxf.fediz:fediz-core",maven__split__org.apache.cxf.fediz:fediz-spring2,"according to the advisory and patch: https://cxf.apache.org/security-advisories.data/CVE-2015-5175.txt.asc?version=1&modificationDate=1440598018000&api=v2, https://github.com/apache/cxf-fediz/commit/f65c961ea31e3c1851daba8e7e49fc37bbf77b19, in the pox.xml, the org.apache.cxf.fediz:fediz-idp and org.apache.cxf.fediz:fediz-core is affected https://github.com/apache/cxf-fediz/blob/f65c961ea31e3c1851daba8e7e49fc37bbf77b19/services/idp/pom.xml, https://github.com/apache/cxf-fediz/blob/f65c961ea31e3c1851daba8e7e49fc37bbf77b19/plugins/core/pom.xml"
+"CVE-2018-11039
+GHSA-9gcm-f4x3-8jpw","maven__split__org.springframework:spring-web
+maven__split__org.springframework:spring-webmvc",maven__split__org.springframework:spring-core,"according to the advisort (https://spring.io/security/cve-2018-11039), spring-webmvc is affected, but the vulnerable class, HiddenHttpMethodFilter is in spring-web as well"
+"CVE-2020-1928
+GHSA-w4fj-ccr6-7pcp",maven__split__org.apache.nifi:nifi-parameter,maven__split__org.apache.nifi:nifi,"the advisory is: https://nifi.apache.org/security.html#CVE-2020-1928, the patch is: https://github.com/apache/nifi/pull/3935/files, the affected component is nifi-parameter"
+"CVE-2021-3503
+GHSA-c4r5-xvgw-2942",maven__split__org.wildfly:wildfly-metrics,maven__split__org.wildfly:wildfly-parent,"according to the patch: https://github.com/wildfly/wildfly/pull/14136/files, the component more specifically affected by the vulnerability is wildfly-metrics"
+"CVE-2018-1339
+GHSA-p699-3wgc-7h72",maven__split__org.apache.tika:tika-parsers,maven__split__org.apache.tika:tika-core,"according to cve, 'A carefully crafted file can trigger an infinite loop in Apache Tika's ChmParser', and the ChmParser is also in tika-parsers"
+"CVE-2019-10648
+GHSA-q2xp-75m7-gv52",maven__split__net.sf.robocode:robocode.host,maven__split__net.sf.robocode:robocode.api,"according to the patch: https://github.com/robo-code/robocode/commit/836c84635e982e74f2f2771b2c8640c3a34221bd#diff-583a22a38f0e8bf8e02ebb121bc19e8792db894f5069946e24b716ca0a26e9e3, robocode.host is affected"
+"CVE-2021-46062
+GHSA-rpvr-mw7r-25xx",maven__split__net.mingsoft:ms-basic,maven__split__net.mingsoft:ms-mcms,"according to the issue: https://github.com/ming-soft/MCMS/issues/59, net/mingsoft/basic/action/TemplateAction.java and net/mingsoft/basic/util/BasicUtil.java in ms-basic is affected more specifically"
+"CVE-2021-37136
+GHSA-grg4-wf29-r9vv","maven__split__io.netty:netty-codec
+maven__split__io.netty:netty-all",maven__split__io.netty:netty-codec,"netty-all contains netty-codec, is vulnerable as well"
+"CVE-2018-17197
+GHSA-3448-vfvv-xp9g",maven__split__org.apache.tika:tika-parser-sqlite3-module,maven__split__org.apache.tika:tika-core,"according to cve(https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17197),'A carefully crafted or corrupt sqlite file can cause an infinite loop in Apache Tika's SQLite3Parser'"
+"CVE-2019-10091
+GHSA-wc4x-4gm2-74j8",maven__split__org.apache.geode:geode-core,maven__split__org.apache.geode:apache-geode,"according to the patch https://github.com/apache/geode/pull/3849/commits/0acac66c3a9dc564388bc900ce5275c4f2534bf7, the affeted artifact is geode-core."
+"CVE-2012-5886
+GHSA-9xrj-439h-62hg",maven__split__org.apache.tomcat:tomcat-catalina,maven__split__org.apache.tomcat:tomcat,"according to the patch: http://svn.apache.org/viewvc?view=revision&revision=1377807, more specifically, the affected component is catalina"
+"CVE-2018-1309
+GHSA-42wx-65g4-5cxv",maven__split__org.apache.nifi:nifi-standard-processors,maven__split__org.apache.nifi:nifi,"according to cve desc: 'Apache NiFi External XML Entity issue in SplitXML processor', the SplitXML processor is in nifi-standard-processors (https://repo1.maven.org/maven2/org/apache/nifi/nifi-standard-processors/1.5.0/nifi-standard-processors-1.5.0.jar)"
+"CVE-2020-10776
+GHSA-484q-784p-8m5h","maven__split__org.keycloak:keycloak-server-spi-private
+maven__split__org.keycloak:keycloak-services",maven__split__org.keycloak:keycloak-parent,"according to the advisory(https://bugzilla.redhat.com/show_bug.cgi?id=1847428), the bug id is KEYCLOAK-14306, and search github repo, the patch is: https://github.com/keycloak/keycloak/commit/01be601dbdd77822827de173e34180d9322db85c, and the affected components are keycloak-server-spi-private and keycloak-services"
+"CVE-2020-17533
+GHSA-grc3-8q8m-4j7c",maven__split__org.apache.accumulo:accumulo-manager,maven__split__org.apache.accumulo:accumulo-core,"according to this patch: https://github.com/apache/accumulo/pull/1828/files, when accumulo-manager do not throw exceptions, allowing an authenticated user flushing a table, shutting down Accumulo or an individual tablet server, and setting or removing system-wide Accumulo configuration properties without permission"
+"CVE-2020-1942
+GHSA-7q8g-gpfp-v8gx","maven__split__org.apache.nifi:nifi-framework-core
+maven__split__org.apache.nifi:nifi-security-utils",maven__split__org.apache.nifi:nifi,"according to the advisory(https://nifi.apache.org/security.html#CVE-2020-1942) and patch in this advisory(https://github.com/apache/nifi/pull/4028/files) ,the affected component is org.apache.nifi:nifi-framework-core and org.apache.nifi:nifi-security-utils"
+"CVE-2020-13697
+GHSA-pr5m-4w22-8483",maven__split__org.nanohttpd:nanohttpd-nanolets,maven__split__org.nanohttpd:nanohttpd,"according to the cve desc: 'An issue was discovered in RouterNanoHTTPD.java in NanoHTTPD through 2.3.1.', and the RouterNanoHTTPD is located in org.nanohttpd:nanohttpd-nanolets (https://github.com/NanoHttpd/nanohttpd/blob/efb2ebf85a2b06f7c508aba9eaad5377e3a01e81/nanolets/src/main/java/org/nanohttpd/router/RouterNanoHTTPD.java#L64), the pom.xml (https://github.com/NanoHttpd/nanohttpd/blob/efb2ebf85a2b06f7c508aba9eaad5377e3a01e81/nanolets/pom.xml) shows the coordiante of this component."

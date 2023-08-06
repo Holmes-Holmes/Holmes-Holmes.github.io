@@ -1,0 +1,245 @@
+Vulnerability ID,Erroneous Affected Component,Suggested Component,Evidence
+CVE-2018-1000408,"rpm__split__atomic-openshift-service-idler
+rpm__split__jenkins-2-plugins
+rpm__split__golang-github-prometheus-node_exporter
+rpm__split__openshift-ansible
+rpm__split__golang-github-prometheus-alertmanager
+rpm__split__atomic-openshift-node-problem-detector
+rpm__split__atomic-enterprise-service-catalog
+rpm__split__openshift-monitor-project-lifecycle
+rpm__split__atomic-openshift-dockerregistry
+rpm__split__atomic-openshift
+rpm__split__golang-github-prometheus-prometheus
+rpm__split__kibana
+rpm__split__atomic-openshift-cluster-autoscaler
+rpm__split__openshift-enterprise-cluster-capacity
+rpm__split__atomic-openshift-metrics-server
+rpm__split__openshift-enterprise-autoheal
+rpm__split__atomic-openshift-web-console
+rpm__split__atomic-openshift-descheduler
+rpm__split__openshift-monitor-sample-app
+rpm__split__golang-github-openshift-oauth-proxy
+rpm__split__cri-o
+rpm__split__jenkins",maven__split__org.jenkins-ci.main:jenkins-core,"it affect org.jenkins-ci.main:jenkins-core, the advisory is https://jenkins.io/security/advisory/2018-10-10/#SECURITY-1128, the patch is https://github.com/jenkinsci/jenkins/commit/01157a699f611ca7492e872103ac01526a982cf2"
+CVE-2019-1003040,rpm__split__jenkins-2-plugins,maven__split__org.jenkins-ci.plugins:script-security,"it affect org.jenkins-ci.plugins:script-security, the advisory is https://www.jenkins.io/security/advisory/2019-03-25/#SECURITY-1353, the patch is https://github.com/jenkinsci/script-security-plugin/commit/8424ad90547e37a2bd3b6a3a7da48eb1af9cd0ee"
+CVE-2019-10790,npm__split__taffy,npm__split__taffydb,"according to the desc of cve, the taffydb may be affected as well, https://www.npmjs.com/package/taffydb"
+CVE-2020-8554,go__split__github.com:kubernetes:kubernetes,go__split__k8s.io:kubernetes,the real affected go module of kubernetes is called k8s.io:kubernetes in go.mod (refer the patch https://github.com/kubernetes/kubernetes/pull/96296/commits)
+CVE-2018-20094,maven__split__com.xuxueli:xxl-conf,maven__split__com.xuxueli:xxl-conf-admin,"as mentioned in the poc, https://github.com/xuxueli/xxl-conf/issues/61, the ConfController.java line 150 are affected, and this method is located in https://github.com/xuxueli/xxl-conf/blob/6726dfe7979ea6d8fb983771471cde69789de632/xxl-conf-admin/src/main/java/com/xxl/conf/admin/controller/ConfController.java, the scope can be more specific: com.xuxueli:xxl-conf-admin"
+CVE-2020-7639,npm__split__eivindfjeldstad-dot,npm__split__@eivifj:dot,"according to the patch https://github.com/eivindfjeldstad/dot/commit/774e4b0c97ca35d2ae40df2cd14428d37dd07a0b#diff-7ae45ad102eab3b6d7e7896acd08c427a9b25b346470d7bc6507b6481575d519, the affected compoonent is @eivifj/dot"
+CVE-2019-12421,maven__split__org.apache.nifi:nifi-web-api,"maven__split__org.apache.nifi:nifi-web-security
+maven__split__org.apache.nifi:nifi-web-api","according to the advisory(https://nifi.apache.org/security.html#CVE-2019-12421) and patch(https://github.com/apache/nifi/commit/cf6f5172503ce438c6c22c334c9367f774db7b24), the affected compoents are in nifi-web, more specifically, nifi-web-security and nifi-web-api"
+CVE-2019-10357,rpm__split__jenkins-2-plugins,maven__split__org.jenkins-ci.plugins.workflow:workflow-cps-global-lib,"the advisory is: https://www.jenkins.io/security/advisory/2019-07-31/#SECURITY1422, the patch is: https://github.com/jenkinsci/workflow-cps-global-lib-plugin/commit/6fce1e241d82641e8648c546bc63c22a5e07e96b, the artifact id is org.jenkins-ci.plugins.workflow:workflow-cps-global-lib(https://github.com/jenkinsci/workflow-cps-global-lib-plugin/blob/6fce1e241d82641e8648c546bc63c22a5e07e96b/pom.xml)"
+CVE-2020-2305,rpm__split__jenkins-2-plugins,maven__split__org.jenkins-ci.plugins:mercurial,"org.jenkins-ci.plugins:mercurial is affected in fact, the advisory is https://www.jenkins.io/security/advisory/2020-11-04/#SECURITY-2115"
+CVE-2021-20329,go__split__github.com:mongodb:mongo-go-driver,go__split__go.mongodb.org:mongo-driver,"go.mongodb.org:mongo-driver and github.com:mongodb:mongo-go-driver are tow different distribution, the affected component is go.mongodb.org:mongo-driver(https://pkg.go.dev/go.mongodb.org/mongo-driver?tab=versions) not github.com:mongodb:mongo-go-driver(https://pkg.go.dev/github.com/mongodb/mongo-go-driver?tab=versions)"
+CVE-2017-1000034,"maven__split__com.typesafe.akka:akka-remote_2.11
+maven__split__com.typesafe.akka:akka-actor_2.10
+maven__split__com.typesafe.akka:akka-actor_2.11",maven__split__com.typesafe.akka:akka-actor,"the affected maven component may not contain information about version, it is not standardized"
+CVE-2020-2160,"alpine__split__jenkins:3.11
+rpm__split__atomic-openshift-dockerregistry
+rpm__split__golang-github-cpuguy83-go-md2man
+rpm__split__openshift-clients
+rpm__split__python-openshift
+rpm__split__golang-github-prometheus-prometheus
+rpm__split__atomic-enterprise-service-catalog
+rpm__split__openshift-enterprise-autoheal
+rpm__split__atomic-openshift
+rpm__split__cri-tools
+rpm__split__machine-config-daemon
+rpm__split__atomic-openshift-web-console
+rpm__split__openshift-ansible
+rpm__split__jenkins
+rpm__split__atomic-openshift-cluster-autoscaler
+rpm__split__conmon
+rpm__split__golang-github-prometheus-node_exporter
+rpm__split__golang-github-openshift-oauth-proxy
+rpm__split__atomic-openshift-node-problem-detector
+rpm__split__golang-github-prometheus-alertmanager
+rpm__split__atomic-openshift-metrics-server
+rpm__split__cri-o
+rpm__split__atomic-openshift-service-idler
+rpm__split__jenkins-2-plugins
+rpm__split__openshift-kuryr
+rpm__split__openshift-enterprise-cluster-capacity
+alpine__split__jenkins:edge
+rpm__split__atomic-openshift-descheduler
+rpm__split__openshift",maven__split__org.jenkins-ci.main:jenkins-core,"it affect org.jenkins-ci.main:jenkins-core, the advisory is https://jenkins.io/security/advisory/2020-03-25/#SECURITY-1774, the patch is https://github.com/jenkinsci/jenkins/commit/f7cf28355973df1ca6eb19066370bf70b10742f7"
+CVE-2020-2306,rpm__split__jenkins-2-plugins,maven__split__org.jenkins-ci.plugins:mercurial,"the affected component is org.jenkins-ci.plugins:mercurial, this is the security advisory: https://www.jenkins.io/security/advisory/2020-11-04/#SECURITY-2104; this is the original repo: https://github.com/jenkinsci/mercurial-plugin"
+CVE-2020-8828,go__split__github.com:argoproj:argo,go__split__github.com:argoproj:argo-workflows,"the advisory is https://argo-cd.readthedocs.io/en/stable/security_considerations/#cve-2020-8828-insecure-default-administrative-password, the github repo is: https://github.com/argoproj/argo, and the module name in go.mod is github.com/argoproj/argo-workflows"
+CVE-2020-1954,"rpm__split__eap7-jgroups
+rpm__split__eap7-jboss-server-migration
+rpm__split__eap7-jboss-xnio-base
+maven__split__org.apache.cxf:cxf-rt-management
+rpm__split__eap7-narayana
+rpm__split__eap7-apache-commons-lang
+rpm__split__eap7-snakeyaml
+rpm__split__eap7-glassfish-jsf
+rpm__split__eap7-bouncycastle
+rpm__split__eap7-apache-commons-codec
+rpm__split__eap7-wildfly-transaction-client
+rpm__split__eap7-httpcomponents-client
+rpm__split__eap7-picketbox
+rpm__split__eap7-wildfly-elytron
+rpm__split__eap7-jboss-logmanager
+rpm__split__eap7-hal-console
+rpm__split__eap7-undertow
+rpm__split__eap7-jberet
+rpm__split__eap7-artemis-native
+rpm__split__eap7-activemq-artemis
+rpm__split__eap7-httpcomponents-core
+rpm__split__eap7-xerces-j2
+rpm__split__eap7-apache-cxf
+rpm__split__eap7-wildfly
+rpm__split__eap7-jboss-invocation
+rpm__split__eap7-ws-commons-xmlschema
+rpm__split__eap7-picketlink-bindings
+rpm__split__eap7-hibernate
+rpm__split__eap7-velocity
+rpm__split__eap7-activemq-artemis-native","maven__split__org.apache.cxf:cxf-rt-management
+maven__split__org.apache.cxf:cxf-bundle","Apache CXF can integrate with JMX using an InstrumentationManager extension. If the 'createMBServerConnectorFactory' property of the default InstrumentationManagerImpl is not disabled, it is vulnerable to MITM attacks. And the 'createMBServerConnectorFactory' property of the default InstrumentationManagerImpl is in org.apache.cxf:cxf-rt-management (https://github.com/apache/cxf/blob/5c64b7a10227d59cd61f9e61a64496e57bf2e1b6/rt/management/src/main/java/org/apache/cxf/management/jmx/InstrumentationManagerImpl.java#L59) and artifact org.apache.cxf:cxf-bundle contain org.apache.cxf:cxf-rt-management which is also affected"
+CVE-2021-32690,go__split__github.com:helm:helm,go__split__helm.sh:helm,"The name of the Go module is defined in the go.mod file, and the real module of kubernetes is called helm.sh:helm in go.mod (refered to the patach: https://github.com/helm/helm/commit/179f90151d5ecb4aa3d35ada35e82b5c1e791752)"
+CVE-2021-28165,"maven__split__org.eclipse.jetty:jetty-io
+rpm__split__rh-eclipse-jetty
+rpm__split__runc
+debian__split__jetty9:sid
+debian__split__jetty9:bullseye
+rpm__split__jenkins
+debian__split__jetty9:buster",maven__split__org.eclipse.jetty:jetty-server,"The server may receive an invalid TLS frame, leading to 100% CPU usage. and jetty-server is clearly impacted. The workaroud of the vulnerability can refer https://github.com/eclipse/jetty.project/security/advisories/GHSA-26vr-8j45-3r4w"
+CVE-2014-8681,go__split__github.com:gogits:gogs,go__split__gogs.io:gogs,gogs.io:gogs(https://pkg.go.dev/gogs.io/gogs?tab=versions) and github.com:gogits:gogs(https://pkg.go.dev/github.com/gogits/gogs?tab=versions) are contain the vulnerable version both (https://github.com/gogs/gogs/commit/83283bca4cb4e0f4ec48a28af680f0d88db3d2c8)
+CVE-2020-14958,go__split__github.com:gogs:gogs,go__split__gogs.io:gogs,gogs.io:gogs(https://pkg.go.dev/gogs.io/gogs?tab=versions) and github.com:gogs:gogs(https://pkg.go.dev/github.com/gogs/gogs?tab=versions) are contain the vulnerable version both(refer to the patch: https://github.com/gogs/gogs/commit/82ff0c5852f29daa5f95d965fd50665581e7ea3c)
+CVE-2018-11788,"maven__split__org.apache.karaf:org.apache.karaf.util
+maven__split__org.apache.karaf.specs:org.apache.karaf.specs.java.xml",maven__split__org.apache.karaf.specs:org.apache.karaf.specs.java.xml,"org.apache.karaf.util is not affected accually, Apache Karaf has a features deployer for hot deploying features XML via the deploy folder, the key of this cve is the XMLInputFactory class in org.apache.karaf.specs.java.xml lacks XXE mitigation codes and be vulnerable https://github.com/apache/karaf/pull/611/files#diff-10d58eff148ff1f902579e2a23ca30669aae268c0337070374c3fdc9c9461833."
+CVE-2018-1000863,"rpm__split__atomic-openshift-dockerregistry
+rpm__split__golang-github-prometheus-prometheus
+rpm__split__atomic-enterprise-service-catalog
+rpm__split__openshift-enterprise-autoheal
+rpm__split__atomic-openshift
+rpm__split__atomic-openshift-web-console
+rpm__split__ansible-service-broker
+rpm__split__openshift-ansible
+rpm__split__jenkins
+rpm__split__atomic-openshift-cluster-autoscaler
+rpm__split__golang-github-prometheus-node_exporter
+rpm__split__golang-github-openshift-oauth-proxy
+rpm__split__atomic-openshift-node-problem-detector
+rpm__split__golang-github-prometheus-alertmanager
+rpm__split__atomic-openshift-metrics-server
+rpm__split__python-elasticsearch
+rpm__split__atomic-openshift-service-idler
+rpm__split__openshift-enterprise-cluster-capacity
+rpm__split__atomic-openshift-descheduler",maven__split__org.jenkins-ci.main:jenkins-core,"it affect org.jenkins-ci.main:jenkins-core, the advisory is https://www.jenkins.io/security/advisory/2018-12-05/#SECURITY-1072, the patch is https://github.com/jenkinsci/jenkins/commit/4ed66e5838476e575a83c3cd13fffb37eefa2f48"
+CVE-2022-25181,rpm__split__jenkins-2-plugins,maven__split__org.jenkins-ci.plugins.workflow:workflow-cps-global-lib,"it affect org.jenkins-ci.plugins.workflow:workflow-cps-global-lib, the advisory is https://www.jenkins.io/security/advisory/2022-02-15/#SECURITY-2441, the patch is https://github.com/jenkinsci/workflow-cps-global-lib-plugin/commit/ace0de3c2d691662021ea10306eeb407da6b6365"
+CVE-2021-41190,"alpine__split__docker:3.15
+rpm__split__skopeo
+debian__split__containerd:focal
+alpine__split__containerd:edge
+alpine__split__containerd:3.15
+alpine__split__skopeo:3.15
+alpine__split__podman:edge
+rpm__split__buildah
+debian__split__containerd:devel
+alpine__split__containerd:3.14
+rpm__split__cri-o
+go__split__github.com:opencontainers:distribution-spec
+rpm__split__podman
+alpine__split__docker:3.14
+alpine__split__skopeo:edge
+alpine__split__podman:3.15
+alpine__split__docker:edge",go__split__github.com:opencontainers:distribution-spec:specs-go,"github.com:opencontainers:distribution-spec:specs-go, place in github repo: https://github.com/opencontainers/distribution-spec/blob/main/specs-go/go.mod, place in go website: https://pkg.go.dev/github.com/opencontainers/distribution-spec/specs-go"
+CVE-2019-10070,maven__split__org.apache.atlas:atlas-webapp,maven__split__org.apache.atlas:apache-atlas,org.apache.atlas:apache-atlas is the vulnerable component according to the cve desc: Apache Atlas versions 0.8.3 and 1.1.0 were found vulnerable
+CVE-2020-9486,maven__split__org.apache.nifi:nifi-framework-core,maven__split__org.apache.nifi:nifi-stateless,"as this cve says, the NiFi stateless execution engine produced log output which included sensitive property values, so we think the org.apache.nifi:nifi-stateless is the truly one of affected components and the patch can be considered: https://github.com/apache/nifi/pull/4222/files#diff-eb305cbea432a90d9f07a7ace6471952eae1d41a85be46733574f0c47a92c991"
+CVE-2019-1003040,rpm__split__jenkins-2-plugins,maven__split__org.jenkins-ci.plugins:script-security,"it affect org.jenkins-ci.plugins:script-security, the advisory is https://jenkins.io/security/advisory/2019-03-25/#SECURITY-1353"
+CVE-2021-25740,go__split__github.com:haproxytech:kubernetes-ingress,go__split__k8s.io:kubernetes,"the affected component is k8s.io:kubernetes, patch is: https://github.com/kubernetes/kubernetes/pull/103704/files"
+CVE-2017-6962,"debian__split__apng2gif:groovy
+debian__split__apng2gif:focal
+debian__split__apng2gif:hirsute
+debian__split__apng2gif:devel
+debian__split__apng2gif:stretch",pypi__split__apng2gif,the afffected component is written by python and managed by pypi
+CVE-2021-43803,npm__split__@next:mdx,npm__split__next,"the affected components contain 'next', the patch is https://github.com/vercel/next.js/commit/6d98b4fb4315dec1badecf0e9bdc212a4272b264, the package setting file is: https://github.com/vercel/next.js/blob/canary/packages/next/package.json"
+CVE-2019-1010314,go__split__github.com:go-gitea:gitea,go__split__code.gitea.io:gitea,"code.gitea.io:gitea(https://pkg.go.dev/code.gitea.io/gitea?tab=versions) and  github.com:go-gitea:gitea(https://pkg.go.dev/github.com/go-gitea/gitea?tab=versions) contain the vulnerable version(1.7.2, 1.7.3) both"
+CVE-2022-21693,pypi__split__onionshare_cli,pypi__split__onionshare-cli,delimiter question
+CVE-2018-1098,go__split__github.com:coreos:etcd,go__split__go.etcd.io:etcd,the vulnerability affected go.etcd.io:etcd and github.com:coreos:etcd both(refer to the patch: https://github.com/etcd-io/etcd/commit/a7e5790c82039945639798ae9a3289fe787f5e56)
+CVE-2022-29046,rpm__split__jenkins-2-plugins,maven__split__org.jenkins-ci.plugins:subversion,"it affect org.jenkins-ci.plugins:subversion, the advisory is https://www.jenkins.io/security/advisory/2022-04-12/#SECURITY-2617, the repo is https://github.com/jenkinsci/subversion-plugin"
+CVE-2022-24844,go__split__github.com:flipped-aurora:gin-vue-admin,go__split__github.com:flipped-aurora:gin-vue-admin:server,"the patch is :https://github.com/flipped-aurora/gin-vue-admin/blob/main/server/service/system/sys_auto_code_pgsql.go and belong to https://github.com/flipped-aurora/gin-vue-admin/tree/main/server, the go.mod point out the module is github.com/flipped-aurora/gin-vue-admin/server"
+CVE-2020-12666,"rpm__split__kiali
+rpm__split__servicemesh-prometheus
+go__split__github.com:go-macaron:macaron
+rpm__split__servicemesh-operator
+rpm__split__ior
+rpm__split__servicemesh
+rpm__split__servicemesh-cni
+rpm__split__servicemesh-grafana",go__split__gopkg.in:macaron.v1,"the patch: https://github.com/go-macaron/macaron/pull/199, and in this commit, the module name in go.mod is: gopkg.in:macaron.v1(https://github.com/go-macaron/macaron/blob/5b504cf0b841fdf016672ae86d70363eb8911004/go.mod)"
+CVE-2022-26184,pypi__split__poetry_core,pypi__split__poetry,"according to this cve, Poetry v1.1.9 and below had an untrusted search path, leading to unexpected behavior when executing Poetry commands in a directory with malicious content. And https://pypi.org/project/poetry-core/#history do not have version 1.1.9, the https://pypi.org/project/poetry may be one of the affected components"
+CVE-2016-10527,manual__split__riot-compiler,npm__split__riot-compiler,the ecosystem of affected component is npm not manual.
+CVE-2012-0213,maven__split__org.apache.poi:poi-scratchpad,"maven__split__org.apache.poi:poi-scratchpad
+maven__split__org.apache.poi:poi","the UnhandledDataStructure function in hwpf/model/UnhandledDataStructure.java in Apache POI allows remote attackers to cause a denial of service, the UnhandledDataStructure function in hwpf/model/UnhandledDataStructure.java are in both of org.apache.poi:poi-scratchpad and org.apache.poi:poi"
+CVE-2021-21691,rpm__split__jenkins,maven__split__org.jenkins-ci.main:jenkins-core,"the advisory: https://www.jenkins.io/security/advisory/2021-11-04/#SECURITY-2455, the patch: https://github.com/jenkinsci/jenkins/commit/104c751d907919dd53f5090f84d53c671a66457b"
+CVE-2019-10353,rpm__split__jenkins,maven__split__org.jenkins-ci.main:jenkins-core,"the advisory: https://jenkins.io/security/advisory/2019-07-17/#SECURITY-626, the patch: https://github.com/jenkinsci/jenkins/commit/772152315aa0a9ba27b812a4ba0f3f9b64af78d9"
+CVE-2021-3028,"debian__split__git-big-picture:bullseye
+debian__split__git-big-picture:sid",pypi__split__git-big-picture,"acoording to cve, the affected components may contain git-big-picture in pypi(https://github.com/git-big-picture/git-big-picture)"
+CVE-2021-21684,rpm__split__jenkins-2-plugins,maven__split__org.jenkins-ci.plugins:git,"it affect org.jenkins-ci.plugins:git, the advisory is https://www.jenkins.io/security/advisory/2021-10-06/#SECURITY-2499, the patch is https://github.com/jenkinsci/git-plugin/commit/5474cc942bfba60927be629ff47fb41c38c66741"
+CVE-2022-26661,"debian__split__tryton-server:bullseye
+debian__split__tryton-server:sid
+debian__split__tryton-server:bookworm
+debian__split__tryton-proteus:bullseye
+debian__split__tryton-proteus:sid
+debian__split__tryton-server:stretch",pypi__split__trytond,the affected components may contain trytond in pypi
+CVE-2017-1000483,pypi__split__accesscontrol,pypi__split__plone,"the direct affcted component is plone, ad cve says: Accessing private content via str.format in through-the-web templates and scripts in Plone"
+CVE-2014-3607,maven__split__edu.vt.middleware:vt-ldap,"maven__split__org.ldaptive:ldaptive
+maven__split__edu.vt.middleware:vt-ldap",the affected components contain org.ldaptive:ldaptive and edu.vt.middleware:vt-ldap both(https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3607)
+CVE-2021-31920,rpm__split__servicemesh,go__split__istio.io:istio,"the direct affcted component is istio in go, https://github.com/istio/istio/tree/release-1.8, please check in go.mod"
+CVE-2021-39236,maven__split__org.apache.hadoop:hadoop-ozone-common,maven__split__org.apache.hadoop:hadoop-ozone-ozone-manager,"the patch is: https://github.com/apache/ozone/commit/60e078729e18ef1be276f35659957ac553d266f7, and the affected component is org.apache.ozone:hadoop-ozone-ozone-manager in https://github.com/apache/ozone/blob/60e078729e18ef1be276f35659957ac553d266f7/hadoop-ozone/ozone-manager/pom.xml"
+CVE-2020-8551,go__split__github.com:kubernetes:kubernetes,go__split__k8s.io:kubernetes,"versions 1.15.0-1.15.9, 1.16.0-1.16.6, and 1.17.0-1.17.2 are located in https://pkg.go.dev/k8s.io/kubernetes?tab=versions not https://pkg.go.dev/github.com/kubernetes/kubernetes?tab=versions"
+CVE-2019-20444,"rpm__split__eap7-netty
+maven__split__io.netty:netty-codec-http","maven__split__io.netty:netty-codec-http
+maven__split__io.netty:netty-all","netty-all contains the artifact netty-codec-http, netty-codec-http is affected, netty-codec-http is affected as well."
+CVE-2019-10354,"maven__split__org.kohsuke.stapler:stapler
+rpm__split__jenkins
+maven__split__org.kohsuke.stapler:stapler-groovy
+maven__split__org.kohsuke.stapler:stapler-jelly",maven__split__org.jenkins-ci.main:jenkins-core,"it affect org.jenkins-ci.main:jenkins-core, the advisory is https://jenkins.io/security/advisory/2019-07-17/#SECURITY-534, the patch is https://github.com/jenkinsci/jenkins/commit/279d8109eddb7a494428baf25af9756c2e33576b"
+CVE-2015-5175,maven__split__org.apache.cxf.fediz:fediz-core,"maven__split__org.apache.cxf.fediz:fediz-idp
+maven__split__org.apache.cxf.fediz:fediz-core","according to the advisory and patch: https://cxf.apache.org/security-advisories.data/CVE-2015-5175.txt.asc?version=1&modificationDate=1440598018000&api=v2, https://github.com/apache/cxf-fediz/commit/f65c961ea31e3c1851daba8e7e49fc37bbf77b19, in the pox.xml, the org.apache.cxf.fediz:fediz-idp and org.apache.cxf.fediz:fediz-core is affected https://github.com/apache/cxf-fediz/blob/f65c961ea31e3c1851daba8e7e49fc37bbf77b19/services/idp/pom.xml, https://github.com/apache/cxf-fediz/blob/f65c961ea31e3c1851daba8e7e49fc37bbf77b19/plugins/core/pom.xml"
+CVE-2020-2110,rpm__split__jenkins-2-plugins,maven__split__org.jenkins-ci.plugins:script-security,"it affect org.jenkins-ci.main:jenkins-core, the advisory is https://jenkins.io/security/advisory/2020-02-12/#SECURITY-1713, the patch is https://github.com/jenkinsci/script-security-plugin/commit/1a09bdcf789b87c4e158aacebd40937c64398de3"
+CVE-2021-37136,maven__split__io.netty:netty-codec,"maven__split__io.netty:netty-codec
+maven__split__io.netty:netty-all","netty-all contains netty-codec, is vulnerable as well"
+CVE-2022-24843,go__split__github.com:flipped-aurora:gin-vue-admin,go__split__github.com:flipped-aurora:gin-vue-admin:server,"more specifially, according to cve(https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24843) and the patch(https://github.com/flipped-aurora/gin-vue-admin/pull/1024/files), it is a lack of parameter validation in gin-vue-admin:server(https://pkg.go.dev/github.com/flipped-aurora/gin-vue-admin/server)"
+CVE-2017-18635,"rpm__split__python-werkzeug
+rpm__split__apache-commons-compress
+bower__split__no-vnc
+rpm__split__m2crypto
+rpm__split__apache-sshd
+rpm__split__apache-commons-jxpath
+rpm__split__ansible-runner
+rpm__split__ansible-runner-service
+rpm__split__log4j12
+rpm__split__python-ovsdbapp",npm__split__@novnc:novnc,"according to the patch https://github.com/novnc/noVNC/commit/6048299a138e078aed210f163111698c8c526a13#diff-286f7dc7b881e942e97cd50c10898f03L534, the @novnc:novnc in npm is directly affected"
+CVE-2018-17197,maven__split__org.apache.tika:tika-parsers,maven__split__org.apache.tika:tika-parser-sqlite3-module,"according to cve(https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17197),'A carefully crafted or corrupt sqlite file can cause an infinite loop in Apache Tika's SQLite3Parser'"
+CVE-2020-28735,pypi__split__plone_app_event,pypi__split__plone,"acoording to the patch (https://github.com/plone/plone.app.theming/commit/b22ccb1b8db526cc426ec6451e162bb5d94481d8), plone is also affected"
+CVE-2020-10776,rpm__split__rh-sso7-keycloak,"maven__split__org.keycloak:keycloak-server-spi-private
+maven__split__org.keycloak:keycloak-services","according to the advisory(https://bugzilla.redhat.com/show_bug.cgi?id=1847428), the bug id is KEYCLOAK-14306, and search github repo, the patch is: https://github.com/keycloak/keycloak/commit/01be601dbdd77822827de173e34180d9322db85c, and the affected components are keycloak-server-spi-private and keycloak-services"
+CVE-2020-17533,maven__split__org.apache.accumulo:accumulo-master,maven__split__org.apache.accumulo:accumulo-manager,"according to this patch: https://github.com/apache/accumulo/pull/1828/files, when accumulo-manager do not throw exceptions, allowing an authenticated user flushing a table, shutting down Accumulo or an individual tablet server, and setting or removing system-wide Accumulo configuration properties without permission"
+CVE-2018-1000407,"rpm__split__atomic-openshift-dockerregistry
+rpm__split__kibana
+rpm__split__golang-github-prometheus-prometheus
+rpm__split__atomic-enterprise-service-catalog
+rpm__split__openshift-enterprise-autoheal
+rpm__split__atomic-openshift
+rpm__split__atomic-openshift-web-console
+rpm__split__openshift-ansible
+rpm__split__jenkins
+rpm__split__atomic-openshift-cluster-autoscaler
+rpm__split__golang-github-prometheus-node_exporter
+rpm__split__golang-github-openshift-oauth-proxy
+rpm__split__atomic-openshift-node-problem-detector
+rpm__split__golang-github-prometheus-alertmanager
+rpm__split__openshift-monitor-sample-app
+rpm__split__atomic-openshift-metrics-server
+rpm__split__cri-o
+rpm__split__atomic-openshift-service-idler
+rpm__split__jenkins-2-plugins
+rpm__split__openshift-monitor-project-lifecycle
+rpm__split__openshift-enterprise-cluster-capacity
+rpm__split__atomic-openshift-descheduler",maven__split__org.jenkins-ci.main:jenkins-core,"according to the advisory (https://jenkins.io/security/advisory/2018-10-10/#SECURITY-1129) and patch (https://github.com/jenkinsci/jenkins/commit/58fecdcdefa2ef2e9abb2e08d9d7c7a6b7d2027f), the affected component is org.jenkins-ci.main:jenkins-core"
+CVE-2020-1942,maven__split__org.apache.nifi:nifi-framework-core,"maven__split__org.apache.nifi:nifi-framework-core
+maven__split__org.apache.nifi:nifi-security-utils","according to the advisory(https://nifi.apache.org/security.html#CVE-2020-1942) and patch in this advisory(https://github.com/apache/nifi/pull/4028/files) ,the affected component is org.apache.nifi:nifi-framework-core and org.apache.nifi:nifi-security-utils"
+CVE-2020-36066,go__split__github.com:tidwall:match,go__split__github.com:tidwall:gjson,the affected package is github.com:tidwall:gjson according to https://github.com/tidwall/gjson/issues/195
+CVE-2020-13697,maven__split__org.nanohttpd:nanohttpd,maven__split__org.nanohttpd:nanohttpd-nanolets,"according to the cve desc: 'An issue was discovered in RouterNanoHTTPD.java in NanoHTTPD through 2.3.1.', and the RouterNanoHTTPD is located in org.nanohttpd:nanohttpd-nanolets (https://github.com/NanoHttpd/nanohttpd/blob/efb2ebf85a2b06f7c508aba9eaad5377e3a01e81/nanolets/src/main/java/org/nanohttpd/router/RouterNanoHTTPD.java#L64), the pom.xml (https://github.com/NanoHttpd/nanohttpd/blob/efb2ebf85a2b06f7c508aba9eaad5377e3a01e81/nanolets/pom.xml) shows the coordiante of this component."

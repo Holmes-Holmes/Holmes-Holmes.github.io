@@ -1,0 +1,93 @@
+{
+    "CVE-2021-28681": {
+        "timescope": [
+            [
+                "14h32m20s",
+                "14h36m20s"
+            ],
+            [
+                "22h52m52s",
+                "22h57m04s"
+            ]
+        ],
+        "tagged_library": [
+            "go__split__github.com:pion:webrtc"
+        ]
+    },
+    "CVE-2021-29451": {
+        "timescope": [
+            [
+                "14h37m50s",
+                "14h39m55s"
+            ],
+            [
+                "22h57m44s",
+                "22h59m10s"
+            ]
+        ],
+        "tagged_library": [
+            "maven__split__com.manydesigns:portofino)"
+        ]
+    },
+    "CVE-2013-6430": {
+        "timescope": [
+            [
+                "14h54m10s",
+                "14h54m50s"
+            ],
+            [
+                "23h09m14s",
+                "23h11m19s"
+            ]
+        ],
+        "tagged_library": [
+            "maven__split__org.springframework:spring-web"
+        ]
+    },
+    "CVE-2020-14343": {
+        "timescope": [
+            [
+                "15h02m15s",
+                "15h03m15s"
+            ],
+            [
+                "14h22m45s",
+                "14h24m45s"
+            ]
+        ],
+        "tagged_library": [
+            "pypi__split__PyYAML"
+        ]
+    },
+    "CVE-2020-2305": {
+        "timescope": [
+            [
+                "15h13m40s",
+                "15h14m15s"
+            ],
+            [
+                "23h42m25s",
+                "23h44m20s"
+            ]
+        ],
+        "tagged_library": [
+            "maven__split__org.jenkins-ci.plugins:mercurial"
+        ]
+    },
+    "CVE-2017-1000043": {
+        "timescope": [
+            [
+                "15h15m20s",
+                "15h16m20s"
+            ],
+            [
+                "23h44m40s",
+                "23h46m47s"
+            ]
+        ],
+        "tagged_library": [
+            "Ruby__split__mapbox-rails",
+            "npm__split__mapbox.js"
+        ]
+    }
+}

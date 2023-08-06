@@ -1,0 +1,303 @@
+Vulnerability ID,Erroneous Affected Component,Suggested Component,Evidence
+CVE-2021-26715,maven__split__org.mitre:openid-connect-server-webapp,maven__split__org.mitre:openid-connect-server,"according to the vulnerability advisory(https://portswigger.net/research/hidden-oauth-attack-vectors), the vulnerable code is located in the vulnerable controller was located at org.mitre.openid.connect.web.ClientAPI#getClientLogo which belong to openid-connect-server not openid-connect-server-webapp (https://github.com/mitreid-connect/OpenID-Connect-Java-Spring-Server/blob/master/openid-connect-server/src/main/java/org/mitre/openid/connect/web/ClientAPI.java#L509)"
+CVE-2021-38555,maven__split__org.apache.any23:apache-any23-core,maven__split__org.apache.any23:apache-any23,"not only apache-any23-core are affected, StreamUtils.java is located in org.apache.any23:apache-any23 and org.apache.any23:apache-any23-core both"
+CVE-2020-1954,"rhel:8__split__eap7-jboss-server-migration
+rhel:8__split__eap7-narayana-jbosstxbridge
+rhel:8__split__eap7-jboss-invocation
+rhel:8__split__eap7-apache-cxf
+rhel:8__split__eap7-hibernate
+rhel:8__split__eap7-activemq-artemis-server
+rhel:8__split__eap7-jboss-server-migration-eap6.4-to-eap7.3
+rhel:8__split__eap7-bouncycastle-mail
+rhel:8__split__eap7-glassfish-jsf
+rhel:8__split__eap7-activemq-artemis-native
+rhel:8__split__eap7-narayana-restat-bridge
+rhel:8__split__eap7-apache-cxf-rt
+maven__split__org.apache.cxf:cxf-rt-management
+rhel:8__split__eap7-activemq-artemis-jms-client
+rhel:8__split__eap7-apache-cxf-tools
+rhel:8__split__eap7-jboss-server-migration-wildfly16.0-server
+rhel:8__split__eap7-narayana-compensations
+rhel:8__split__eap7-narayana-jts-idlj
+rhel:7__split__eap7-activemq-artemis-ra
+rhel:8__split__eap7-wildfly-javadocs
+rhel:8__split__eap7-jboss-server-migration-wildfly10.0
+rhel:8__split__eap7-jboss-server-migration-wildfly10.1
+rhel:8__split__eap7-bouncycastle
+rhel:8__split__eap7-jboss-server-migration-wildfly15.0-server
+rhel:8__split__eap7-jboss-server-migration-eap6.4
+rhel:8__split__eap7-activemq-artemis-commons
+rhel:8__split__eap7-wildfly-elytron
+rhel:8__split__eap7-activemq-artemis-hqclient-protocol
+rhel:8__split__eap7-picketbox
+rhel:8__split__eap7-activemq-artemis-service-extensions
+rhel:8__split__eap7-activemq-artemis-journal","maven__split__org.apache.cxf:cxf-rt-management
+maven__split__org.apache.cxf:cxf-bundle","Apache CXF can integrate with JMX using an InstrumentationManager extension. If the 'createMBServerConnectorFactory' property of the default InstrumentationManagerImpl is not disabled, it is vulnerable to MITM attacks. And the 'createMBServerConnectorFactory' property of the default InstrumentationManagerImpl is in org.apache.cxf:cxf-rt-management (https://github.com/apache/cxf/blob/5c64b7a10227d59cd61f9e61a64496e57bf2e1b6/rt/management/src/main/java/org/apache/cxf/management/jmx/InstrumentationManagerImpl.java#L59) and artifact org.apache.cxf:cxf-bundle contain org.apache.cxf:cxf-rt-management which is also affected"
+CVE-2021-28165,"rhel:7__split__jetty-websocket-server
+rhel:7__split__jetty-websocket-api
+sles:15.3__split__jetty-util-ajax
+sles:15.3__split__jetty-http
+rhel:7__split__jetty-client
+sles:15.3__split__jetty-security
+sles:15.2__split__jetty-server
+sles:15.2__split__jetty-http
+sles:15.2__split__jetty-util-ajax
+sles:15.2__split__jetty-security
+sles:15.2__split__jetty-util
+rhel:7__split__jetty-security
+sles:15.3__split__jetty-server
+sles:15.2__split__jetty-servlet
+rhel:7__split__runc
+rhel:7__split__jetty-xml
+rhel:7__split__jetty-util
+rhel:7__split__jetty-http
+maven__split__org.eclipse.jetty:jetty-io
+centos:7__split__jetty-project
+centos:7__split__jetty-security
+rhel:7__split__jetty-util-ajax
+centos:7__split__jetty-plus
+rhel:7__split__jetty-servlets
+centos:7__split__jetty-servlets
+rhel:7__split__jetty-continuation
+sles:15.3__split__jetty-io
+sles:15.3__split__jetty-servlet
+sles:15.3__split__jetty-util
+sles:15.2__split__jetty-io
+rhel:7__split__jetty-start",maven__split__org.eclipse.jetty:jetty-server,"The server may receive an invalid TLS frame, leading to 100% CPU usage. and jetty-server is clearly impacted. The workaroud of the vulnerability can refer https://github.com/eclipse/jetty.project/security/advisories/GHSA-26vr-8j45-3r4w"
+CVE-2017-14868,"ubuntu:16.04__split__restlet
+maven__split__org.restlet.osgi:org.restlet
+ubuntu:18.04__split__restlet
+ubuntu:18.10__split__restlet",maven__split__org.restlet.jse:org.restlet.ext.jaxrs,"as cve says: 'when using SimpleXMLProvider, ... This affects use of org.restlet.ext.jaxrs (Jax-rs extension)'. SimpleXMLProvider is located in modules/org.restlet.ext.jaxrs/src/main/java/org/restlet/ext/jaxrs/internal/provider/SimpleXmlProvider.java. Ref: https://github.com/restlet/restlet-framework-java/wiki/XEE-security-enhancements."
+CVE-2021-34371,maven__split__org.neo4j:neo4j,maven__split__org.neo4j:neo4j-shell,"Neo4j through 3.4.18 exposes an RMI service that arbitrarily deserializes Java objects, the exploit is worked with shellserver in neo4j-shell-3.4.18.jar: https://www.exploit-db.com/exploits/50170"
+CVE-2019-10868,"ubuntu:21.10__split__tryton-server
+ubuntu:18.04__split__tryton-server
+debian:unstable__split__tryton-server
+ubuntu:16.04__split__tryton-server
+ubuntu:21.04__split__tryton-server
+ubuntu:19.10__split__tryton-server
+ubuntu:18.10__split__tryton-server
+ubuntu:22.10__split__tryton-server
+debian:10__split__tryton-server
+debian:9__split__tryton-server
+ubuntu:22.04__split__tryton-server
+ubuntu:19.04__split__tryton-server
+ubuntu:20.10__split__tryton-server
+ubuntu:20.04__split__tryton-server
+debian:13__split__tryton-server
+debian:11__split__tryton-server
+pypi__split__tryton
+debian:12__split__tryton-server
+ubuntu:14.04__split__tryton-server",pypi__split__trytond,"In trytond/model/modelstorage.py in Tryton, an authenticated user can order records based on a field for which he has no access right. It would be more appropriate to adjust the affected component to trytond(https://pypi.org/project/trytond/) instead of tryton(https://pypi.org/project/tryton/)."
+CVE-2021-43841,maven__split__org.xwiki.platform:xwiki-platform-oldcore,"maven__split__org.xwiki.platform:xwiki-platform-oldcore
+maven__split__org.xwiki.platform:xwiki-platform-tool-configuration-resources","as mentioned in path https://github.com/xwiki/xwiki-platform/commit/5853d492b3a274db0d94d560e2a5ea988a271c62#diff-f16636e21658a0cc4675a4b2e67b352e62316cfc55898888bdffda291edd19c6, the svg is forbidden not only in xwiki-platform-oldcore but in xwiki-platform-tool-configuration-resources, so the affected components contain org.xwiki.platform:xwiki-platform-tool-configuration-resources"
+CVE-2021-32635,"unmanaged__split__sylabs:singularity
+go__split__github.com:hpcng:singularity:e2e:actions",go__split__github.com:sylabs:singularity,"the patch is: https://github.com/sylabs/singularity/commit/d52ae9d13979733c5e987a566fae59ed6f1bf796, and according to this patch, github.com:sylabs:singularity is actually affected as well"
+CVE-2020-1727,maven__split__org.keycloak:keycloak-services,maven__split__org.keycloak:keycloak-common,"according to this patch: https://github.com/keycloak/keycloak/commit/2f489a41ebd06eb14197f8a66afae86ac1397f42#diff-ac2900b18c6e2b356b59c69a52ced02290b81030df01331775938d5cee692229, org.keycloak:keycloak-common may also be affected"
+CVE-2020-9486,maven__split__org.apache.nifi:nifi-security-utils,maven__split__org.apache.nifi:nifi-stateless,"as this cve says, the NiFi stateless execution engine produced log output which included sensitive property values, so we think the org.apache.nifi:nifi-stateless is the truly one of affected components and the patch can be considered: https://github.com/apache/nifi/pull/4222/files#diff-eb305cbea432a90d9f07a7ace6471952eae1d41a85be46733574f0c47a92c991"
+CVE-2017-6962,"debian:9__split__apng2gif
+ubuntu:20.10__split__apng2gif
+ubuntu:22.04__split__apng2gif
+ubuntu:22.10__split__apng2gif
+debian:10__split__apng2gif
+debian:12__split__apng2gif
+ubuntu:19.04__split__apng2gif
+ubuntu:19.10__split__apng2gif
+debian:unstable__split__apng2gif
+ubuntu:23.04__split__apng2gif
+debian:13__split__apng2gif
+ubuntu:21.10__split__apng2gif
+ubuntu:18.10__split__apng2gif
+debian:11__split__apng2gif
+ubuntu:21.04__split__apng2gif
+unmanaged__split__apng2gif
+ubuntu:20.04__split__apng2gif
+ubuntu:18.04__split__apng2gif
+ubuntu:16.04__split__apng2gif",pypi__split__apng2gif,the afffected component is written by python and managed by pypi as well
+CVE-2019-8336,"debian:10__split__consul
+debian:unstable__split__consul
+ubuntu:20.10__split__consul
+ubuntu:18.04__split__consul
+ubuntu:20.04__split__consul
+debian:11__split__consul",go__split__github.com:hashicorp:consul,"according to the issue, https://github.com/hashicorp/consul/issues/5423, the affected component is github.com/hashicorp/consul which is a go package"
+CVE-2017-18349,maven__split__com.alibaba:fastjson,maven__split__ro.pippo:pippo-fastjson,"as cve desc: parseObject in Fastjson, as used in FastjsonEngine in Pippo and other products allows remote attackers to execute arbitrary code, pippo-fastjson may be one of the affected components"
+CVE-2020-2026,"oracle:7__split__kata-image
+oracle:7__split__kata-runtime
+oracle:7__split__istio
+oracle:7__split__istio-pilot-agent
+oracle:7__split__kubelet
+oracle:7__split__olcne-prometheus-chart
+oracle:7__split__istio-sidecar-injector
+oracle:7__split__olcne-api-server
+oracle:7__split__kata
+oracle:7__split__istio-pilot-discovery
+oracle:7__split__istio-node-agent
+oracle:7__split__istio-mixs
+oracle:7__split__olcne-istio-chart
+oracle:7__split__istio-istioctl
+oracle:7__split__istio-proxy-init
+oracle:7__split__istio-citadel
+oracle:7__split__istio-mixc
+oracle:7__split__olcne-agent
+oracle:7__split__kubeadm
+oracle:7__split__istio-galley
+oracle:7__split__kernel-uek-container
+oracle:7__split__kubectl
+oracle:7__split__olcne-nginx
+oracle:7__split__olcne-utils
+oracle:7__split__olcnectl",go__split__github.com:kata-containers:runtime,"according to the pull: https://github.com/kata-containers/runtime/pull/2713, the go package github.com:kata-containers:runtime is affected"
+CVE-2012-0213,maven__split__org.apache.poi:poi-scratchpad,"maven__split__org.apache.poi:poi-scratchpad
+maven__split__org.apache.poi:poi","the UnhandledDataStructure function in hwpf/model/UnhandledDataStructure.java in Apache POI allows remote attackers to cause a denial of service, the UnhandledDataStructure function in hwpf/model/UnhandledDataStructure.java are in both of org.apache.poi:poi-scratchpad and org.apache.poi:poi"
+CVE-2021-22118,"rhel:9__split__jenkins
+rhel:7__split__jenkins
+rhel:8__split__jenkins
+maven__split__org.springframework:spring-web",maven__split__org.springframework:spring-webflux,"the true affected components may contain org.springframework:spring-webflux, there are the advisory and patch: https://spring.io/security/cve-2021-22118/, https://github.com/spring-projects/spring-framework/commit/cce60c479c22101f24b2b4abebb6d79440b120d1"
+CVE-2021-36156,"rhel:8__split__grafana-graphite
+rhel:8__split__grafana-elasticsearch
+rhel:8__split__grafana-mssql
+centos:8__split__grafana-azure-monitor
+rhel:8__split__grafana-loki
+rhel:8__split__grafana-mysql
+centos:8__split__grafana-influxdb
+centos:9__split__grafana
+rhel:8__split__grafana-azure-monitor
+centos:8__split__grafana-graphite
+rhel:8__split__grafana-opentsdb
+rhel:8__split__grafana-influxdb
+centos:8__split__grafana-postgres
+centos:8__split__grafana-stackdriver
+rhel:8__split__servicemesh-grafana
+rhel:8__split__grafana
+centos:8__split__grafana-prometheus
+rhel:8__split__grafana-cloudwatch
+centos:8__split__grafana-mysql
+centos:8__split__grafana-opentsdb
+rhel:8__split__grafana-stackdriver
+centos:8__split__grafana-elasticsearch
+rhel:8__split__grafana-prometheus
+centos:8__split__grafana-loki
+centos:8__split__grafana
+centos:8__split__grafana-mssql
+centos:8__split__grafana-cloudwatch
+rhel:8__split__grafana-postgres
+rhel:9__split__grafana",go__split__github.com:grafana:loki,"according to the patch https://github.com/grafana/loki/pull/4020#issue-694377133, the go package github.com:grafana:loki may be affected"
+CVE-2021-37682,unmanaged__split__tensorflow:tensorflow,pypi__split__tensorflow,the tensorflow in pypi may also be affected
+CVE-2020-21125,maven__split__com.bstek.ureport:ureport2-console,maven__split__com.bstek.ureport:ureport2-core,"as the issue in cve: the affected class is ureport2-core/src/main/java/com/bstek/ureport/provider/report/ReportProvider.java, and located in com.bstek.ureport:ureport2-core"
+CVE-2020-1714,"rhel:8__split__eap7-keycloak-adapter-sso7_4
+rhel:7__split__eap7-keycloak-adapter-sso7_4
+rhel:7__split__eap7-keycloak-saml-adapter-sso7_4
+rhel:8__split__eap7-keycloak-saml-adapter-sso7_4
+rhel:7__split__keycloak-saml-adapter-sso7_4-eap6
+maven__split__org.keycloak:keycloak-common
+rhel:7__split__keycloak-adapter-sso7_4-eap6","maven__split__org.keycloak:keycloak-common
+maven__split__org.keycloak:keycloak-core","in the patch (https://github.com/keycloak/keycloak/pull/7053/files#diff-0e2be7153ad8d3c0750e5f355de884baa6f518d6d5c4ca152680ce2a11f2298d), keycloak-common and keycloak-core contains usages of ObjectInputStream without type checks"
+CVE-2015-5175,maven__split__org.apache.cxf.fediz:fediz-core,"maven__split__org.apache.cxf.fediz:fediz-idp
+maven__split__org.apache.cxf.fediz:fediz-core","according to the advisory and patch: https://cxf.apache.org/security-advisories.data/CVE-2015-5175.txt.asc?version=1&modificationDate=1440598018000&api=v2, https://github.com/apache/cxf-fediz/commit/f65c961ea31e3c1851daba8e7e49fc37bbf77b19, in the pox.xml, the org.apache.cxf.fediz:fediz-idp and org.apache.cxf.fediz:fediz-core is affected https://github.com/apache/cxf-fediz/blob/f65c961ea31e3c1851daba8e7e49fc37bbf77b19/services/idp/pom.xml, https://github.com/apache/cxf-fediz/blob/f65c961ea31e3c1851daba8e7e49fc37bbf77b19/plugins/core/pom.xml"
+CVE-2021-29499,"debian:11__split__golang-github-sylabs-sif
+debian:13__split__golang-github-sylabs-sif
+ubuntu:22.04__split__golang-github-sylabs-sif
+debian:unstable__split__golang-github-sylabs-sif
+ubuntu:21.04__split__golang-github-sylabs-sif
+ubuntu:20.04__split__golang-github-sylabs-sif
+ubuntu:22.10__split__golang-github-sylabs-sif
+ubuntu:21.10__split__golang-github-sylabs-sif
+debian:12__split__golang-github-sylabs-sif
+ubuntu:23.04__split__golang-github-sylabs-sif
+ubuntu:20.10__split__golang-github-sylabs-sif",go__split__github.com:sylabs:sif,"according to github advisory(https://github.com/sylabs/sif/security/advisories/GHSA-4gh8-x3vv-phhg), the go package may be affected"
+CVE-2020-1928,maven__split__org.apache.nifi:nifi-web-api,maven__split__org.apache.nifi:nifi-parameter,"the advisory is: https://nifi.apache.org/security.html#CVE-2020-1928, the patch is: https://github.com/apache/nifi/pull/3935/files, the affected component is nifi-parameter"
+CVE-2019-10648,"ubuntu:20.10__split__robocode
+ubuntu:18.04__split__robocode
+debian:unstable__split__robocode
+debian:11__split__robocode
+debian:8__split__robocode
+maven__split__net.sf.robocode:robocode
+ubuntu:19.04__split__robocode
+debian:10__split__robocode
+debian:9__split__robocode
+debian:12__split__robocode
+ubuntu:20.04__split__robocode
+ubuntu:16.04__split__robocode
+debian:13__split__robocode
+ubuntu:19.10__split__robocode",maven__split__net.sf.robocode:robocode.host,"according to the patch: https://github.com/robo-code/robocode/commit/836c84635e982e74f2f2771b2c8640c3a34221bd#diff-583a22a38f0e8bf8e02ebb121bc19e8792db894f5069946e24b716ca0a26e9e3, robocode.host is affected"
+CVE-2020-10687,"rhel:8__split__eap7-jboss-server-migration-eap7.2-to-eap7.3
+rhel:7__split__eap7-hibernate-core
+rhel:7__split__eap7-infinispan-cachestore-jdbc
+rhel:8__split__eap7-jboss-server-migration-wildfly9.0
+rhel:7__split__eap7-jboss-ejb-client
+rhel:7__split__eap7-weld-core
+rhel:7__split__eap7-bouncycastle-prov
+rhel:7__split__eap7-activemq-artemis-jms-server
+rhel:7__split__eap7-jboss-server-migration-core
+rhel:7__split__eap7-activemq-artemis-service-extensions
+rhel:7__split__eap7-hibernate-entitymanager
+rhel:7__split__eap7-bouncycastle-mail
+rhel:7__split__eap7-infinispan
+rhel:7__split__eap7-hibernate-validator
+rhel:7__split__eap7-jboss-server-migration-eap7.1
+rhel:7__split__eap7-bouncycastle-pkix
+rhel:7__split__eap7-jboss-server-migration-eap6.4
+rhel:7__split__eap7-activemq-artemis-jdbc-store
+rhel:7__split__eap7-jboss-server-migration-wildfly10.0
+rhel:8__split__eap7-wildfly-modules
+rhel:8__split__eap7-jboss-server-migration-wildfly18.0-server
+rhel:8__split__eap7-weld-ejb
+rhel:7__split__eap7-jboss-server-migration-cli
+rhel:7__split__eap7-activemq-artemis
+rhel:7__split__eap7-resteasy
+rhel:7__split__eap7-ironjacamar-jdbc
+rhel:7__split__eap7-ironjacamar-common-spi
+rhel:7__split__eap7-jboss-server-migration-wildfly9.0
+rhel:7__split__eap7-wildfly-elytron
+rhel:7__split__eap7-hibernate-validator-cdi
+maven__split__io.undertow:undertow-core","maven__split__io.undertow:undertow-servlet
+maven__split__io.undertow:undertow-websockets-jsr","according to the patch https://github.com/undertow-io/undertow/pull/878/files, the io.undertow:undertow-servlet and io.undertow:undertow-websockets-jsr are affected as well"
+CVE-2017-7549,rhel:7__split__instack-undercloud,pypi__split__instack-undercloud,the instack-undercloud is also managed by pypi
+CVE-2021-46062,maven__split__net.mingsoft:ms-mcms,maven__split__net.mingsoft:ms-basic,"according to the issue: https://github.com/ming-soft/MCMS/issues/59, net/mingsoft/basic/action/TemplateAction.java and net/mingsoft/basic/util/BasicUtil.java in ms-basic is affected more specifically"
+CVE-2021-37136,"maven__split__io.netty:netty-codec
+rhel:7__split__eap7-wildfly-http-naming-client
+rhel:8__split__eap7-netty-transport
+rhel:8__split__eap7-netty-codec-xml
+rhel:7__split__eap7-wildfly-java-jdk8
+rhel:7__split__eap7-activemq-artemis-jms-server
+rhel:7__split__eap7-activemq-artemis-service-extensions
+rhel:7__split__eap7-wildfly-java-jdk11
+rhel:8__split__eap7-netty-buffer
+rhel:7__split__opendaylight
+rhel:8__split__eap7-activemq-artemis
+rhel:8__split__eap7-netty-transport-native-unix-common
+rhel:7__split__candlepin
+rhel:8__split__eap7-netty
+rhel:8__split__eap7-activemq-artemis-jdbc-store
+rhel:7__split__eap7-activemq-artemis-jdbc-store
+rhel:8__split__eap7-wildfly-modules
+rhel:8__split__eap7-netty-all
+rhel:7__split__candlepin-selinux
+rhel:7__split__eap7-activemq-artemis
+rhel:8__split__eap7-netty-codec-http2
+rhel:7__split__eap7-wildfly-javadocs
+rhel:8__split__eap7-netty-codec-mqtt
+rhel:8__split__eap7-netty-transport-rxtx
+rhel:7__split__eap7-activemq-artemis-commons
+rhel:8__split__eap7-h2database
+rhel:7__split__eap7-activemq-artemis-cli
+rhel:8__split__eap7-netty-transport-sctp
+rhel:8__split__eap7-wildfly
+rhel:8__split__eap7-jackson-databind","maven__split__io.netty:netty-codec
+maven__split__io.netty:netty-all","netty-all contains netty-codec, is vulnerable as well"
+CVE-2018-17197,"debian:10__split__tika
+maven__split__org.apache.tika:tika-parsers
+maven__split__org.apache.tika:tika-core
+debian:11__split__tika
+ubuntu:19.04__split__tika
+debian:unstable__split__tika
+debian:12__split__tika",maven__split__org.apache.tika:tika-parser-sqlite3-module,"according to cve(https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17197),'A carefully crafted or corrupt sqlite file can cause an infinite loop in Apache Tika's SQLite3Parser'"
+CVE-2018-1000403,maven__split__org.jenkins-ci.plugins:codedeploy,maven__split__com.amazonaws:codedeploy,"in https://github.com/jenkinsci/aws-codedeploy-plugin/blob/master/pom.xml, the group id is com.amazonaws not org.jenkins-ci.plugins; advisory: https://www.jenkins.io/security/advisory/2018-06-25/#SECURITY-833"
+CVE-2020-10776,"rhel:7__split__rh-sso7-keycloak
+rhel:7__split__rh-sso7-keycloak-server
+rhel:8__split__rh-sso7-keycloak
+rhel:8__split__rh-sso7-libunix-dbus-java
+rhel:8__split__rh-sso7-libunix-dbus-java-devel
+rhel:8__split__rh-sso7-keycloak-server","maven__split__org.keycloak:keycloak-services
+maven__split__org.keycloak:keycloak-server-spi-private","according to the advisory(https://bugzilla.redhat.com/show_bug.cgi?id=1847428), the bug id is KEYCLOAK-14306, and search github repo, the patch is: https://github.com/keycloak/keycloak/commit/01be601dbdd77822827de173e34180d9322db85c, and the affected components are keycloak-server-spi-private and keycloak-services"
+CVE-2020-17533,maven__split__org.apache.accumulo:accumulo-master,maven__split__org.apache.accumulo:accumulo-manager,"according to this patch: https://github.com/apache/accumulo/pull/1828/files, when accumulo-manager do not throw exceptions, allowing an authenticated user flushing a table, shutting down Accumulo or an individual tablet server, and setting or removing system-wide Accumulo configuration properties without permission"
+CVE-2018-20094,maven__split__com.xuxueli:xxl-conf,maven__split__com.xuxueli:xxl-conf-admin,"as mentioned in the poc, https://github.com/xuxueli/xxl-conf/issues/61, the ConfController.java line 150 are affected, and this method is located in https://github.com/xuxueli/xxl-conf/blob/6726dfe7979ea6d8fb983771471cde69789de632/xxl-conf-admin/src/main/java/com/xxl/conf/admin/controller/ConfController.java, the scope can be more specific: com.xuxueli:xxl-conf-admin"
+CVE-2018-17194,maven__split__org.apache.nif:nifi-framework-cluster,maven__split__org.apache.nifi:nifi-framework-cluster,is there a misspell of nifi?

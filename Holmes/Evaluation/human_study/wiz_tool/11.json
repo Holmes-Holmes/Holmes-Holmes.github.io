@@ -1,0 +1,86 @@
+{
+    "CVE-2021-28681": {
+        "timescope": [
+            ["17h47m14s", "17h55m10s"]
+        ],
+        "tagged_library": [ 
+            "go__split__github.com:pion:webrtc(https://webrtcforthecurious.com/)"
+        ],
+        "suggest component": [
+            "go__split__github.com:pion:webrtc",
+            "npm__split__webrtc",
+            "npm__split__555-webrtc"
+        ],
+        "reason":"https://github.com/pion/webrtc/issues/1708,https://webrtcforthecurious.com/,"
+    },
+    "CVE-2021-29451": {
+        "timescope": [
+            ["17h56m26s", "18h00m49s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__com.manydesigns:portofino(https://portofino.manydesigns.com/en)"
+        ],
+        "suggest component": [
+            "maven__split__com.manydesigns:portofino-core",
+            "npm__split__portofino",
+            "maven__split__com.manydesigns:portofino-chart"
+        ],
+        "reason":"https://github.com/ManyDesigns/Portofino/security/advisories/GHSA-6g3c-2mh5-7q6x,https://mvnrepository.com/artifact/com.manydesigns/portofino,https://portofino.manydesigns.com/en"
+    },
+    "CVE-2013-6430": {
+        "timescope": [
+            ["18h01m08s", "18h07m08s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__org.springframework:spring-web(https://spring.io/projects/spring-framework)"
+        ],
+        "suggest component": [
+            "maven__split__org.springframework:spring-web",
+            "npm__split__spring-framework",
+            "go__split__github.com:spring-projects:spring-framework"
+        ],
+        "reason":"https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/JavaScriptUtils.java,https://spring.io/security/cve-2013-6430"
+    },
+    "CVE-2020-2305": {
+        "timescope": [
+            ["18h07m20s", "18h11m55s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__org.jenkins-ci.plugins:mercurial(https://plugins.jenkins.io/mercurial/)"
+        ],
+        "suggest component": [
+            "maven__split__org.jenkins-ci.plugins:mercurial",
+            "maven__split__org.jvnet.hudson.plugins:mercurial",
+            "maven__split__org.sonarsource.scm.mercurial:sonar-scm-mercurial-plugin"
+        ],
+        "reason":"https://www.jenkins.io/security/advisory/2020-11-04/#SECURITY-2115,https://plugins.jenkins.io/mercurial/"
+    },
+    "CVE-2017-1000043": {
+        "timescope": [
+            ["18h12m05s", "18h18m16s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__mapbox.js(https://www.mapbox.com/)"
+        ],
+        "suggest component": [
+            "npm__split__mapbox.js",
+            "npm__split__vue-mapbox-js",
+            "pypi__split__mapbox"
+        ],
+        "reason":"https://hackerone.com/reports/99245,https://github.com/mapbox"
+    },
+    "CVE-2020-14343": {
+        "timescope": [
+            ["18h18m30s", "18h21m47s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__pyyaml(https://pypi.org/project/PyYAML/)"
+        ],
+        "suggest component": [
+            "npm__split__pyyaml",
+            "go__split__github.com:yaml:pyyaml",
+            "pypi__split__pyyaml"
+        ],
+        "reason":"https://github.com/SeldonIO/seldon-core/issues/2252,https://github.com/yaml/pyyaml/issues/420"
+    }
+}

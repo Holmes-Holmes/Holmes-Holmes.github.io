@@ -1,0 +1,104 @@
+{
+  "CVE-2021-28681": {
+    "timescope": [
+      [
+        "14h17m45s",
+        "14h24m05s"
+      ]
+    ],
+    "tagged_library": [
+      "go__split__github.com:pion:webrtc(https://pkg.go.dev/github.com/pion/webrtc/v3)"
+    ],
+    "suggest component": [
+      "go__split__github.com:pion:webrtc",
+      "npm__split__webrtc",
+      "npm__split__555-webrtc"
+    ],
+    "reason": "didn't properly tear down the DTLS Connection(description from NVD) matches commit 465865ee2b63197db75c113a562a0e89ebd5bef4 in https://github.com/pion/webrtc"
+  },
+  "CVE-2021-29451": {
+    "timescope": [
+      [
+        "14h24m18s",
+        "14h30m22s"
+      ]
+    ],
+    "tagged_library": [
+      "maven__split__com.manydesigns:portofino-core(https://mvnrepository.com/artifact/com.manydesigns/portofino-core)"
+    ],
+    "suggest component": [
+      "maven__split__com.manydesigns:portofino-core",
+      "npm__split__portofino",
+      "maven__split__com.manydesigns:portofino-chart"
+    ],
+    "reason": "did not properly verify the signature of JSON Web Tokens(description from NVD) matches commit 8c754a0ad234555e813dcbf9e57d637f9f23d8fb in https://github.com/ManyDesigns/Portofino, maven__split__com.manydesigns:portofino-chart doesn't have version 5.2.1, which is said to migrate the cve"
+  },
+  "CVE-2013-6430": {
+    "timescope": [
+      [
+        "14h30m50s",
+        "14h34m27s"
+      ]
+    ],
+    "tagged_library": [
+      "maven__split__org.springframework:spring-web(https://mvnrepository.com/artifact/org.springframework/spring-web)"
+    ],
+    "suggest component": [
+      "maven__split__org.springframework:spring-web",
+      "npm__split__spring-framework",
+      "go__split__github.com:spring-projects:spring-framework"
+    ],
+    "reason": "JavaScriptUtils.javaScriptEscape method in web/util/JavaScriptUtils.java(description from NVD) matches commit 7a7df6637478607bef0277bf52a4e0a03e20a248 in https://github.com/spring-projects/spring-framework"
+  },
+  "CVE-2020-2305": {
+    "timescope": [
+      [
+        "14h34m42s",
+        "14h44m01s"
+      ]
+    ],
+    "tagged_library": [
+      "maven__split__org.jenkins-ci.plugins:mercurial(https://mvnrepository.com/artifact/org.jenkins-ci.plugins/mercurial)"
+    ],
+    "suggest component": [
+      "maven__split__org.jenkins-ci.plugins:mercurial",
+      "maven__split__org.jvnet.hudson.plugins:mercurial",
+      "maven__split__org.sonarsource.scm.mercurial:sonar-scm-mercurial-plugin"
+    ],
+    "reason": "https://www.jenkins.io/security/advisory/2020-11-04/#SECURITY-2115(NVD refs) said does not configure its XML changelog parser, which matches 84af58b08f80bb92792f7bc04a31487f3eeee95a in https://github.com/jenkinsci/mercurial-plugin. What's more, CVE-2020-2305 does exist in https://mvnrepository.com/artifact/org.jenkins-ci.plugins/mercurial/2.11's direct vulns"
+  },
+  "CVE-2017-1000043": {
+    "timescope": [
+      [
+        "14h44m18s",
+        "14h52m25s"
+      ]
+    ],
+    "tagged_library": [
+      "npm__split__mapbox.js(https://www.npmjs.com/package/mapbox.js)"
+    ],
+    "suggest component": [
+      "npm__split__mapbox.js",
+      "npm__split__vue-mapbox-js",
+      "pypi__split__mapbox"
+    ],
+    "reason": "link in https://hackerone.com/reports/99245 contains https://github.com/mapbox/mapbox.js/releases/tag/v2.2.4, which matches https://www.npmjs.com/package/mapbox.js's repo location"
+  },
+  "CVE-2020-14343": {
+    "timescope": [
+      [
+        "14h52m47s",
+        "14h58m33s"
+      ]
+    ],
+    "tagged_library": [
+      "pypi__split__pyyaml(https://pypi.org/project/PyYAML/)"
+    ],
+    "suggest component": [
+      "npm__split__pyyaml",
+      "go__split__github.com:yaml:pyyaml",
+      "pypi__split__pyyaml"
+    ],
+    "reason": "This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor(description from NVD), so it can't be a npm eco component. Description matches a001f2782501ad2d24986959f0239a354675f9dc in https://github.com/yaml/pyyaml"
+  }
+}

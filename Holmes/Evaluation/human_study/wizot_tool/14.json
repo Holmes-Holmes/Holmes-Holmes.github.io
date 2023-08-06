@@ -1,0 +1,58 @@
+{
+    "CVE-2019-10856": {
+        "timescope": [
+            ["16h28m04s", "16h32m10s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__notebook"
+        ],
+        "reason":"https://blog.jupyter.org/open-redirect-vulnerability-in-jupyter-jupyterhub-adf43583f1e4, https://github.com/jupyter/notebook/compare/16cf97c...b8e30ea, docs/source/changelog.rst"
+    },
+    "CVE-2019-10795": {
+        "timescope": [
+            ["16h32m33s", "16h35m25s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__undefsafe"
+        ],
+        "reason":"https://security.snyk.io/vuln/SNYK-JS-UNDEFSAFE-548940, https://github.com/remy/undefsafe/commit/f272681b3a50e2c4cbb6a8533795e1453382c822, lib/undefsafe.js"
+    },
+    "CVE-2021-29469": {
+        "timescope": [
+            ["16h35m36s", "16h39m33s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__node-redis"
+        ],
+        "reason":"https://github.com/redis/node-redis/releases/tag/v3.1.1, https://github.com/redis/node-redis/commit/2d11b6dc9b9774464a91fb4b448bad8bf699629e, lib/utils.js"
+    },
+    "CVE-2021-32641": {
+        "timescope": [
+            ["16h39m59s", "16h43m59s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__nauth0-lock"
+        ],
+        "reason":"https://github.com/auth0/lock/security/advisories/GHSA-jr3j-whm4-9wwm"
+    },
+    "CVE-2017-16618": {
+        "timescope": [
+            ["16h44m09s", "16h47m16s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__owlmixin"
+        ],
+        "reason":"owlmixin/util.py, https://github.com/tadashi-aikawa/owlmixin/commit/5d0575303f6df869a515ced4285f24ba721e0d4e, https://github.com/tadashi-aikawa/owlmixin/issues/12"
+    },
+    "CVE-2022-30284": {
+        "timescope": [
+            ["16h47m25s", "16h52m15s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__python-libnmap"
+        ],
+        "reason":"https://github.com/savon-noir/python-libnmap/releases, https://www.swascan.com/security-advisory-libnmap-2/"
+    }
+}
+
+

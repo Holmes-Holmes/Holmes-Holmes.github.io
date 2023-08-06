@@ -1,0 +1,92 @@
+{
+    "CVE-2021-28681": {
+        "timescope": [
+            [
+                "14h18m40s",
+                "14h21m47s"
+            ],
+            [
+                "15h15m32s",
+                "15h16m30s"
+            ]
+        ],
+        "tagged_library": [
+            "go__split__github.com:pion:webrtc"
+        ]
+    },
+    "CVE-2021-29451": {
+        "timescope": [
+            [
+                "14h24m40s",
+                "14h27m0s"
+            ],
+            [
+                "15h18m0s",
+                "15h21m17s"
+            ]
+        ],
+        "tagged_library": [
+            "maven__split__com.manydesigns:portofino-core"
+        ]
+    },
+    "CVE-2013-6430": {
+        "timescope": [
+            [
+                "14h34m0s",
+                "14h35m50s"
+            ],
+            [
+                "15h25m45s",
+                "15h26m50s"
+            ]
+        ],
+        "tagged_library": [
+            "maven__split__org.springframework:spring"
+        ]
+    },
+    "CVE-2020-14343": {
+        "timescope": [
+            [
+                "14h48m40s",
+                "14h49m45s"
+            ],
+            [
+                "15h38m09s",
+                "15h38m22s"
+            ]
+        ],
+        "tagged_library": [
+            "pypi__split__PyYAML"
+        ]
+    },
+    "CVE-2020-2305": {
+        "timescope": [
+            [
+                "15h01m10s",
+                "15h04m20s"
+            ],
+            [
+                "15h48m30s",
+                "15h49m15s"
+            ]
+        ],
+        "tagged_library": [
+            "maven__split__org.jenkins-ci.plugins:mercurial"
+        ]
+    },
+    "CVE-2017-1000043": {
+        "timescope": [
+            [
+                "15h07m30s",
+                "15h09m06s"
+            ],
+            [
+                "15h50m50s",
+                "15h52m50s"
+            ]
+        ],
+        "tagged_library": [
+            "npm__split__mapbox.js"
+        ]
+    }
+}

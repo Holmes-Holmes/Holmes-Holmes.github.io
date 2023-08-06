@@ -1,0 +1,14 @@
+{
+    "CVE-2019-10856":["pypi__split__notebook"],
+    "CVE-2019-10795":["npm__split__undefsafe"],
+    "CVE-2021-29469":["npm__split__redis"],
+    "CVE-2021-32641":["npm__split__auth0-lock"],
+    "CVE-2017-16618":["pypi__split__owlmixin"],
+    "CVE-2022-30284":["pypi__split__python-libnmap"],
+    "CVE-2021-28681":["go__split__github.com:pion:webrtc"],
+    "CVE-2021-29451":["maven__split__com.manydesigns:portofino-core"],
+    "CVE-2013-6430":["maven__split__org.springframework:spring-web"],
+    "CVE-2020-2305":["maven__split__org.jenkins-ci.plugins:mercurial"],
+    "CVE-2017-1000043":["npm__split__Mapbox.js"],
+    "CVE-2020-14343":["pypi__split__PyYAML"]
+}

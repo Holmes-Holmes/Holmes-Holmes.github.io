@@ -1,0 +1,74 @@
+{
+  "CVE-2019-10856": {
+    "timescope": [
+      [
+        "15h07m26s",
+        "15h09m09s"
+      ]
+    ],
+    "tagged_library": [
+      "pypi__split__notebook(https://pypi.org/project/notebook/)"
+    ],
+    "reason": "an open redirect can occur via an empty netloc(description from NVD) matches commit 979e0bd15e794ceb00cc63737fcd5fd9addc4a99 in https://github.com/jupyter/notebook"
+  },
+  "CVE-2019-10795": {
+    "timescope": [
+      [
+        "15h11m11s",
+        "15h15m20s"
+      ]
+    ],
+    "tagged_library": [
+      "npm__split__undefsafe(https://www.npmjs.com/package/undefsafe)"
+    ],
+    "reason": "Prototype Pollution(description from NVD) matches commit f272681b3a50e2c4cbb6a8533795e1453382c822 in https://github.com/remy/undefsafe"
+  },
+  "CVE-2021-29469": {
+    "timescope": [
+      [
+        "15h15m40s",
+        "15h18m05s"
+      ]
+    ],
+    "tagged_library": [
+      "npm__split__redis(https://www.npmjs.com/package/redis)"
+    ],
+    "reason": "the regex begin used to detected monitor messages could cause exponential backtracking on some strings(description from NVD) matches commit 2d11b6dc9b9774464a91fb4b448bad8bf699629e in https://github.com/redis/node-redis"
+  },
+  "CVE-2021-32641": {
+    "timescope": [
+      [
+        "15h18m22s",
+        "15h22m13s"
+      ]
+    ],
+    "tagged_library": [
+      "npm__split__auto0-lock(https://www.npmjs.com/package/auth0-lock)"
+    ],
+    "reason": "NVD refs said that https://github.com/auth0/lock/commit/d139cf01c8234b07caf265e051f39d3eab08f7ed is a patch of this CVE"
+  },
+  "CVE-2017-16618": {
+    "timescope": [
+      [
+        "15h22m29s",
+        "15h24m36s"
+      ]
+    ],
+    "tagged_library": [
+      "pypi__split__owlmixin(https://pypi.org/project/owlmixin/)"
+    ],
+    "reason": "loading functionality(description from NVD) matches commit 5d0575303f6df869a515ced4285f24ba721e0d4e in https://github.com/tadashi-aikawa/owlmixin"
+  },
+  "CVE-2022-30284": {
+    "timescope": [
+      [
+        "15h24m45s",
+        "15h27m28s"
+      ]
+    ],
+    "tagged_library": [
+      "pypi__split__python-libnmap(https://pypi.org/project/python-libnmap/)"
+    ],
+    "reason": "CVE-2022-30284 this CVE ID exists in repo's changelog"
+  }
+}
