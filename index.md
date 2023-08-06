@@ -111,23 +111,29 @@ To replicate our results for RQ5, please use:
 | head1        | Random-Order        | chronological-order   | Generality | 
 |:-------------|:-------------|:-------------|:-------------| 
 | Chronos      | path   | path          | path    | 
-| Lightxml     | path     | path           | path    | 
+| Lightxml     | data/tenfold     | data/chronological           | data/general_data    | 
 | Fastxml      | dataset/tenfold_generate/       | dataset/chronological               | dataset/general   |
 
-To train FastXML, you can use the following command:
+To train FastXML, you can use the following command:<br>
 ```
 python baseline.py model/model_name.model {training_data_path} --verbose train --iters 200 --gamma 30 --trees 64 --min-label-count 1 --blend-factor 0.5  --re_split 0 --leaf-probs
 ```
-You can change the third parameter to change the path of training data, for example: 
+You can change the third parameter to change the path of training data, for example: <br>
 ```
 python baseline.py model/model_name.model dataset/tenfold_generate/fold_0/train.json --verbose train --iters 200 --gamma 30 --trees 64 --min-label-count 1 --blend-factor 0.5  --re_split 0 --leaf-probs
 ```
 
-To test the model, you can use the following command: 
+To test the model, you can use the following command: <br>
 ```
 python baseline.py model/model_name.model {test_data_path} inference --score
 python util.py
 ```
-Also, you can change the third parameter to change the path of test data. 
+Also, you can change the third parameter to change the path of test data. <br>
+Please refer to https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master for more details. <br>
 
-
+For LightXML, you can manually change the path of training and test data in `/Users/songwenyan/SupplyChain/holmes/SOTA-compare/LightXML/src/dataset.py`, line 30, 36, 42, 49. <br>
+After changing the data path, you can use the following command to train and test the model. <br>
+```
+./run.sh cve_data
+```
+Please refer to https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master for more details. <br>
