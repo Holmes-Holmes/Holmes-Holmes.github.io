@@ -12,22 +12,22 @@ Holmes to identify affected libraries and their ecosystems for vulnerabilities v
 # Dataset
 
 * large scale dataset
-    > [xxx](https://github.com/)
-    
-    > [large scale dataset with same eco](https://github.com/)
+    > [Complete dataset mentioned in Sec 3.1(Vulnerability Database Selection)](Holmes/Empirical_Study/component_ana_log/tmp_component.json)
 * GroundTruth
-    > [Ground Truth](https://github.com/)
+    > [Ground Truth](Holmes/GroundTruth/pypimavennpmgo_component_tagging_2023_0720_wss.xlsx)
 
 # Empirical Study
 
 To replicate our results for RQ1, please use:
 ```
-python xx/xx/xx eco_consistency
-python xx/xx/xx name_consistency  
+cd Holmes/Empirical_Study
+./run.sh Eco
+./run.sh Name
 ```
 To replicate our results for RQ2, please use:
 ```
-python xx/xx/xx accuracy
+cd Holmes/Empirical_Study
+./run.sh Acc
 ```
 
 # Approach Implement
