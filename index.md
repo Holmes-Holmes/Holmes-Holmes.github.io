@@ -18,6 +18,15 @@ This paper has been submitted to ICSE 2024.
 * GroundTruth
     > [Ground Truth](Holmes/GroundTruth/pypimavennpmgo_component_tagging_2023_0720_wss.xlsx)
 
+# Setup
+
+## Holmes
+We achieve Holmes in [Holmes](xxxx)
+
+## Other Tools
+We followed the former work and the hyper parameters that result in LightXML’s best performance mentioned were used.
+
+
 # Experiment
 The evaluation contains RQ1, RQ2, RQ3, RQ4, RQ5, RQ6 and RQ7
 
