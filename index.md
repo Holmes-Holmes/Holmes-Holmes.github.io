@@ -19,6 +19,8 @@ This paper has been submitted to ICSE 2024.
     > [Ground Truth](Holmes/GroundTruth/pypimavennpmgo_component_tagging_2023_0720_wss.xlsx)
 
 # Empirical Study
+
+## RQ1 Consistency Assessment 
 ```
 cd Holmes/Empirical_Study
 ```
@@ -27,6 +29,7 @@ To replicate our results for RQ1, please use:
 ./run.sh Eco
 ./run.sh Name
 ```
+## RQ2 Accuracy Assessment
 To replicate our results for RQ2, please use:
 ```
 cd Holmes/Empirical_Study
