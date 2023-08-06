@@ -1,0 +1,250 @@
+{
+    "gitlab": {
+        "maven": {
+            "vulid_missing_num": 14,
+            "field_missing_num": 0,
+            "precison": 107.45238095238096,
+            "recall": 122.0,
+            "precison_eco": 166.5,
+            "recall_eco": 168.0,
+            "precison_name": 107.45238095238096,
+            "recall_name": 122.0,
+            "accuracy": 0,
+            "effective_num": 169
+        },
+        "npm": {
+            "vulid_missing_num": 4,
+            "field_missing_num": 0,
+            "precison": 234.58333333333334,
+            "recall": 243.0,
+            "precison_eco": 240.5,
+            "recall_eco": 245.0,
+            "precison_name": 235.5,
+            "recall_name": 243.0,
+            "accuracy": 0,
+            "effective_num": 246
+        },
+        "go": {
+            "vulid_missing_num": 7,
+            "field_missing_num": 0,
+            "precison": 62.333333333333336,
+            "recall": 64.0,
+            "precison_eco": 72.0,
+            "recall_eco": 72.0,
+            "precison_name": 62.333333333333336,
+            "recall_name": 64.0,
+            "accuracy": 0,
+            "effective_num": 72
+        },
+        "pypi": {
+            "vulid_missing_num": 6,
+            "field_missing_num": 0,
+            "precison": 172.2,
+            "recall": 177.0,
+            "precison_eco": 177.5,
+            "recall_eco": 178.0,
+            "precison_name": 172.2,
+            "recall_name": 177.0,
+            "accuracy": 0,
+            "effective_num": 178
+        },
+        "all": {
+            "vulid_missing_num": 31,
+            "field_missing_num": 0,
+            "precison": 576.5690476190476,
+            "recall": 606.0,
+            "precison_eco": 656.5,
+            "recall_eco": 663.0,
+            "precison_name": 577.4857142857143,
+            "recall_name": 606.0,
+            "accuracy": 0,
+            "effective_num": 665
+        }
+    },
+    "github": {
+        "maven": {
+            "vulid_missing_num": 15,
+            "field_missing_num": 0,
+            "precison": 106.0,
+            "recall": 105.0,
+            "precison_eco": 167.0,
+            "recall_eco": 167.0,
+            "precison_name": 106.0,
+            "recall_name": 105.0,
+            "accuracy": 0,
+            "effective_num": 168
+        },
+        "npm": {
+            "vulid_missing_num": 10,
+            "field_missing_num": 0,
+            "precison": 235.33333333333334,
+            "recall": 238.0,
+            "precison_eco": 239.0,
+            "recall_eco": 240.0,
+            "precison_name": 235.33333333333334,
+            "recall_name": 238.0,
+            "accuracy": 0,
+            "effective_num": 240
+        },
+        "go": {
+            "vulid_missing_num": 18,
+            "field_missing_num": 0,
+            "precison": 54.0,
+            "recall": 54.0,
+            "precison_eco": 61.0,
+            "recall_eco": 61.0,
+            "precison_name": 54.0,
+            "recall_name": 54.0,
+            "accuracy": 0,
+            "effective_num": 61
+        },
+        "pypi": {
+            "vulid_missing_num": 27,
+            "field_missing_num": 0,
+            "precison": 152.2,
+            "recall": 154.0,
+            "precison_eco": 157.0,
+            "recall_eco": 157.0,
+            "precison_name": 152.2,
+            "recall_name": 154.0,
+            "accuracy": 0,
+            "effective_num": 157
+        },
+        "all": {
+            "vulid_missing_num": 70,
+            "field_missing_num": 0,
+            "precison": 547.5333333333333,
+            "recall": 551.0,
+            "precison_eco": 624.0,
+            "recall_eco": 625.0,
+            "precison_name": 547.5333333333333,
+            "recall_name": 551.0,
+            "accuracy": 0,
+            "effective_num": 626
+        }
+    },
+    "snyk": {
+        "maven": {
+            "vulid_missing_num": 1,
+            "field_missing_num": 0,
+            "precison": 81.69703668637325,
+            "recall": 153.85,
+            "precison_eco": 121.1861111111111,
+            "recall_eco": 181.0,
+            "precison_name": 83.52405887184527,
+            "recall_name": 153.85,
+            "accuracy": 0,
+            "effective_num": 182
+        },
+        "npm": {
+            "vulid_missing_num": 3,
+            "field_missing_num": 0,
+            "precison": 175.76706889085483,
+            "recall": 244.0,
+            "precison_eco": 186.65238095238098,
+            "recall_eco": 246.0,
+            "precison_name": 177.64842499565196,
+            "recall_name": 244.0,
+            "accuracy": 0,
+            "effective_num": 247
+        },
+        "go": {
+            "vulid_missing_num": 1,
+            "field_missing_num": 0,
+            "precison": 39.367160896292845,
+            "recall": 69.0,
+            "precison_eco": 50.15000000000001,
+            "recall_eco": 74.0,
+            "precison_name": 40.11417668691263,
+            "recall_name": 69.0,
+            "accuracy": 0,
+            "effective_num": 78
+        },
+        "pypi": {
+            "vulid_missing_num": 0,
+            "field_missing_num": 0,
+            "precison": 85.36882935086228,
+            "recall": 179.0,
+            "precison_eco": 94.03809523809522,
+            "recall_eco": 180.0,
+            "precison_name": 107.23400499171682,
+            "recall_name": 182.0,
+            "accuracy": 0,
+            "effective_num": 184
+        },
+        "all": {
+            "vulid_missing_num": 5,
+            "field_missing_num": 0,
+            "precison": 382.2000958243828,
+            "recall": 645.85,
+            "precison_eco": 452.0265873015868,
+            "recall_eco": 681.0,
+            "precison_name": 408.5206655461264,
+            "recall_name": 648.85,
+            "accuracy": 0,
+            "effective_num": 691
+        }
+    },
+    "veracode": {
+        "maven": {
+            "vulid_missing_num": 39,
+            "field_missing_num": 0,
+            "precison": 72.41593157880621,
+            "recall": 110.25,
+            "precison_eco": 109.16666666666666,
+            "recall_eco": 130.0,
+            "precison_name": 72.41593157880621,
+            "recall_name": 110.25,
+            "accuracy": 0,
+            "effective_num": 144
+        },
+        "npm": {
+            "vulid_missing_num": 22,
+            "field_missing_num": 0,
+            "precison": 170.34995974235105,
+            "recall": 222.0,
+            "precison_eco": 179.3,
+            "recall_eco": 225.0,
+            "precison_name": 180.27717789456918,
+            "recall_name": 223.0,
+            "accuracy": 0,
+            "effective_num": 228
+        },
+        "go": {
+            "vulid_missing_num": 9,
+            "field_missing_num": 0,
+            "precison": 45.42567567567566,
+            "recall": 52.0,
+            "precison_eco": 61.25,
+            "recall_eco": 68.0,
+            "precison_name": 45.42567567567566,
+            "recall_name": 52.0,
+            "accuracy": 0,
+            "effective_num": 70
+        },
+        "pypi": {
+            "vulid_missing_num": 57,
+            "field_missing_num": 0,
+            "precison": 72.32329614829614,
+            "recall": 106.0,
+            "precison_eco": 102.58333333333331,
+            "recall_eco": 123.0,
+            "precison_name": 73.98559773559774,
+            "recall_name": 107.0,
+            "accuracy": 0,
+            "effective_num": 127
+        },
+        "all": {
+            "vulid_missing_num": 127,
+            "field_missing_num": 0,
+            "precison": 360.5148631451289,
+            "recall": 490.25,
+            "precison_eco": 452.29999999999967,
+            "recall_eco": 546.0,
+            "precison_name": 372.1043828846486,
+            "recall_name": 492.25,
+            "accuracy": 0,
+            "effective_num": 569
+        }
+    }
+}

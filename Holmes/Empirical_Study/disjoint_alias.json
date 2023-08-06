@@ -1,0 +1,17 @@
+{
+    "({'rpm'}, {'unknown2'})": "value",
+    "({'debian'}, {'unknown2'})": "value",
+    "({'pypi'}, {'unknown2'})": "value",
+    "({'alpine', 'debian'}, {'unknown2'})": "value",
+    "({'nuget'}, {'unknown2'})": "value",
+    "({'alpine'}, {'unknown2'})": "value",
+    "({'rpm', 'debian'}, {'unknown2'})": "value",
+    "({'cocoapods'}, {'unknown2'})": "value",
+    "({'maven'}, {'unknown2'})": "value",
+    "({'rpm', 'alpine', 'debian'}, {'unknown2'})": "value",
+    "({'rpm', 'alpine'}, {'unknown2'})": "value",
+    "({'unknown5'}, {'unknown2'})": "value",
+    "({'conan'}, {'unknown2'})": "value",
+    "({'npm'}, {'unknown2'})": "value",
+    "({'rpm', 'unknown5'}, {'unknown2'})": "value"
+}

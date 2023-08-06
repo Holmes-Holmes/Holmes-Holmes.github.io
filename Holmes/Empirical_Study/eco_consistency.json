@@ -1,0 +1,42 @@
+{
+    "(1, 2)": {
+        "Empty": 33153,
+        "Disjoint": 4825,
+        "Exist/Missing": 4999,
+        "Equal": 2388,
+        "Latter Contain Former": 36,
+        "Overlap": 18
+    },
+    "(1, 3)": {
+        "Exist/Missing": 21750,
+        "Empty": 18432,
+        "Disjoint": 5237
+    },
+    "(1, 4)": {
+        "Exist/Missing": 31776,
+        "Disjoint": 1409,
+        "Empty": 11419,
+        "Equal": 711,
+        "Latter Contain Former": 95,
+        "Overlap": 7,
+        "Former Contain Latter": 2
+    },
+    "(2, 3)": {
+        "Exist/Missing": 22235,
+        "Empty": 16613,
+        "Disjoint": 6571
+    },
+    "(2, 4)": {
+        "Exist/Missing": 33925,
+        "Disjoint": 2490,
+        "Empty": 8768,
+        "Equal": 145,
+        "Latter Contain Former": 77,
+        "Overlap": 14
+    },
+    "(3, 4)": {
+        "Disjoint": 11219,
+        "Exist/Missing": 29630,
+        "Empty": 4570
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "base":[
+        "pypi", "cargo", "cocoapods", "conan", "nuget", "npm", "rubygem", "maven", "go", "composer", "pub", "bower",
+        "hex", "alpine", "debian", "rpm",
+        "unknown1", "unknown2", "unknown3", "unknown4", "unknown5",
+
+        "oracle", "amzn", "sles", "rocky", "ubuntu", "centos", "almalinux", "rhel"
+    ],
+    "mapping":{
+        "crates.io": "cargo",
+        "rubygems":"rubygem",
+        "gem":"rubygem",
+        "pip":"pypi",
+        "packagist": "composer",
+        
+        "manual":"unknown1",
+        "unmanaged (c/c++)": "unknown2",
+        "github actions": "unknown3",
+        "upstream": "unknown4",
+        "so": "unknown5",
+
+        "unmanaged": "unknown2"
+    }
+}

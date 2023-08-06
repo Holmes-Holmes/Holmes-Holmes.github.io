@@ -18,7 +18,8 @@ This paper has been submitted to ICSE 2024.
 * GroundTruth
     > [Ground Truth](Holmes/GroundTruth/pypimavennpmgo_component_tagging_2023_0720_wss.xlsx)
 
-# Empirical Study
+# Experiment
+The evaluation contains RQ1, RQ2, RQ3, RQ4, RQ5, RQ6 and RQ7
 
 ## RQ1 Consistency Assessment 
 ```
@@ -35,17 +36,6 @@ To replicate our results for RQ2, please use:
 cd Holmes/Empirical_Study
 ./run.sh Acc
 ```
-
-<!-- # Approach Implement
-
-
-## Evidence Gathering
-
-
-## Lucene -->
-
-# Evaluation
-The evaluation contains RQ3, RQ4, RQ5, RQ6 and RQ7
 
 ## RQ3 Effectiveness Evaluation
 
@@ -104,7 +94,7 @@ python map_score.py
 
     > 62 inaccurate CVEs for Veracode: [Inaccurate-Affected-Components-in-Veracode](Holmes/Evaluation/Reproting/Veracode-Inaccurate-Affected-Components.csv)
 
-<!-- 
+
 # Chronos Lightxml Fastxml
 
 ## Dataset
@@ -147,9 +137,9 @@ After changing the data path, you can use the following command to train and tes
 ./run.sh cve_data
 ```
 For generality test, we use `/data/tenfold/fold_0/train_general_texts.txt` and `/data/tenfold/fold_0/train_general_labels.txt` to train the model, and test the model on `/data/general_data/general_test_texts.txt` and `/data/general_data/general_test_labels.txt`. <br>
-Please refer to https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master for more details. <br> -->
+Please refer to https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master for more details. <br>
 
-<!-- For CHRONOS, you can train and test the model by the following command: <br> 
+For CHRONOS, you can train and test the model by the following command: <br> 
 ```
 bash auto_run.sh -d [description data: "merged" or "description_and_reference"]
                  -t [type of data used in training and testing progress: 'general' or 'chronological' or 'random' or 'fold_X'(X = 0, 1, ..., 9)]
@@ -164,4 +154,4 @@ bash auto_run.sh -d 'description_and_reference' -t'general' -l 'splitting' -m 0 
 Our source data are: `/workspace/Chronos/dataset/description_data/dataset_merged_cleaned_total_general_test.csv` and `/workspace/Chronos/dataset/reference_data/reference_data_raw_total_general_test.csv`. You can generate the test data from scrach by steps below: 
 1. Run `/workspace/Chronos/reference_processing/generate_new_csv.py` and copy the output file `/workspace/Chronos/reference_processing/reference_data_raw_0.5_15_total_general_test.csv` to `/workspace/Chronos/dataset/reference_data/`. 
 2. Run functions `zero_shot_data_splitting`, `zero_shot_data_splitting_chronological` and `zero_shot_data_splitting_general` in `/workspace/Chronos/prepare_data.py` to process data. 
-3. Use the commands mentioned before to get certain results.  -->
+3. Use the commands mentioned before to get certain results. 

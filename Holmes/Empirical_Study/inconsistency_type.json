@@ -1,0 +1,3 @@
+{
+    "base":["Equal", "Disjoint", "Latter Contain Former", "Former Contain Latter", "Overlap", "Exist/Missing", "Empty"]
+}
