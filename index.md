@@ -3,7 +3,7 @@ layout: default
 ---
 
 ![Octocat](approach.png)
-
+*Framework of Holmes*
 
 Software composition analysis (SCA) tools have been widely adopted to identify vulnerable libraries used in software applications. Such SCA tools depend on a vulnerability database to know affected libraries of each vulnerability. However, it is labor-intensive and error-prone for a security team to manually maintain the vulnerability database. While
 several approaches adopt extreme multi-label learning to predict affected libraries for vulnerabilities, they are practically ineffective due to the limited library labels and the unawareness of ecosystems. To address these problems, we first conduct an empirical study to assess the quality of two fields, i.e., affected libraries and their ecosystems, for four vulnerability databases. Our study reveals notable inconsistency and inaccuracy in these two fields. Then, we propose
@@ -139,3 +139,7 @@ After changing the data path, you can use the following command to train and tes
 ```
 For generality test, we use `/data/tenfold/fold_0/train_general_texts.txt` and `/data/tenfold/fold_0/train_general_labels.txt` to train the model, and test the model on `/data/general_data/general_test_texts.txt` and `/data/general_data/general_test_labels.txt`. <br>
 Please refer to https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master for more details. <br>
+
+
+
+This paper has been submitted to ICSE 2024.
