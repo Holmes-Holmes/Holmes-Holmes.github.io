@@ -20,11 +20,19 @@ This paper has been submitted to ICSE 2024.
 
 # Setup
 
-## Holmes
-We achieve Holmes in [Holmes](xxxx)
+## Holmes Setup
+We achieve Holmes in [Holmes](xxxx), you can replicate our result with the guide of [How to start](xxxx). If you have any questions or need assistance, please feel free to let us know.
 
-## Other Tools
-We followed the former work and the hyper parameters that result in LightXML’s best performance mentioned were used.
+## Other Tools Setup
+The hyper parameters that result in FastXML's ,LightXML’s, ZestXML's best performance mentioned in previous work were used. You can start with the [FastXML](xxx), [LightXML](xxx), [Chronos](xxx). 
+
+By the way, when reproducing these works, we have added detailed annotations to [the code along with the trained and tested data](xxx) used for the reproduction. Additionally, we have provided a [README](xxx) to assist you in avoiding common pitfalls while reproducing these three projects.
+
+
+
+
+
+
 
 
 # Experiment
@@ -104,7 +112,7 @@ python map_score.py
     > 62 inaccurate CVEs for Veracode: [Inaccurate-Affected-Components-in-Veracode](Holmes/Evaluation/Reproting/Veracode-Inaccurate-Affected-Components.csv)
 
 
-# Chronos Lightxml Fastxml
+<!-- # Chronos Lightxml Fastxml
 
 ## Dataset
 - data preparing
@@ -165,4 +173,4 @@ Our source data are: `/workspace/Chronos/dataset/description_data/dataset_merged
 2. Run functions `zero_shot_data_splitting`, `zero_shot_data_splitting_chronological` and `zero_shot_data_splitting_general` in `/workspace/Chronos/prepare_data.py` to process data. 
 3. Use the commands mentioned before to get certain results.  -->
 
-The output of all the reproductions are `MAP_result.json` files. 
+The output of all the reproductions are `MAP_result.json` files.  -->
