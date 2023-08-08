@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../../../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BlameSubversion-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hudson-Gerrit-Plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SCTMExecutor-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/URLSCM-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/VMWareLabManager-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WebSVN2-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/active-directory-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/analysis-collector-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/analysis-core-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/analysis-pom-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-emulator-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/audit-trail-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/backup-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bamboo-notifier-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/batch-task-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bazaar-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/blame-upstream-commiters-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bridge-method-injector" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bruceschneier-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bugzilla-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bulk-builder-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/campfire-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/caroline-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cas1-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/core-js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dom4j" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gerrit-trigger-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/git-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gmaven" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/htmlunit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hudson-clearcase-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hudson-notifo-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jelly" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jenkins" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jenkins-clone-workspace-scm-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jenkins.rb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jexl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jmdns" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/labmanager-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib-access-modifier" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/maven-hpi-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/maven-hudson-dev-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/netx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/plugin-blekkoPanel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/priority-sorter-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rake-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/robot-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/subversion-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/svnkit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/testbed-ant-sample" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/testbed-anttest-sample" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/trilead-ssh2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/winstone" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/xwiki-platform" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/xwiki-platform.git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/zip4j" vcs="Git" />
+  </component>
+</project>

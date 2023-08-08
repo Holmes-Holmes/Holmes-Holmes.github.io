@@ -1,0 +1,13 @@
+X borgbackup:borg ---expect--> borgbackup
+   > python 11.7542  borg
+   > python 9.8998  borg.project
+   > python 8.5508  borg-queen
+   > python 8.5508  borg-find
+   > python 8.5508  borg-space
+   > python 8.5508  borg-qt
+   > python 8.5508  borg.supergroup
+   > python 8.5508  borg.localrole
+   > python 8.5508  borg-summon
+   > python 8.5508  mowl-borg
+   > python 8.5508  borg_pod
+   > python 3.9181  borgbackup

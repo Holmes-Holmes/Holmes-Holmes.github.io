@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="package-matcher" />
+        <module name="className-matcher" />
+        <module name="filePath-matcher" />
+        <module name="version-matcher" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="className-matcher" target="1.8" />
+      <module name="filePath-matcher" target="1.8" />
+      <module name="package-matcher" target="1.8" />
+      <module name="package-matcher (1)" target="1.8" />
+      <module name="version-matcher" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
