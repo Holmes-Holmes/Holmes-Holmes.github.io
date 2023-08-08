@@ -25,7 +25,9 @@ We achieve Holmes in [Holmes](Holmes/ApproachImp), you can replicate our result 
 
 ## Other Tools Setup
 The hyper parameters that result in FastXML's ,LightXML’s, ZestXML's best performance mentioned in previous work were used. You can start with the [FastXML](https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master#FastXML), [LightXML](https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master#LightXML), [Chronos](https://github.com/soarsmu/Chronos). 
+The hyper parameters that result in FastXML's ,LightXML’s, ZestXML's best performance mentioned in previous work were used. You can start with the [FastXML](https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master#FastXML), [LightXML](https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master#LightXML), [Chronos](https://github.com/soarsmu/Chronos). 
 
+By the way, when reproducing these works, we have added detailed annotations to [the code along with the trained and tested data](Holmes/Setup) used for the reproduction. Additionally, we have provided a [README](Holmes/Setup/README.md) to assist you in avoiding common pitfalls while reproducing these three projects.
 By the way, when reproducing these works, we have added detailed annotations to [the code along with the trained and tested data](Holmes/Setup) used for the reproduction. Additionally, we have provided a [README](Holmes/Setup/README.md) to assist you in avoiding common pitfalls while reproducing these three projects.
 
 
@@ -37,6 +39,8 @@ By the way, when reproducing these works, we have added detailed annotations to 
 
 # Experiment
 The evaluation contains RQ1, RQ2, RQ3, RQ4, RQ5, RQ6 and RQ7
+
+The RQ3, RQ4 and RQ6 are uploaded to [kaggle](https://www.kaggle.com/datasets/holmesholmes/holmes-experiment), after unzip all file, you can easily replicat the result on our paper.
 
 The RQ3, RQ4 and RQ6 are uploaded to [kaggle](https://www.kaggle.com/datasets/holmesholmes/holmes-experiment), after unzip all file, you can easily replicat the result on our paper.
 
