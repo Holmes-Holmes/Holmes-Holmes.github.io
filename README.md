@@ -105,10 +105,10 @@ python map_score.py
 
 * **Vendor Reporting**
 
-    > 64 inaccurate CVEs for GitHub: [Inaccurate-Affected-Components-in-GitHub](Holmes/Evaluation/Reproting/email_send/Github Inaccurate Affected Components.csv)
+    > 64 inaccurate CVEs for GitHub: [Inaccurate-Affected-Components-in-GitHub](Holmes/Evaluation/Reproting/email_send/Github-Inaccurate-Affected-Components.csv)
 
-    > 51 inaccurate CVEs for GitLab: [Inaccurate-Affected-Components-in-GitLab](Holmes/Evaluation/Reproting/email_send/Gitlab Inaccurate Affected Components.csv)
+    > 51 inaccurate CVEs for GitLab: [Inaccurate-Affected-Components-in-GitLab](Holmes/Evaluation/Reproting/email_send/Gitlab-Inaccurate-Affected-Components.csv)
 
-    > 35 inaccurate CVEs for Snyk: [Inaccurate-Affected-Components-in-Snyk](Holmes/Evaluation/Reproting/email_send/Snyk Inaccurate Affected Components.csv)
+    > 35 inaccurate CVEs for Snyk: [Inaccurate-Affected-Components-in-Snyk](Holmes/Evaluation/Reproting/email_send/Snyk-Inaccurate-Affected-Components.csv)
 
-    > 62 inaccurate CVEs for Veracode: [Inaccurate-Affected-Components-in-Veracode](Holmes/Evaluation/Reproting/email_send/Veracode Inaccurate Affected Components.csv)
+    > 62 inaccurate CVEs for Veracode: [Inaccurate-Affected-Components-in-Veracode](Holmes/Evaluation/Reproting/email_send/Veracode-Inaccurate-Affected-Components.csv)
