@@ -101,7 +101,7 @@ python map_score.py
 * **Human Study**
 
     The detailed result of human study is stored in ```./Holmes/Evaluation/human_study/wiz_tool``` and ```./Holmes/Evaluation/human_study/wizot_tool```;
-    The results are calculated and stored in [quality_wztl.json](Holmes/Evaluation/human_study/quality_wztl.json) and [quality_wiztl.json](Holmes/Evaluation/human_study/quality_wiztl.json).
+    The results are calculated and stored in [quality_wiztl.json](Holmes/Evaluation/human_study/quality_wiztl.json) and [quality_wzttl.json](Holmes/Evaluation/human_study/quality_wzttl.json).
 
 * **Vendor Reporting**
 
