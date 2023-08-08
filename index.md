@@ -21,7 +21,7 @@ This paper has been submitted to ICSE 2024.
 # Setup
 
 ## Holmes Setup
-We achieve Holmes in [Holmes](Holmes/ApproachImp), you can replicate our result with the guide of [How to start](Holmes/ApproachImp/README.md). If you have any questions or need assistance, please feel free to let us know.
+We achieve Holmes in [Holmes](https://github.com/Holmes-Holmes/Holmes-Holmes.github.io/tree/main/Holmes/ApproachImp), you can replicate our result with the guide of [How to start](Holmes/ApproachImp/README.md). If you have any questions or need assistance, please feel free to let us know.
 
 ## Other Tools Setup
 The hyper parameters that result in FastXML's ,LightXML’s, ZestXML's best performance mentioned in previous work were used. You can start with the [FastXML](https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master#FastXML), [LightXML](https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master#LightXML), [Chronos](https://github.com/soarsmu/Chronos). 
@@ -87,7 +87,7 @@ python map_score.py
 ## RQ5 Efficiency Evaluation
 
 We count the time costs in **evidence gathering**, **relevance calculation** and **library ranking**.
-You can find those part in our [source code](./Holmes/ApproachImp)
+You can find those part in our [source code](https://github.com/Holmes-Holmes/Holmes-Holmes.github.io/tree/main/Holmes/ApproachImp)
 
 ## RQ6 Generality Evaluation
 
