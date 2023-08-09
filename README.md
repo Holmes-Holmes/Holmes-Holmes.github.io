@@ -3,7 +3,7 @@ layout: default
 ---
 
 ![Octocat](approach.png)
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               *Framework of Holmes*
+    <center>*Framework of Holmes*</center>
 
 Software composition analysis (SCA) tools have been widely adopted to identify vulnerable libraries used in software applications. Such SCA tools depend on a vulnerability database to know affected libraries of each vulnerability. However, it is labor-intensive and error-prone for a security team to manually maintain the vulnerability database. While
 several approaches adopt extreme multi-label learning to predict affected libraries for vulnerabilities, they are practically ineffective due to the limited library labels and the unawareness of ecosystems. To address these problems, we first conduct an empirical study to assess the quality of two fields, i.e., affected libraries and their ecosystems, for four vulnerability databases. Our study reveals notable inconsistency and inaccuracy in these two fields. Then, we propose
@@ -13,9 +13,9 @@ This paper has been submitted to ICSE 2024.
 
 # Dataset
 
-* large scale dataset
+* Large Scale Dataset
     > [Complete dataset mentioned in Sec 3.1(Vulnerability Database Selection)](Holmes/Empirical_Study/component_ana_log/component_ana_log.zip) (you should unzip the component_ana_log.zip file first and complete_component.json is the dataset)
-* GroundTruth
+* Ground Truth Dataset
     > [Ground Truth](Holmes/GroundTruth/ground_truth.xlsx)
 
 # Setup
@@ -38,7 +38,7 @@ By the way, when reproducing these works, we have added detailed annotations to 
 # Experiment
 The evaluation contains RQ1, RQ2, RQ3, RQ4, RQ5, RQ6 and RQ7
 
-The RQ3, RQ4 and RQ6 are uploaded to [kaggle](https://www.kaggle.com/datasets/holmesholmes/holmes-experiment), after unzip all file, you can easily replicat the result on our paper.
+The codes and datas of RQ3, RQ4 and RQ6 are uploaded to [kaggle](https://www.kaggle.com/datasets/holmesholmes/holmes-experiment), after unzip all file, you can easily replicat the result on our paper.
 
 ## RQ1 Consistency Assessment 
 ```
@@ -87,7 +87,7 @@ python map_score.py
 ## RQ5 Efficiency Evaluation
 
 We count the time costs in **evidence gathering**, **relevance calculation** and **library ranking**.
-You can find those part in our [source code](https://github.com/Holmes-Holmes/Holmes-Holmes.github.io/tree/main/Holmes/ApproachImp)
+You can find those part in our [source code](https://github.com/Holmes-Holmes/Holmes-Holmes.github.io/tree/main/Holmes/ApproachImp).
 
 ## RQ6 Generality Evaluation
 
@@ -105,10 +105,10 @@ python map_score.py
 
 * **Vendor Reporting**
 
-    > 64 inaccurate CVEs for GitHub: [Inaccurate-Affected-Components-in-GitHub](Holmes/Evaluation/Reproting/email_send/Github Inaccurate Affected Components.csv)
+    > 64 inaccurate CVEs for GitHub: [Inaccurate-Affected-Components-in-GitHub](Holmes/Evaluation/Reproting/email_send/Github Inaccurate Affected Components.csv);
 
-    > 51 inaccurate CVEs for GitLab: [Inaccurate-Affected-Components-in-GitLab](Holmes/Evaluation/Reproting/email_send/Gitlab Inaccurate Affected Components.csv)
+    > 51 inaccurate CVEs for GitLab: [Inaccurate-Affected-Components-in-GitLab](Holmes/Evaluation/Reproting/email_send/Gitlab Inaccurate Affected Components.csv);
 
-    > 35 inaccurate CVEs for Snyk: [Inaccurate-Affected-Components-in-Snyk](Holmes/Evaluation/Reproting/email_send/Snyk Inaccurate Affected Components.csv)
+    > 35 inaccurate CVEs for Snyk: [Inaccurate-Affected-Components-in-Snyk](Holmes/Evaluation/Reproting/email_send/Snyk Inaccurate Affected Components.csv);
 
-    > 62 inaccurate CVEs for Veracode: [Inaccurate-Affected-Components-in-Veracode](Holmes/Evaluation/Reproting/email_send/Veracode Inaccurate Affected Components.csv)
+    > 62 inaccurate CVEs for Veracode: [Inaccurate-Affected-Components-in-Veracode](Holmes/Evaluation/Reproting/email_send/Veracode Inaccurate Affected Components.csv).
