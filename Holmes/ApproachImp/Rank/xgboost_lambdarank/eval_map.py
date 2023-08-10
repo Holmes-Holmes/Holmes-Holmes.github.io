@@ -44,12 +44,9 @@ def test(exp_type, train_data, tain_group, test_path_lst):
             'min_child_weight': 0.1, 'max_depth': 6}
     xgb_model = xgb.train(params, train_dmatrix, num_boost_round=300)
 
-    # # # 定义保存模型的路径和文件名
     # model_path = f'./{exp_type}/model.model'
 
-    # # 使用XGBoost提供的save_model方法保存模型
     # xgb_model.save_model(model_path)
-    # # 使用XGBoost提供的load_model方法加载模型
     # loaded_model = xgb.Booster()
     # loaded_model.load_model(model_path)
     total_test_num = 0
@@ -58,7 +55,6 @@ def test(exp_type, train_data, tain_group, test_path_lst):
         total_test_num += 1
         x_test, y_test = load_svmlight_file(test_file)
         test_dmatrix = DMatrix(x_test)
-        # # 在预测时使用加载的模型
         # pred = loaded_model.predict(test_dmatrix)
     
         #pred is the score list
@@ -79,7 +75,7 @@ def test(exp_type, train_data, tain_group, test_path_lst):
         # print(qid)
         coordinate_labels[qid] = labels
         coordinate_scores[qid] = pred.tolist()
-        # 下面是测试的vulid以及结果
+
         with open(f"./{exp_type}/coorinate_labels.json", "w") as fw:
             json.dump(coordinate_labels, fw, indent = 4)
         # print(coordinate_scores)
@@ -98,11 +94,11 @@ def tenfold_evaluate(exp_type):
 
 
 if __name__ == '__main__':
-    # 创建命令行参数解析器
-    parser = argparse.ArgumentParser(description="消融实验或者总体实验")
-    # 添加位置参数
+
+    parser = argparse.ArgumentParser(description="ablation or all")
+
     parser.add_argument("exp_type", help="[name] or [language] or [api] or [configfile] or [version] or [path] or [all] or [timeseries]")
-    # 解析命令行参数
+
     args = parser.parse_args()
     tenfold_evaluate(args.exp_type)
 
