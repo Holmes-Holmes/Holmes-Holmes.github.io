@@ -5,7 +5,7 @@ We use EvidenceGather to gather evidence, and there are the details our paper me
 
 ## Relevance Calculation
 
-We use Matchers to calculate relevance. 
+We use [Matchers](Matchers) to calculate relevance. 
 
 1. First, we initialize the [Lucene](ApproachImp/Matchers/tools)(including the prerocess and improved BM25)
 
