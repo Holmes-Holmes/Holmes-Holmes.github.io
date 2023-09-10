@@ -62,7 +62,7 @@ def baseline_security_database():
                 evaluation_dic[source][eco] = []
         components = each_comindex[2].lower().replace("/", ":").split("\n")
         true_component_name_lst = [each.strip() for each in components]
-        true_component_lst = [eco + "__fdse__" + each for each in true_component_name_lst]
+        true_component_lst = [eco + "__split__" + each for each in true_component_name_lst]
 
         # deepvul_id缺失
         for vuldb in evaluation_dic:
@@ -74,21 +74,21 @@ def baseline_security_database():
                 evaluation_dic[vuldb][eco]["effective_num"] += 1
                 db_component_lst = []
                 for component in vuldb_dic[vuldb][vulid]:
-                    eco_name = component.split("__fdse__")[0]
-                    component_name = component.split("__fdse__")[1].lower().replace("/", ":")
+                    eco_name = component.split("__split__")[0]
+                    component_name = component.split("__split__")[1].lower().replace("/", ":")
                     if eco_name == "pypi" and (component_name == "tensorflow-cpu" or component_name == "tensorflow-gpu"):
-                        db_component_lst.append(eco_name + "__fdse__" + "tensorflow")
+                        db_component_lst.append(eco_name + "__split__" + "tensorflow")
                     elif eco_name == "go" and eco == "go":
                         flag = False
                         for true_component_name in true_component_name_lst:
                             # 如果真实影响组件是本组件的字串，则认为匹配上了
                             if true_component_name in component_name:
                                 flag = True
-                                db_component_lst.append(eco_name + "__fdse__" + true_component_name)
+                                db_component_lst.append(eco_name + "__split__" + true_component_name)
                         if flag == False:
-                            db_component_lst.append(eco_name + "__fdse__" + component_name)
+                            db_component_lst.append(eco_name + "__split__" + component_name)
                     else:
-                        db_component_lst.append(eco_name + "__fdse__" + component_name)
+                        db_component_lst.append(eco_name + "__split__" + component_name)
                 
                 each_pre, each_recall, each_accuracy = evaluation(db_component_lst, true_component_lst)
                 evaluation_dic[vuldb]["all"]["precision"] += each_pre
@@ -96,15 +96,15 @@ def baseline_security_database():
                 evaluation_dic[vuldb]["all"]["accuracy"] += each_accuracy
 
                 # # Eco
-                db_eco_lst = [each.split("__fdse__")[0] for each in db_component_lst]
-                true_eco_lst = [each.split("__fdse__")[0] for each in true_component_lst]
+                db_eco_lst = [each.split("__split__")[0] for each in db_component_lst]
+                true_eco_lst = [each.split("__split__")[0] for each in true_component_lst]
                 eco_pre, eco_recall, eco_accuracy = evaluation(db_eco_lst, true_eco_lst)
                 evaluation_dic[vuldb]["all"]["eco_precision"] += eco_pre
                 evaluation_dic[vuldb]["all"]["eco_recall"] += eco_recall
                 evaluation_dic[vuldb]["all"]["eco_accuracy"] += eco_accuracy
                 
                 # # Name
-                db_component_lst = [each.split("__fdse__")[1] for each in db_component_lst]
+                db_component_lst = [each.split("__split__")[1] for each in db_component_lst]
                 name_pre, name_recall, name_accuracy = evaluation(db_component_lst, true_component_name_lst)
                 
                 evaluation_dic[vuldb]["all"]["name_precision"] += name_pre

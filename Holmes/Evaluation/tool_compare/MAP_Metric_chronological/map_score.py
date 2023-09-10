@@ -141,13 +141,13 @@ def fetch_resultsEL(topi, predict, answers, components, true_components):
     labels_E = []
     labels_L = []
     # print(true_components)
-    true_ecos = [each.split("__fdse__")[0].lower() for each in true_components]
-    true_components_names = [each.split("__fdse__")[1].lower() for each in true_components]
+    true_ecos = [each.split("__split__")[0].lower() for each in true_components]
+    true_components_names = [each.split("__split__")[1].lower() for each in true_components]
     label_num = len(true_components)
     # print("---------")
     for index in top_indexes:
         # print(components[str(index)])
-        eco, component_name = components[str(index)].split("__fdse__")
+        eco, component_name = components[str(index)].split("__split__")
         component_name = component_name.lower()
         component = components[str(index)]
         if component_name not in true_components_names: 
