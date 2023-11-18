@@ -5,11 +5,11 @@ This section outlines the recent updates and enhancements to Holmes, tracking ne
 ## 1. Dataset Information Release
 
 ### Ground Truth
-- Ecosystem and Library Names Tagging Results
+- Ecosystem and Library Names Tagging Results Update
     - Tagging results for [GroundTruth](Holmes/GroundTruth/ground_truth.xlsx), each with tagging decision reasons.
 
 ### General Dataset
-- Ecosystem and Library Names Tagging Results
+- Ecosystem and Library Names Tagging Results Update
     - Tagging results for [General Dataset](Holmes/GroundTruth/general_dataset.xlsx), each with tagging decision reasons. 
 
 
