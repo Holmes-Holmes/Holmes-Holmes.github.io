@@ -45,7 +45,7 @@ We've also provided [sample code](Holmes/GroundTruth/ground_truth_sample.py) and
     - Compared additional experiments of Human Study with the aid of Chronos.
         - we show more details of our experiment setup in [Setup](Holmes/Evaluation/human_study/README.md) and [the human study of additional Chronos](Holmes/Evaluation/human_study/Chronos)
     - We update the inaccurate results in GitHub, GitLab, Snyk and Veracode of more vulnerabilities and we also reported those results.
-- Besides, the tool of [Chronos](holmes00/chronos_reproduce:v2), [FastXML](Holmes/Setup/FastXML.zip) and [LightXML](Holmes/Setup/LightXML.zip) update simultaneously.
+- Besides, the tool of Chronos(docker pull holmes00/chronos_reproduce:v2), [FastXML](Holmes/Setup/FastXML.zip) and [LightXML](Holmes/Setup/LightXML.zip) update simultaneously.
 
 
 # Framework
