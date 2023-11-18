@@ -25,6 +25,7 @@ Field Information:
     element: the vulnerable element of the vulnerability
     detailed_reason: the reason of tagged library_names
     ```
+    
 We've also provided [sample code](Holmes/GroundTruth/ground_truth_sample.py) and [tagging criteria](Holmes/GroundTruth/README.md). This enables easy  reproduce sampling or tagging of affected libraries.
 
 ## 2. Experiment Supplement
