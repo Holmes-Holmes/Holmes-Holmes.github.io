@@ -6,11 +6,11 @@ This section outlines the recent updates and enhancements to Holmes, tracking ne
 
 ### Ground Truth
 - Ecosystem and Library Names Tagging Results
-    - Tagging results for [GroundTruth](Holmes\GroundTruth\ground_truth.xlsx), each with tagging decision reasons.
+    - Tagging results for [GroundTruth](Holmes/GroundTruth/ground_truth.xlsx), each with tagging decision reasons.
 
 ### General Dataset
 - Ecosystem and Library Names Tagging Results
-    - Tagging results for [General Dataset](Holmes\GroundTruth\general_dataset.xlsx), each with tagging decision reasons. 
+    - Tagging results for [General Dataset](Holmes/GroundTruth/general_dataset.xlsx), each with tagging decision reasons. 
 
 
 Field Information:
@@ -25,27 +25,27 @@ Field Information:
     element: the vulnerable element of the vulnerability
     detailed_reason: the reason of tagged library_names
     ```
-We've also provided [sample code](Holmes/GroundTruth/ground_truth_sample.py) and [tagging criteria](Holmes\GroundTruth\README.md). This enables easy  reproduce sampling or tagging of affected libraries.
+We've also provided [sample code](Holmes/GroundTruth/ground_truth_sample.py) and [tagging criteria](Holmes/GroundTruth/README.md). This enables easy  reproduce sampling or tagging of affected libraries.
 
 ## 2. Experiment Supplement
 
 - **RQ 2: Accuracy Assessment**
-    - [Extended experiment result](Holmes\Empirical_Study\securitydb_compare\securitydb_result_general.json) to verify accuracy assessment legality.
+    - [Extended experiment result](Holmes/Empirical_Study/securitydb_compare/securitydb_result_general.json) to verify accuracy assessment legality.
 
 - **RQ 5: Efficiency Evaluation**
     We boost the Holmes by shorting the website crawling time and the lucene search time.
-    - Implemented [multiple threads](Holmes\ApproachImp\EvidenceGather\clue_website.py) to boost network performance in Holmes.
-    - [Refactored Lucene](Holmes\ApproachImp\Matchers) code for enhanced query performance.
+    - Implemented [multiple threads](Holmes/ApproachImp/EvidenceGather/clue_website.py) to boost network performance in Holmes.
+    - [Refactored Lucene](Holmes/ApproachImp/Matchers) code for enhanced query performance.
 
 - **RQ 6: Generality Evaluation**
-    - We have Expanded the general evaluation scale from 80 to [464](Holmes\GroundTruth\general_dataset.xlsx).
-    - Updated evaluation results of Holmes, Chronos, LightXml, and FastXml, the data and analysis code is uploaded in [kaggle](https://www.kaggle.com/datasets/holmesholmes/holmes-experiment) and the analysis code is also accessible in [MAP_Metric_general](Holmes\Evaluation\tool_compare\MAP_Metric_general).
+    - We have Expanded the general evaluation scale from 80 to [464](Holmes/GroundTruth/general_dataset.xlsx).
+    - Updated evaluation results of Holmes, Chronos, LightXml, and FastXml, the data and analysis code is uploaded in [kaggle](https://www.kaggle.com/datasets/holmesholmes/holmes-experiment) and the analysis code is also accessible in [MAP_Metric_general](Holmes/Evaluation/tool_compare/MAP_Metric_general).
 
 - **RQ 7: Usefulness Evaluation**
     - Compared additional experiments of Human Study with the aid of Chronos.
-        - we show more details of our experiment setup in [Setup](Holmes\Evaluation\human_study\README.md) and [the human study of additional Chronos](Holmes\Evaluation\human_study\Chronos)
+        - we show more details of our experiment setup in [Setup](Holmes/Evaluation/human_study/README.md) and [the human study of additional Chronos](Holmes/Evaluation/human_study/Chronos)
     - We update the inaccurate results in GitHub, GitLab, Snyk and Veracode of more vulnerabilities and we also reported those results.
-- Besides, the tool of [Chronos](holmes00/chronos_reproduce:v2), [FastXML](Holmes\Setup\FastXML.zip) and [LightXML](Holmes\Setup\LightXML.zip) update simultaneously.
+- Besides, the tool of Chronos(docker pull holmes00/chronos_reproduce:v2), [FastXML](Holmes/Setup/FastXML.zip) and [LightXML](Holmes/Setup/LightXML.zip) update simultaneously.
 
 
 # Framework
