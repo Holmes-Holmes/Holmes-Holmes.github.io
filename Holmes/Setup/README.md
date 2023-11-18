@@ -5,13 +5,26 @@ We follow chronos, lightxml and fastxml, replace the dataset with our's.
 
 To be convenient, we copyed their code into our repo for fastxml and lightxml. And pull a docker image for chronos, then we create a table for you to reproducce the tranging and testing data for random, chrono and geneal dataset. 
 
-
-|  Data path        | Chronos        | Lightxml   | Fastxml | 
-|:-------------|:-------------|:-------------|:-------------| 
-| Random-Order      | ./zero_shot_dataset/tenfold/   | data/tenfold/          | dataset/tenfold_generate/    | 
-| Chronological-Order     | ./zero_shot_dataset/chronological/     | data/chronological/           | dataset/chronological/    | 
-| Generality      | (mentioned below)       | data/general/               | dataset/general   |
-
+Chronos Run PATH:
+|    Experiment Type      | Data PATH        |  
+|:-------------|:-------------|
+| Random-Order      | ./zero_shot_dataset/tenfold/   |
+| Chronological-Order     | ./zero_shot_dataset/chronological/     |
+| Generality      | (mentioned below)       | 
+-----
+Light XML Run PATH:
+|    Experiment Type      | Data PATH        |  
+|:-------------|:-------------|
+| Random-Order      |  data/tenfold/          | 
+| Chronological-Order       | data/chronological/           | 
+| Generality      |  data/general/               |
+--------
+Light XML Run PATH:
+|   Experiment Type        |Data PATH  | 
+|:-------------|:-------------|
+| Random-Order      | dataset/tenfold_generate/    | 
+| Chronological-Order     |  dataset/chronological/    | 
+| Generality      | dataset/general   |
 
 (Please  `cd workspace/Chronos` before getting chronos's data. )
 
