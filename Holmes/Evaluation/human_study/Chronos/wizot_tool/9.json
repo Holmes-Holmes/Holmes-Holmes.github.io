@@ -1,0 +1,56 @@
+{
+    "CVE-2021-28681": {
+        "timescope": [
+            ["17h30m38s", "17h31m53s"]
+        ],
+        "tagged_library": [
+            "go__split__github.com/pion/webrtc"
+        ],
+        "reason":"Google search to find related projects in github"
+    },
+    "CVE-2021-29451": {
+        "timescope": [
+            ["17h33m06s", "17h35m24s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__Portofino"
+        ],
+        "reason":"Google search found related projects in github and found pom files"
+    },
+    "CVE-2013-6430": {
+        "timescope": [
+            ["17h36m11s", "17h37m34s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__springJavaScriptUtils"
+        ],
+        "reason":"Google search found related projects in github and found them to be spring related components."
+    },
+    "CVE-2020-2305": {
+        "timescope": [
+            ["17h38m15s", "17h39m53s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__Mercurial"
+        ],
+        "reason":"Google search found related projects in github and found pom files"
+    },
+    "CVE-2017-1000043": {
+        "timescope": [
+            ["17h40m18s", "17h42m20s"]
+        ],
+        "tagged_library": [ 
+            "Hadoop__split__Mapbox"
+        ],
+        "reason":"Search on Google to find the relevant project name, find the key configuration files, and determine the ecology"
+    },
+    "CVE-2020-14343": {
+        "timescope": [
+            ["17h43m34s", "17h46m04s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__pyyaml"
+        ],
+        "reason":"Search on Google to find the relevant project name, determine the file language, and determine the ecology"
+    }
+}

@@ -8,7 +8,6 @@ from ScorePackage import ScorePackage
 from classname_matcher_lang import LanguageClassnameMatcher, SUPPORTED_LANGUAGE_MATCHER, get_classname_matcher
 
 
-# 改classname！
 class ClassnameMatcher:
     def __init__(self, lang_list: Optional[List[ProgLang]] = None):
         if lang_list is None:
@@ -19,6 +18,8 @@ class ClassnameMatcher:
         }
         self._jvm: Optional[ClassnameMatcherJVMController] = None
         self._is_open: bool = False
+        self.query_queue = []
+        self.stack = {}
 
     def __enter__(self):
         self.open()
@@ -41,11 +42,22 @@ class ClassnameMatcher:
     def search_detail(self, classname: Optional[str], lang_list=None) -> Dict:
         results = []
         print(f'Request classname: {classname}. ')
-        for lang in self._lang_matchers:
-            res = self._lang_matchers[lang].search(classname)
-            results.extend(res)
-        results = sorted(results, key=lambda x: float(x['score']), reverse=True)
-        return results
+        query = classname
+        if query in self.query_queue:
+            self.query_queue.remove(query)
+            self.query_queue.insert(0, query)
+            return self.stack[query]
+        else:
+            for lang in self._lang_matchers:
+                res = self._lang_matchers[lang].search(classname)
+                results.extend(res)
+            results = sorted(results, key=lambda x: float(x['score']), reverse=True)
+            if self.query_queue.__sizeof__() == 100:
+                self.query_queue.pop()
+            self.stack[query] = results
+            self.query_queue.insert(0, query)
+            return results
+
 
 if __name__ == '__main__':
     pm = ClassnameMatcher()

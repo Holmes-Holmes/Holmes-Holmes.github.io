@@ -1,0 +1,105 @@
+{
+    "CVE-2021-28681": {
+        "timescope": [
+            [
+                "11h23m35s",
+                "11h27m10s"
+            ]
+        ],
+        "tagged_library": [
+            "go__split__github.com/pion/webrtc"
+        ],
+        "suggest component": [
+            "total.js",
+            "shuup",
+            "next"
+        ],
+        "reason": "https://nvd.nist.gov/vuln/detail/CVE-2021-28681   https://github.com/pion/webrtc/blob/9a1da179bab61a0b127d5c98b701c59730cd8905/go.mod"
+    },
+    "CVE-2021-29451": {
+        "timescope": [
+            [
+                "11h27m34s",
+                "11h29m30s"
+            ]
+        ],
+        "tagged_library": [
+            "maven__split__com.manydesigns/portofino"
+        ],
+        "suggest component": [
+            "pillow",
+            "github.com/cloudflare/cfrpki",
+            "apache-airflow"
+        ],
+        "reason": "https://nvd.nist.gov/vuln/detail/CVE-2021-29451   https://mvnrepository.com/artifact/com.manydesigns/portofino"
+    },
+    "CVE-2013-6430": {
+        "timescope": [
+            [
+                "11h30m00s",
+                "11h33m55s"
+            ]
+        ],
+        "tagged_library": [
+            "go__split__spring-framework"
+        ],
+        "suggest component": [
+            "github.com/ethereum/go-ethereum",
+            "total.js",
+            "shuup"
+        ],
+        "reason": "https://github.com/spring-projects/spring-framework/commit/7a7df6637478607bef0277bf52a4e0a03e20a248"
+    },
+    "CVE-2020-2305": {
+        "timescope": [
+            [
+                "13h41m15s",
+                "13h44m05s"
+            ]
+        ],
+        "tagged_library": [
+            "jenkins__split__mercurial"
+        ],
+        "suggest component": [
+            "org.jenkins-ci.main_jenkins-core",
+            "selenium-chromedriver",
+            "org.jenkins-ci.plugins_git"
+        ],
+        "reason": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-2305   https://plugins.jenkins.io/mercurial/"
+    },
+    "CVE-2017-1000043": {
+        "timescope": [
+            [
+                "13h44m35s",
+                "13h49m05s"
+            ]
+        ],
+        "tagged_library": [
+            "npm__split__mapbox.js",
+            "RubyGems__split__mapbox-rails"
+        ],
+        "suggest component": [
+            "next",
+            "total.js",
+            "shuup"
+        ],
+        "reason": "https://github.com/advisories/GHSA-q69p-5h74-w36f"
+    },
+    "CVE-2020-14343": {
+        "timescope": [
+            [
+                "13h49m30s",
+                "13h54m55s"
+            ]
+        ],
+        "tagged_library": [
+            "pypi__split__PyYAML"
+        ],
+        "suggest component": [
+            "total.js",
+            "github.com/ethereum/go-ethereum",
+            "next"
+        ],
+        "reason": "https://www.suse.com/security/cve/CVE-2020-14343.html  https://pypi.org/project/PyYAML/"
+    }
+}

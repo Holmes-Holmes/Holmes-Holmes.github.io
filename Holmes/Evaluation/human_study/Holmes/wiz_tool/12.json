@@ -1,0 +1,88 @@
+{
+    "CVE-2021-28681": {
+        "timescope": [
+            ["16h24m00s", "16h27m00s"]
+        ],
+        "tagged_library": [ 
+            "go__split__github.com/pion/webrtc"
+        ],
+        "suggest component": [
+            "go__split__github.com:pion:webrtc",
+            "npm__split__webrtc",
+            "npm__split__555-webrtc"
+        ],
+        "reason":"Pion WebRTC before 3.0.15 didn't properly tear down the DTLS Connection when certificate verification failed in https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28681"
+    },
+    "CVE-2021-29451": {
+        "timescope": [
+            ["16h28m00s", "16h30m00s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__com.manydesigns.portofino",
+            "npm__split__ManyDesigns.Portofino"
+        ],
+        "suggest component": [
+            "maven__split__com.manydesigns:portofino-core",
+            "npm__split__portofino",
+            "maven__split__com.manydesigns:portofino-chart"
+        ],
+        "reason":"Portofino is an open source web development framework. Portofino before version 5.2.1 did not properly verify the signature of JSON Web Tokens in https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-29451"
+    },
+    "CVE-2013-6430": {
+        "timescope": [
+            ["16h31m00s", "16h33m00s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__SpringFramework"
+        ],
+        "suggest component": [
+            "maven__split__org.springframework:spring-web",
+            "npm__split__spring-framework",
+            "go__split__github.com:spring-projects:spring-framework"
+        ],
+        "reason":"The JavaScriptUtils.javaScriptEscape method in web/util/JavaScriptUtils.java in Spring MVC in Spring Framework before 3.2.2 does not properly escape certain characters, which allows remote attackers to conduct cross-site scripting (XSS) attacks via a (1) line separator or (2) paragraph separator Unicode character or (3) left or (4) right angle bracket. in https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6430"
+    },
+    "CVE-2020-2305": {
+        "timescope": [
+            ["16h35m00s", "16h36m00s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__org.jenkins-ci.plugins"
+        ],
+        "suggest component": [
+            "maven__split__org.jenkins-ci.plugins:mercurial",
+            "maven__split__org.jvnet.hudson.plugins:mercurial",
+            "maven__split__org.sonarsource.scm.mercurial:sonar-scm-mercurial-plugin"
+        ],
+        "reason":"Jenkins Mercurial Plugin 2.11 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks. in https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-2305"
+    },
+    "CVE-2017-1000043": {
+        "timescope": [
+            ["16h36m00s", "16h38m00s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__mapbox"
+        ],
+        "suggest component": [
+            "npm__split__mapbox.js",
+            "npm__split__vue-mapbox-js",
+            "pypi__split__mapbox"
+        ],
+        "reason":"Mapbox.js versions 1.x prior to 1.6.6 and 2.x prior to 2.2.4 are vulnerable to a cross-site-scripting attack in certain uncommon usage scenarios via TileJSON name and map share control in https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000043 "
+    },
+    "CVE-2020-14343": {
+        "timescope": [
+            ["16h38m00s", "16h40m00s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__pyyaml",
+            "npm__split__pyyaml"
+        ],
+        "suggest component": [
+            "npm__split__pyyaml",
+            "go__split__github.com:yaml:pyyaml",
+            "pypi__split__pyyaml"
+        ],
+        "reason":"A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader in https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14343"
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "CVE-2019-10856": {
+        "timescope": [
+            ["14h26m57s", "14h27m50s"], 
+            ["14h28m20s", "14h29m57s"]
+        ],
+        "tagged_library": [
+            "npm__split__notebook/auth"
+        ],
+        "suggest component": [
+            "froala-editor",
+            "code.gitea.io/gitea",
+            "pillow"
+        ],
+        "reason":"The CVE interface prompts that this vulnerability is caused by another vulnerability that has not been completely repaired. The main code for repairing these two vulnerabilities on GitHub is notebook/auth/login.py"
+    },
+    "CVE-2019-10795": {
+        "timescope": [
+            ["14h31m17s", "14h32m24s"], 
+            ["14h32m44s", "14h33m17s"]
+        ],
+        "tagged_library": [
+            "npm__split__underfsafe"
+        ],
+        "suggest component": [
+            "apache-airflow",
+            "sds",
+            "i18next"
+        ],
+        "reason":"The Github interface gives the language information, and the code changes are consistent with the known Affected Software Configurations on the CVE report."
+    },
+    "CVE-2021-29469": {
+        "timescope": [
+            ["14h34m22s", "14h34m56s"], 
+            ["14h35m14s", "14h37m03s"]
+        ],
+        "tagged_library": [
+            "npm__split__node-redis"
+        ],
+        "suggest component": [
+            "org.jenkins-ci.main_jenkins-core",
+            "apache-airflow",
+            "com.fasterxml.jackson.core_jackson-databind"
+        ],
+        "reason":"Node.js information is given in the CVE interface, JavaScript is located, and the component of the code modified in GitHub is node-redis."
+    },
+    "CVE-2021-32641": {
+        "timescope": [
+            ["14h38m30s", "14h39m44s"], 
+            ["14h40m08s", "14h40m35s"]
+        ],
+        "tagged_library": [
+            "npm__split__auth0-lock"
+        ],
+        "suggest component": [
+            "shuup",
+            "auth0-js",
+            "froala-editor"
+        ],
+        "reason":"GitHub page positioning language information, component information is obtained through CVE's Description information"
+    },
+    "CVE-2017-16618": {
+        "timescope": [
+            ["14h41m50s", "14h42m50s"], 
+            ["14h43m07s", "14h43m44s"]
+        ],
+        "tagged_library": [
+            "PyPI__split__owlmixin"
+        ],
+        "suggest component": [
+            "tensorflow",
+            "pillow",
+            "ansible"
+        ],
+        "reason":"GitHub page location language information, confirm affected components from Know Affected Software Configurations"
+    },
+    "CVE-2022-30284": {
+        "timescope": [
+            ["14h44m47s", "14h45m40s"], 
+            ["14h46m07s", "14h46m23s"]
+        ],
+        "tagged_library": [
+            "PyPI__split__python-libnmap"
+        ],
+        "suggest component": [
+            "pillow",
+            "next",
+            "github.com/cloudflare/cfrpki"
+        ],
+        "reason":"GitHub page location language information, confirm affected components from Know Affected Software Configurations"
+    }
+}
+
+

@@ -1,0 +1,62 @@
+{
+    "CVE-2021-28681": {
+        "timescope": [
+            ["14h06m06s", "14h08m23s"],
+            ["14h08m41s", "14h10m18s"]
+        ],
+        "tagged_library": [
+            "go__split__pion/webrtc"
+        ],
+        "reason":"Find the issue page related to the vulnerability in the NVD website of the vulnerability. You can find that the affected ecosystem is GO, and the component is found in the https://github.com/pion/webrtc/security/advisories/GHSA-74xm-qj29-cq8p page. Named pion/webrtc"
+    },
+    "CVE-2021-29451": {
+        "timescope": [
+            ["14h12m48s", "14h13m24s"],
+            ["14h13m45s", "14h15m39s"]
+        ],
+        "tagged_library": [
+            "maven__split__com.manydesigns.portofino"
+        ],
+        "reason":"The ecosystem and components affected by the vulnerability were found in the vulnerability disclosure page of github https://github.com/ManyDesigns/Portofino/security/advisories/GHSA-6g3c-2mh5-7q6x, and the component name can be confirmed from pom.xml"
+    },
+    "CVE-2013-6430": {
+        "timescope": [
+            ["14h16m37s", "14h17m24s"],
+            ["14h17m40s", "14h18m10s"]
+        ],
+        "tagged_library": [
+            "maven__split__org.springframework:spring-web"
+        ],
+        "reason":"From the patch page https://github.com/spring-projects/spring-framework/commit/7a7df6637478607bef0277bf52a4e0a03e20a248, you can find that the spring project was modified, and the name of the component is springMVC"
+    },
+    "CVE-2020-2305": {
+        "timescope": [
+            ["14h19m28s", "14h20m45s"],
+            ["14h21m02s", "14h25m53s"]
+        ],
+        "tagged_library": [
+            "maven__split__jenkins"
+        ],
+        "reason":"The component name affected by the vulnerability found in the https://www.jenkins.io/security/advisory/2020-11-04/#SECURITY-2115 website is jenkins, and jenkins belongs to the maven ecosystem"
+    },
+    "CVE-2017-1000043": {
+        "timescope": [
+            ["14h27m02s", "14h29m31s"],
+            ["14h29m47s", "14h31m17s"]
+        ],
+        "tagged_library": [
+            "npm__split__mapbox"
+        ],
+        "reason":"From the NVD official website description of the vulnerability, you can know the name of the component affected by the vulnerability, which is related to JS, and search it on the npm official website to confirm."
+    },
+    "CVE-2020-14343": {
+        "timescope": [
+            ["14h32m23s", "14h33m34s"],
+            ["14h33m42s", "14h34m21s"]
+        ],
+        "tagged_library": [
+            "pypi__split__PyYAML"
+        ],
+        "reason":"From the GitHub issue link, know that the affected ecology is pypi and its name, and search for confirmation on the pypi website"
+    }
+}

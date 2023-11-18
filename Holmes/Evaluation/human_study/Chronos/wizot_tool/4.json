@@ -1,0 +1,74 @@
+{
+  "CVE-2019-10856": {
+    "timescope": [
+      [
+        "16h13m00s",
+        "16h21m42s"
+      ]
+    ],
+    "tagged_library": [
+      "pypi__split__jupyter-core"
+    ],
+    "reason": "i can find the jupyter from pypi"
+  },
+  "CVE-2019-10795": {
+    "timescope": [
+      [
+        "16h22m15s",
+        "16h23m52s"
+      ]
+    ],
+    "tagged_library": [
+      "npm__split__undefsafe"
+    ],
+    "reason": "https://github.com/remy/undefsafe/commit/f272681b3a50e2c4cbb6a8533795e1453382c822 patch the same as https://www.npmjs.com/package/undefsafe"
+  },
+  "CVE-2021-29469": {
+    "timescope": [
+      [
+        "16h24m15s",
+        "16h26m25s"
+      ]
+    ],
+    "tagged_library": [
+      "npm__split__redis"
+    ],
+    "reason": "https://github.com/NodeRedis/node-redis/commit/2d11b6dc9b9774464a91fb4b448bad8bf699629e patch the same as https://www.npmjs.com/package/redis"
+  },
+  "CVE-2021-32641": {
+    "timescope": [
+      [
+        "16h27m08s",
+        "16h28m20s"
+      ]
+    ],
+    "tagged_library": [
+      "npm__split__auth0-lock"
+    ],
+    "reason": "https://github.com/auth0/lock/commit/d139cf01c8234b07caf265e051f39d3eab08f7ed patch the same as https://www.npmjs.com/package/auth0-lock"
+  },
+  "CVE-2017-16618": {
+    "timescope": [
+      [
+        "16h28m52s",
+        "16h30m03s"
+      ]
+    ],
+    "tagged_library": [
+      "pypi__split__owlmixin"
+    ],
+    "reason": "https://github.com/tadashi-aikawa/owlmixin/commit/5d0575303f6df869a515ced4285f24ba721e0d4e patch, the same as https://pypi.org/project/owlmixin/"
+  },
+  "CVE-2022-30284": {
+    "timescope": [
+      [
+        "16h30m40s",
+        "16h31m30s"
+      ]
+    ],
+    "tagged_library": [
+      "pypi__split__python-libnmap"
+    ],
+    "reason": "NVD references"
+  }
+}

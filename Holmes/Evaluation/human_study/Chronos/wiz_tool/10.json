@@ -1,0 +1,94 @@
+{
+    "CVE-2019-10856": {
+        "timescope": [
+            ["21h12m00s", "21h15m12s"], 
+            ["21h15m38s", "21h17m04s"]
+        ],
+        "tagged_library": [
+            "pypi__split__notebook"
+        ],
+        "suggest component": [
+            "froala-editor",
+            "code.gitea.io/gitea",
+            "pillow"
+        ],
+        "reason":"This vulnerability repository can be identified in reference: https://github.com/jupyter/notebook/compare/16cf97c...b8e30ea, and this component can be identified in https://pypi.org/project/notebook/."
+    },
+    "CVE-2019-10795": {
+        "timescope": [
+            ["21h20m44s", "21h22m12s"], 
+            ["21h22m46s", "21h24m11s"]
+        ],
+        "tagged_library": [
+            "npm__split__undefsafe"
+        ],
+        "suggest component": [
+            "apache-airflow",
+            "sds",
+            "i18next"
+        ],
+        "reason":"can find patch:https://github.com/remy/undefsafe/commit/f272681b3a50e2c4cbb6a8533795e1453382c822"
+    },
+    "CVE-2021-29469": {
+        "timescope": [
+            ["21h25m02s", "21h27m02s"], 
+            ["21h28m23s", "21h29m31s"]
+        ],
+        "tagged_library": [
+            "npm__split__redis"
+        ],
+        "suggest component": [
+            "org.jenkins-ci.main_jenkins-core",
+            "apache-airflow",
+            "com.fasterxml.jackson.core_jackson-databind"
+        ],
+        "reason":"can find patch:https://github.com/redis/node-redis/commit/2d11b6dc9b9774464a91fb4b448bad8bf699629e"
+    },
+    "CVE-2021-32641": {
+        "timescope": [
+            ["21h30m47s", "21h32m18s"], 
+            ["21h33m04s", "21h34m02s"]
+        ],
+        "tagged_library": [
+            "npm__split__auth0-lock"
+        ],
+        "suggest component": [
+            "shuup",
+            "auth0-js",
+            "froala-editor"
+        ],
+        "reason":"can find patch patch:https://github.com/auth0/lock/commit/d139cf01c8234b07caf265e051f39d3eab08f7ed"
+    },
+    "CVE-2017-16618": {
+        "timescope": [
+            ["21h34m52s", "21h36m17s"], 
+            ["21h37m08s", "21h38m31s"]
+        ],
+        "tagged_library": [
+            "pypi__split__owlmixin"
+        ],
+        "suggest component": [
+            "tensorflow",
+            "pillow",
+            "ansible"
+        ],
+        "reason":"can find patch:https://github.com/tadashi-aikawa/owlmixin/commit/5d0575303f6df869a515ced4285f24ba721e0d4e"
+    },
+    "CVE-2022-30284": {
+        "timescope": [
+            ["21h40m24s", "21h41m44s"], 
+            ["21h41m58s", "21h43m05s"]
+        ],
+        "tagged_library": [
+            "pypi__split__python-libnmap"
+        ],
+        "suggest component": [
+            "pillow",
+            "next",
+            "github.com/cloudflare/cfrpki"
+        ],
+        "reason":"according to description和reference:https://pypi.org/project/python-libnmap/判断出结果"
+    }
+}
+
+

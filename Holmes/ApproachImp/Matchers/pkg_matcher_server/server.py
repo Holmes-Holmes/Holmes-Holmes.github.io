@@ -29,7 +29,8 @@ class MatcherHandler(BaseHTTPRequestHandler):
             url_info = urlparse(self.path)
             path: str = url_info.path
             print(url_info)
-            query: Dict[str, str] = {k: v[0] for k, v in parse_qs(url_info.query).items()}
+            query: Dict[str, str] = {k: v[0]
+                                     for k, v in parse_qs(url_info.query).items()}
             self._match(query)
         except Exception as e:
             self._send(500, traceback.format_exc(), None)
@@ -51,12 +52,13 @@ class MatcherHandler(BaseHTTPRequestHandler):
 
         if language is not None:
             language = [lang for lang in language.split(' ')]
-        vendor, product = query.get('vendor', None), query.get(
-            'product', None)
+        print(f'请求语言参数：{language}')
+        vendor, product, detail = query.get('vendor', None), query.get(
+            'product', None), query.get('detail', None)
 
-        if product is None:
+        if product is None and detail is None:
             self._send(
-                400, 'Parameter "product" must be specified.', None)
+                400, 'Parameter "product" or "detail" must be specified.', None)
             return
 
         results_to_show = []
@@ -66,12 +68,14 @@ class MatcherHandler(BaseHTTPRequestHandler):
             'cveData': None
         }
 
-        results = matcher.search_detail(vendor, product, lang_list=language)
+        results = matcher.search_detail(
+            vendor, product, detail, lang_list=language)
         for result in results:
             results_to_show.append(result)
         self._send(0, 'Ok.', to_show)
 
     def _send(self, code: int, msg: str, results: Union[None, List, Dict]):
+        """ 返回结果. """
         to_send = {
             'errorCode': code,
             'message': msg,

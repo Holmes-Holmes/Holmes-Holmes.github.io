@@ -1,0 +1,104 @@
+{
+  "CVE-2021-28681": {
+    "timescope": [
+      [
+        "15h44m23s",
+        "15h45m31s"
+      ]
+    ],
+    "tagged_library": [
+      "go__split__github.com/pion/webrtc"
+    ],
+    "suggest component": [
+      "total.js",
+      "shuup",
+      "next"
+    ],
+    "reason": "https://github.com/pion/webrtc/commit/545613dcdeb5dedb01cce94175f40bcbe045df2e patch"
+  },
+  "CVE-2021-29451": {
+    "timescope": [
+      [
+        "15h45m35s",
+        "15h47m59s"
+      ]
+    ],
+    "tagged_library": [
+      "maven__split__com.manydesigns.portofino-core"
+    ],
+    "suggest component": [
+      "pillow",
+      "github.com/cloudflare/cfrpki",
+      "apache-airflow"
+    ],
+    "reason": "https://github.com/ManyDesigns/Portofino/commit/8c754a0ad234555e813dcbf9e57d637f9f23d8fb patch"
+  },
+  "CVE-2013-6430": {
+    "timescope": [
+      [
+        "15h48m15s",
+        "15h53m59s"
+      ]
+    ],
+    "tagged_library": [
+      "maven__split__org.springframewors.spring-web"
+    ],
+    "suggest component": [
+      "github.com/ethereum/go-ethereum",
+      "total.js",
+      "shuup"
+    ],
+    "reason": "https://mvnrepository.com/artifact/org.springframework/spring-web/3.2.1.RELEASE 有该CVE"
+  },
+  "CVE-2020-2305": {
+    "timescope": [
+      [
+        "15h54m05s",
+        "15h56m21s"
+      ]
+    ],
+    "tagged_library": [
+      "maven__split__org.jenkins-ci.plugins.mercurial"
+    ],
+    "suggest component": [
+      "org.jenkins-ci.main_jenkins-core",
+      "selenium-chromedriver",
+      "org.jenkins-ci.plugins_git"
+    ],
+    "reason": "https://mvnrepository.com/artifact/org.jenkins-ci.plugins/mercurial?repo=jenkins-releases 有该CVE"
+  },
+  "CVE-2017-1000043": {
+    "timescope": [
+      [
+        "15h56m30s",
+        "16h07m38s"
+      ]
+    ],
+    "tagged_library": [
+      "npm__split__mapbox.js"
+    ],
+    "suggest component": [
+      "next",
+      "total.js",
+      "shuup"
+    ],
+    "reason": "https://github.com/mapbox/mapbox.js/pull/1102 is the PR included in the patch in the report, which is consistent with the warehouse address on https://www.npmjs.com/package/mapbox.js"
+  },
+  "CVE-2020-14343": {
+    "timescope": [
+      [
+        "16h08m52s",
+        "16h11m36s"
+      ]
+    ],
+    "tagged_library": [
+      "pypi__split__PyYAML"
+    ],
+    "suggest component": [
+      "total.js",
+      "github.com/ethereum/go-ethereum",
+      "next"
+    ],
+    "reason": "https://github.com/yaml/pyyaml/issues/420 issue"
+  }
+}

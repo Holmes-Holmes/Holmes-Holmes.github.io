@@ -1,0 +1,82 @@
+{
+    "CVE-2019-10856": {
+        "timescope": [
+            [
+                "16h18m45s",
+                "16h22m13s"
+            ]
+        ],
+        "tagged_library": [
+            "pypi__split__notebook"
+        ],
+        "reason": "Determine it is Jupyter Notebook based on the display on the NVD, determine the ecology of pypi, and then determine https://github.com/advisories/GHSA-rcx2-m7jp-p9wj based on the data in the github vulnerability library"
+    },
+    "CVE-2019-10795": {
+        "timescope": [
+            [
+                "16h24m08s",
+                "16h24m53s"
+            ]
+        ],
+        "tagged_library": [
+            "npm__split__undefsafe"
+        ],
+        "reason": "Determine the ecology based on NVD's CPE, and then determine the component name based on github"
+    },
+    "CVE-2021-29469": {
+        "timescope": [
+            [
+                "16h26m24s",
+                "16h26m44s"
+            ],
+            [
+                "16h26m45s",
+                "16h27m17s"
+            ]
+        ],
+        "tagged_library": [
+            "npm__split__redis"
+        ],
+        "reason": "Determine the ecology based on NVD's CPE, and then determine the component name based on github"
+    },
+    "CVE-2021-32641": {
+        "timescope": [
+            [
+                "16h27m35s",
+                "16h28m35s"
+            ]
+        ],
+        "tagged_library": [
+            "npm__split__auth0-lock"
+        ],
+        "reason": "According to the CPE of NVD, determine the name of the affected component, and then determine the ecology and name of the component through search"
+    },
+    "CVE-2017-16618": {
+        "timescope": [
+            [
+                "16h29m40s",
+                "16h30m45s"
+            ]
+        ],
+        "tagged_library": [
+            "pypi__split__OwlMixin"
+        ],
+        "reason": "Determine the name of the affected component based on the CPE field of NVD, confirm the ecology of the component through Google search, and confirm through the information provided by the vulnerability library of github"
+    },
+    "CVE-2022-30284": {
+        "timescope": [
+            [
+                "16h31m55s",
+                "16h32m15s"
+            ],
+            [
+                "16h32m28s",
+                "16h33m05s"
+            ]
+        ],
+        "tagged_library": [
+            "pypi__split__python-libnmap"
+        ],
+        "reason": "Determine the ecological name through the description of NVD, then search for the component name through the content of CPE, and confirm it through the content of the github vulnerability library"
+    }
+}

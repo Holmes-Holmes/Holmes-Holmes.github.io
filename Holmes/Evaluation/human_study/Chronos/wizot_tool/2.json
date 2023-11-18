@@ -1,0 +1,58 @@
+{
+    "CVE-2019-10856": {
+        "timescope": [
+            ["15h12m53s", "15h15m10s"]
+        ],
+        "tagged_library": [
+            "pypi__split__notebook"
+        ],
+        "reason":"I found the github repository in the external link of nvd, then used Google to search and found that it was a python-related package, and then went to the pypi official website to search for it."
+    },
+    "CVE-2019-10795": {
+        "timescope": [
+            ["15h17m30s", "15h19m01s"]
+        ],
+        "tagged_library": [
+            "npm__split__undesafe"
+        ],
+        "reason":"I found the github repository in the external link of nvd and found that it was a js package. Then I searched for it on the npm official website."
+    },
+    "CVE-2021-29469": {
+        "timescope": [
+            ["15h20m0s", "15h22m0s"]
+        ],
+        "tagged_library": [
+            "npm__split__redis"
+        ],
+        "reason":"Found the github warehouse in the external link of nvd, and found the npm link in the warehouse readme."
+    },
+    "CVE-2021-32641": {
+        "timescope": [
+            ["15h22m50s", "15h24m39s"]
+        ],
+        "tagged_library": [
+            "npm__split__auth0-lock"
+        ],
+        "reason":"I found the github repository in the external link of nvd and found that it was a js package. Then I searched for it on the npm official website."
+    },
+    "CVE-2017-16618": {
+        "timescope": [
+            ["15h25m20s", "15h26m37s"]
+        ],
+        "tagged_library": [
+            "pypi__split__owlmixin"
+        ],
+        "reason":"Found the github warehouse in the external link of nvd, and found the pypi link in the warehouse readme."
+    },
+    "CVE-2022-30284": {
+        "timescope": [
+            ["15h27m11s", "15h28m0s"]
+        ],
+        "tagged_library": [
+            "pypi__split__python-libnmap"
+        ],
+        "reason":"Found the pypi link in the external link of nvd"
+    }
+}
+
+

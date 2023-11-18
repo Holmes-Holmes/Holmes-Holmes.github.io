@@ -1,0 +1,63 @@
+{
+    "CVE-2021-28681": {
+        "timescope": [
+            ["19h58m14s", "20h00m03s"],
+            ["20h00m23s", "20h01m13s"]
+        ],
+        "tagged_library": [
+            "go__split__github.com/pion/webrtc"
+        ],
+        "reason":"The patch can be found at: https://github.com/pion/webrtc/commit/545613dcdeb5dedb01cce94175f40bcbe045df2e"
+    },
+    "CVE-2021-29451": {
+        "timescope": [
+            ["20h02m27s", "20h04m17s"],
+            ["20h04m50s", "20h21m27s"]
+        ],
+        "tagged_library": [
+            "maven__split__com.manydesigns:portofino-security-shiro",
+            "maven__split__com.manydesigns:portofino-dispatcher"
+        ],
+        "reason":"can find patch:https://github.com/ManyDesigns/Portofino/commit/8c754a0ad234555e813dcbf9e57d637f9f23d8fb#diff-8a8b092c544d8d29123de4a051fc204cf45c9b463382e93f9e24f443a22fa987"
+    },
+    "CVE-2013-6430": {
+        "timescope": [
+            ["20h22m26s", "20h23m39s"],
+            ["20h23m50s", "20h38m04s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__org.springframework:spring-web"
+        ],
+        "reason":"can find patch:https://github.com/spring-projects/spring-framework/commit/7a7df6637478607bef0277bf52a4e0a03e20a248#diff-33e816e8f683109f4576f828c5f4013351b4a25cb4707aedeb3601ae95ea8c38"
+    },
+    "CVE-2020-2305": {
+        "timescope": [
+            ["20h38m44s", "20h40m55s"],
+            ["20h41m01s", "20h42m15s"]
+        ],
+        "tagged_library": [  
+            "maven__split__org.jenkins-ci.plugins:mercurial"
+        ],
+        "reason":"It can be known from the description that the vulnerability exists in Jenkins Mercurial Plugin, and its source code can be found on github: https://github.com/jenkinsci/mercurial-plugin"
+    },
+    "CVE-2017-1000043": {
+        "timescope": [
+            ["20h43m45s", "20h51m31s"],
+            ["20h51m59s", "20h55m01s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__mapbox-gl"
+        ],
+        "reason":"We can find a PoC about this vulnerability: https://hackerone.com/reports/99245"
+    },
+    "CVE-2020-14343": {
+        "timescope": [
+            ["20h56m55s", "20h59m08s"],
+            ["20h59m44s", "21h03m35s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__PyYAML"
+        ],
+        "reason":"You can tell from reference: https://github.com/yaml/pyyaml/issues/420 that PyYAML is affected"
+    }
+}

@@ -19,6 +19,7 @@ class LanguageVersionMatcher:
     _SPLIT_CH = '._-/:'
 
     def __init__(self, language: ProgLang, jvm_controller: VersionMatcherJVMController) -> None:
+        """ 初始化. """
         if not jvm_controller.is_open():
             raise Exception('JVM not started.')
         self._matcher = jvm_controller.get_matcher(language)
@@ -28,26 +29,28 @@ class LanguageVersionMatcher:
         self.get_max_result_cnt()
 
     def set_max_result_cnt(self, cnt: int) -> None:
+        """ 设置最大返回结果数量. """
         self._max_result_cnt = cnt
         self._matcher.setMaxResultCnt(self._max_result_cnt)
 
     def get_max_result_cnt(self) -> int:
+        """ 获得最大返回结果数量. """
         self._max_result_cnt = int(self._matcher.getMaxResultCnt())
         return self._max_result_cnt
 
-    def search(self, version: Optional[str]) -> List[str]:
-        if version == None:
+    def search(self, version: Optional[str], detail: Optional[str]) -> List[str]:
+        if version == None and detail == None:
             return []
         else:
-            results = self._search_jvm(version)
+            results = self._search_jvm(version, detail)
             return results
 
-    def _search_jvm(self, version: Optional[str]) -> List[str]:
-        print(f'search params: version - {version}')
-        if version == None:
+    def _search_jvm(self, version: Optional[str], detail: Optional[str]) -> List[str]:
+        print(f'search params: version - {version}, detail - {detail}')
+        if version == None and detail == None:
             return []
         else:
-            hits = list(self._matcher.search(version))
+            hits = list(self._matcher.search(version, detail))
             results = []
             for hit in hits:
                 results.append(hit)
@@ -60,16 +63,17 @@ class JavaVersionMatcher(LanguageVersionMatcher):
         super().__init__(ProgLang.JAVA, jvm_controller)
         self.set_max_result_cnt(MAX_VALUE)
 
-    def search(self, version: Optional[str]) -> List[Dict]:
-        if version == None:
+    def search(self, version: Optional[str], detail: Optional[str]) -> List[Dict]:
+        if version == None and detail == None:
             return []
         else:
-            results = self._search_jvm(version)
+            results = self._search_jvm(version, detail)
         results_to_show = []
         for r in results:
             # print(r)
             r_splt = r.split('#')
             r_lang = str(r_splt[0])
+            # r_nameVersion = str(r_splt[1])
             r_name = str(r_splt[1])
             r_version = str(r_splt[2])
             r_score = str(r_splt[-1])
@@ -88,16 +92,17 @@ class JavascriptVersionMatcher(LanguageVersionMatcher):
         super().__init__(ProgLang.JAVASCRIPT, jvm_controller)
         self.set_max_result_cnt(MAX_VALUE)
 
-    def search(self, version: Optional[str]) -> List[Dict]:
-        if version == None:
+    def search(self, version: Optional[str], detail: Optional[str]) -> List[Dict]:
+        if version == None and detail == None:
             return []
         else:
-            results = self._search_jvm(version)
+            results = self._search_jvm(version, detail)
         results_to_show = []
         for r in results:
             # print(r)
             r_splt = r.split('#')
             r_lang = str(r_splt[0])
+            # r_nameVersion = str(r_splt[1])
             r_name = str(r_splt[1])
             r_version = str(r_splt[2])
             r_score = str(r_splt[-1])
@@ -116,16 +121,17 @@ class PythonVersionMatcher(LanguageVersionMatcher):
         super().__init__(ProgLang.PYTHON, jvm_controller)
         self.set_max_result_cnt(MAX_VALUE)
 
-    def search(self, version: Optional[str]) -> List[Dict]:
-        if version == None:
+    def search(self, version: Optional[str], detail: Optional[str]) -> List[Dict]:
+        if version == None and detail == None:
             return []
         else:
-            results = self._search_jvm(version)
+            results = self._search_jvm(version, detail)
         results_to_show = []
         for r in results:
             # print(r)
             r_splt = r.split('#')
             r_lang = str(r_splt[0])
+            # r_nameVersion = str(r_splt[1])
             r_name = str(r_splt[1])
             r_version = str(r_splt[2])
             r_score = str(r_splt[-1])
@@ -144,16 +150,17 @@ class GoVersionMatcher(LanguageVersionMatcher):
         super().__init__(ProgLang.GO, jvm_controller)
         self.set_max_result_cnt(MAX_VALUE)
 
-    def search(self, version: Optional[str]) -> List[Dict]:
-        if version == None:
+    def search(self, version: Optional[str], detail: Optional[str]) -> List[Dict]:
+        if version == None and detail == None:
             return []
         else:
-            results = self._search_jvm(version)
+            results = self._search_jvm(version, detail)
         results_to_show = []
         for r in results:
             # print(r)
             r_splt = r.split('#')
             r_lang = str(r_splt[0])
+            # r_nameVersion = str(r_splt[1])
             r_name = str(r_splt[1])
             r_version = str(r_splt[2])
             r_score = str(r_splt[-1])

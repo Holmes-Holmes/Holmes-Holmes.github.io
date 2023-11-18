@@ -18,7 +18,10 @@ class PackageMatcher:
         }
         self._jvm: Optional[PackageMatcherJVMController] = None
         self._is_open: bool = False
+        self.query_queue = []
+        self.stack = {}
 
+        # print("self._lang_matchers:", self._lang_matchers)
 
     def __enter__(self):
         self.open()
@@ -31,6 +34,7 @@ class PackageMatcher:
         self._jvm = PackageMatcherJVMController()
         self._jvm.open()
         for lang in self._lang_matchers:
+            # print("language matchers:", self._lang_matchers[lang])
             self._lang_matchers[lang] = get_package_matcher(lang, self._jvm)
         self._is_open = True
 
@@ -39,20 +43,36 @@ class PackageMatcher:
         self._is_open = False
 
     def search_detail(self, cpe_vendor: Optional[str], cpe_product: Optional[str],
-                    lang_list=None) -> Dict:
+                      cpe_detail: Optional[str], lang_list=None) -> Dict:
         results = []
-        print(f'Request vendor: {cpe_vendor}, product: {cpe_product}, language: {lang_list}. ')
-        for lang in self._lang_matchers:
-            res = self._lang_matchers[lang].search(
-                cpe_vendor, cpe_product)
-            results.extend(res)
-        results = sorted(results, key=lambda x: float(
-            x['score']), reverse=True)
-        return results
+        print(f'Request vendor: {cpe_vendor}, product: {cpe_product}, detail: {cpe_detail} language: {lang_list}. ')
+        # if not lang_list:
+        #     lang_list = [ProgLang.COMMON]
+        query = f"vendor={cpe_vendor}&product={cpe_product}&detail={cpe_detail}"
+        if query in self.query_queue:
+            self.query_queue.remove(query)
+            self.query_queue.insert(0, query)
+            return self.stack[query]
+        else:
+            for lang in self._lang_matchers:
+                # print(self._lang_matchers[lang])
+                res = self._lang_matchers[lang].search(
+                    cpe_vendor, cpe_product, cpe_detail)
+                results.extend(res)
+            results = sorted(results, key=lambda x: float(
+                x['score']), reverse=True)
+            if self.query_queue.__sizeof__() == 100:
+                self.query_queue.pop()
+            self.stack[query] = results
+            self.query_queue.insert(0, query)
+            return results
+
 
 if __name__ == '__main__':
     pm = PackageMatcher()
     pm.open()
     result = pm.search_detail('jenkins', 'nuget', 'org.jenkins-ci.plugins:nuget')
+    result = pm.search_detail('tomcat', 'catalina', '')
+    result = pm.search_detail('tomcat', 'catalina', '')
     print(json.dumps(result, indent=4))
     pm.close()

@@ -35,13 +35,14 @@ class LanguagePackageMatcher:
         return self._max_result_cnt
 
     def search(self, cpe_vendor: Optional[str], cpe_product: Optional[str],
-            cpe_versions: Optional[List[str]] = None) -> List[str]:
-        results = self._search_jvm(cpe_vendor, cpe_product)
+               detail: Optional[str], cpe_versions: Optional[List[str]] = None) -> List[str]:
+        results = self._search_jvm(cpe_vendor, cpe_product, detail)
         return results
 
-    def _search_jvm(self, cpe_vendor: Optional[str], cpe_product: Optional[str]) -> List[str]:
-        # print(f'search params: vendor - {cpe_vendor}, product - {cpe_product}')
-        hits = list(self._matcher.search(cpe_vendor, cpe_product))
+    def _search_jvm(self, cpe_vendor: Optional[str], cpe_product: Optional[str],
+                    detail: Optional[str]) -> List[str]:
+        print(f'search params: vendor - {cpe_vendor}, product - {cpe_product}, detail - {detail}')
+        hits = list(self._matcher.search(cpe_vendor, cpe_product, detail))
         results = []
         for hit in hits:
             results.append(hit)
@@ -55,8 +56,8 @@ class JavaPackageMatcher(LanguagePackageMatcher):
         self.set_max_result_cnt(MAX_VALUE)
 
     def search(self, cpe_vendor: Optional[str], cpe_product: Optional[str],
-               cpe_versions: Optional[List[str]] = None) -> List[Dict]:
-        results = self._search_jvm(cpe_vendor, cpe_product)
+               detail: Optional[str], cpe_versions: Optional[List[str]] = None) -> List[Dict]:
+        results = self._search_jvm(cpe_vendor, cpe_product, detail)
         results_to_show = []
         for r in results:
             # print(r)
@@ -79,8 +80,8 @@ class JavascriptPackageMatcher(LanguagePackageMatcher):
         self.set_max_result_cnt(MAX_VALUE)
 
     def search(self, cpe_vendor: Optional[str], cpe_product: Optional[str],
-               cpe_versions: Optional[List[str]] = None) -> List[Dict]:
-        results = self._search_jvm(cpe_vendor, cpe_product)
+               detail: Optional[str], cpe_versions: Optional[List[str]] = None) -> List[Dict]:
+        results = self._search_jvm(cpe_vendor, cpe_product, detail)
         results_to_show = []
         for r in results:
             # print(r)
@@ -103,8 +104,8 @@ class PythonPackageMatcher(LanguagePackageMatcher):
         self.set_max_result_cnt(MAX_VALUE)
 
     def search(self, cpe_vendor: Optional[str], cpe_product: Optional[str],
-               cpe_versions: Optional[List[str]] = None) -> List[Dict]:
-        results = self._search_jvm(cpe_vendor, cpe_product)
+               detail: Optional[str], cpe_versions: Optional[List[str]] = None) -> List[Dict]:
+        results = self._search_jvm(cpe_vendor, cpe_product, detail)
         results_to_show = []
         for r in results:
             # print(r)
@@ -127,8 +128,8 @@ class GoPackageMatcher(LanguagePackageMatcher):
         self.set_max_result_cnt(MAX_VALUE)
 
     def search(self, cpe_vendor: Optional[str], cpe_product: Optional[str],
-               cpe_versions: Optional[List[str]] = None) -> List[Dict]:
-        results = self._search_jvm(cpe_vendor, cpe_product)
+               detail: Optional[str], cpe_versions: Optional[List[str]] = None) -> List[Dict]:
+        results = self._search_jvm(cpe_vendor, cpe_product, detail)
         results_to_show = []
         for r in results:
             r_splt = r.split('#')

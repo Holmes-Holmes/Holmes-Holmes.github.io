@@ -1,0 +1,58 @@
+{
+    "CVE-2021-28681": {
+        "timescope": [
+            ["14h01m32s", "14h04m25s"]
+        ],
+        "tagged_library": [
+            "go__split__webRTC"
+        ],
+        "reason":"The affected components and version numbers are given in the description of the CVE. By looking at the github page of webRTC, we found that it belongs to the Go language." 
+    },
+    "CVE-2021-29451": {
+        "timescope": [
+            ["14h05m54s", "14h08m14s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__com.manydesigns:portofino-core"
+        ],
+        "reason":"From the CVE page, we learned that the affected component is Portofino, and from Github, we learned that the main language is Java. The corresponding component can also be found in Maven."
+    },   
+    "CVE-2013-6430": {
+        "timescope": [
+            ["14h09m24s", "14h10m45s"],
+            ["14h11m13s", "14h11m58s"]
+        ],
+        "tagged_library": [
+            "maven__split__Spring Core"
+        ],
+        "reason":"The language is positioned as Java. When viewing spring framework in maven, it is prompted that the project has been moved to spring-core."
+    },
+    "CVE-2020-2305": {
+        "timescope": [
+            ["14h12m55s", "14h15m35s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__mercurial-plugin"
+        ],
+        "reason":"Locate the Jenkins page from hyperlink, navigate to Github from the page and learn that the main language is Java, and the name of the component is known from the readme."
+    },
+    "CVE-2017-1000043": {
+        "timescope": [
+            ["14h17m11s", "14h20m58s"],
+            ["14h21m25s", "14h22m23s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__mapbox.js"
+        ],
+        "reason":"The main language of mapbox in Github is JS. The specific affected components are confirmed in the conversation at https://hackerone.com/reports/99245"
+    },
+    "CVE-2020-14343": {
+        "timescope": [
+            ["14h23m54s", "14h25m28s"]
+        ],
+        "tagged_library": [ 
+            "PyPI__split__PyYAML"
+        ],
+        "reason":"The Github page gives the pip installation information, and the name of the component is given in the CVE report."
+    }
+}

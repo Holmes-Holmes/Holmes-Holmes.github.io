@@ -1,0 +1,94 @@
+{
+    "CVE-2019-10856": {
+        "timescope": [
+            ["14h07m09s", "14h09m50s"], 
+            ["14h10m01s", "14h11m40s"]
+        ],
+        "tagged_library": [
+            "pypi__split__notebook"
+        ],
+        "suggest component": [
+            "froala-editor",
+            "code.gitea.io/gitea",
+            "pillow"
+        ],
+        "reason":"https://github.com/jupyter/notebook"
+    },
+    "CVE-2019-10795": {
+        "timescope": [
+            ["14h11m55s", "14h13m18s"], 
+            ["14h13m40s", "14h14m24s"]
+        ],
+        "tagged_library": [
+            "npm__split__undefsafe"
+        ],
+        "suggest component": [
+            "apache-airflow",
+            "sds",
+            "i18next"
+        ],
+        "reason":"https://github.com/remy/undefsafe/commit/f272681b3a50e2c4cbb6a8533795e1453382c822"
+    },
+    "CVE-2021-29469": {
+        "timescope": [
+            ["14h15m50s", "14h16m30s"], 
+            ["14h16m40s", "14h17m10s"]
+        ],
+        "tagged_library": [
+            "npm__split__redis"
+        ],
+        "suggest component": [
+            "org.jenkins-ci.main_jenkins-core",
+            "apache-airflow",
+            "com.fasterxml.jackson.core_jackson-databind"
+        ],
+        "reason":"https://github.com/NodeRedis/node-redis/commit/2d11b6dc9b9774464a91fb4b448bad8bf699629e"
+    },
+    "CVE-2021-32641": {
+        "timescope": [
+            ["14h17m35s", "14h17m35s"], 
+            ["14h18m35s", "14h18m59s"]
+        ],
+        "tagged_library": [
+            "npm__split__auth0-lock"
+        ],
+        "suggest component": [
+            "shuup",
+            "auth0-js",
+            "froala-editor"
+        ],
+        "reason":"https://github.com/auth0/lock/commit/d139cf01c8234b07caf265e051f39d3eab08f7ed"
+    },
+    "CVE-2017-16618": {
+        "timescope": [
+            ["14h19m40s", "14h20m20s"], 
+            ["14h20m20s", "14h20m45s"]
+        ],
+        "tagged_library": [
+            "pypi__split__owlmixin"
+        ],
+        "suggest component": [
+            "tensorflow",
+            "pillow",
+            "ansible"
+        ],
+        "reason":"https://github.com/tadashi-aikawa/owlmixin"
+    },
+    "CVE-2022-30284": {
+        "timescope": [
+            ["14h21m20s", "14h22m10s"], 
+            ["14h22m10s", "14h23m40s"]
+        ],
+        "tagged_library": [
+            "pypi__split__python-libnmap"
+        ],
+        "suggest component": [
+            "pillow",
+            "next",
+            "github.com/cloudflare/cfrpki"
+        ],
+        "reason":"https://pypi.org/project/python-libnmap/"
+    }
+}
+
+

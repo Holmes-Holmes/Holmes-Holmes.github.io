@@ -1,6 +1,56 @@
----
-layout: default
----
+# ⭐Update - Latest Information (2023-11-17)
+
+This section outlines the recent updates and enhancements to Holmes, tracking new experiments and features.
+
+## 1. Dataset Information Release
+
+### Ground Truth
+- Ecosystem and Library Names Tagging Results
+    - Tagging results for [GroundTruth](Holmes\GroundTruth\ground_truth.xlsx), each with tagging decision reasons.
+
+### General Dataset
+- Ecosystem and Library Names Tagging Results
+    - Tagging results for [General Dataset](Holmes\GroundTruth\general_dataset.xlsx), each with tagging decision reasons. 
+
+
+Field Information:
+
+    ```
+    alias_ids: the alias of this vulnerability
+    eco: tagged ecosystems
+    eco_criteria: the reason of tagged ecosystems
+    library_names: the vulnerability affected library names
+    sources: the sources for judging the vulnerability affected library names
+    vulnerable_granularity: the granularity of vulnerable libraries
+    element: the vulnerable element of the vulnerability
+    detailed_reason: the reason of tagged library_names
+    ```
+We've also provided [sample code](Holmes/GroundTruth/ground_truth_sample.py) and [tagging criteria](Holmes\GroundTruth\README.md). This enables easy  reproduce sampling or tagging of affected libraries.
+
+## 2. Experiment Supplement
+
+- **RQ 2: Accuracy Assessment**
+    - [Extended experiment result](Holmes\Empirical_Study\securitydb_compare\securitydb_result_general.json) to verify accuracy assessment legality.
+
+- **RQ 5: Efficiency Evaluation**
+    We boost the Holmes by shorting the website crawling time and the lucene search time.
+    - Implemented [multiple threads](Holmes\ApproachImp\EvidenceGather\clue_website.py) to boost network performance in Holmes.
+    - [Refactored Lucene](Holmes\ApproachImp\Matchers) code for enhanced query performance.
+
+- **RQ 6: Generality Evaluation**
+    - We have Expanded the general evaluation scale from 80 to [464](Holmes\GroundTruth\general_dataset.xlsx).
+    - Updated evaluation results of Holmes, Chronos, LightXml, and FastXml, the data and analysis code is uploaded in [kaggle](https://www.kaggle.com/datasets/holmesholmes/holmes-experiment) and the analysis code is also accessible in [MAP_Metric_general](Holmes\Evaluation\tool_compare\MAP_Metric_general).
+
+- **RQ 7: Usefulness Evaluation**
+    - Compared additional experiments of Human Study with the aid of Chronos.
+        - we show more details of our experiment setup in [Setup](Holmes\Evaluation\human_study\README.md) and [the human study of additional Chronos](Holmes\Evaluation\human_study\Chronos)
+    - We update the inaccurate results in GitHub, GitLab, Snyk and Veracode of more vulnerabilities and we also reported those results.
+- Besides, the tool of [Chronos](holmes00/chronos_reproduce:v2), [FastXML](Holmes\Setup\FastXML.zip) and [LightXML](Holmes\Setup\LightXML.zip) update simultaneously.
+
+
+# Framework
+To facilitate the reproduction of RQ6, we've not only provided scores predicted by tools but also preprocessed datasets and included the pipeline for ease of access. You can find the updated files in their original locations.
+
 
 ![Octocat](approach.png)
     <center>*Framework of Holmes*</center>
@@ -27,11 +77,6 @@ We achieve Holmes in [Holmes](https://github.com/Holmes-Holmes/Holmes-Holmes.git
 The hyper parameters that result in FastXML's ,LightXML’s, ZestXML's best performance mentioned in previous work were used. You can start with the [FastXML](https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master#FastXML), [LightXML](https://github.com/soarsmu/ICPC_2022_Automated-Identification-of-Libraries-from-Vulnerability-Data-Can-We-Do-Better/tree/master#LightXML), [Chronos](https://github.com/soarsmu/Chronos). 
 
 By the way, when reproducing these works, we have added detailed annotations to [the code along with the trained and tested data](Holmes/Setup) used for the reproduction. Additionally, we have provided a [README](Holmes/Setup/README.md) to assist you in avoiding common pitfalls while reproducing these three projects.
-
-
-
-
-
 
 
 

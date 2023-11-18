@@ -10,10 +10,10 @@ PARENT_ROOT = parent_dir + '/'
 
 DATA_PATH = PARENT_ROOT + 'components_data/eco_version_dataset_for_lucene'
 print("data path: ", DATA_PATH)
-JAVA_MAVEN_VERSION_PATH = DATA_PATH + '/maven_versions_cleaned.json'
-JS_NPM_VERSION_PATH = DATA_PATH + '/npm_versions_cleaned.json'
-PYTHON_PYPI_VERSION_PATH = DATA_PATH + '/pypi_versions_cleaned.json'
-GO_VERSION_PATH = DATA_PATH + '/go_versions_cleaned.json'
+JAVA_MAVEN_VERSION_PATH = DATA_PATH + '/maven_versions_cleand.json'
+JS_NPM_VERSION_PATH = DATA_PATH + '/npm_versions_cleand.json'
+PYTHON_PYPI_VERSION_PATH = DATA_PATH + '/pypi_versions_cleand.json'
+GO_VERSION_PATH = DATA_PATH + '/go_versions_cleand.json'
 
 
 TOOL_PATH = PARENT_ROOT + 'tools/'

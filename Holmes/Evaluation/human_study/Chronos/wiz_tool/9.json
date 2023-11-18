@@ -1,0 +1,88 @@
+{
+    "CVE-2019-10856": {
+        "timescope": [
+            ["17h52m32s", "17h57m59s"]
+        ],
+        "tagged_library": [
+            "cuda__split__Jupyter"
+        ],
+        "suggest component": [
+            "froala-editor",
+            "code.gitea.io/gitea",
+            "pillow"
+        ],
+        "reason":"Search the cve number and find it as jupyter, and find the ecological cuda to which it belongs."
+    },
+    "CVE-2019-10795": {
+        "timescope": [
+            ["17h58m52s", "18h01m53s"]
+        ],
+        "tagged_library": [
+            "npm__split__undefsafe"
+        ],
+        "suggest component": [
+            "apache-airflow",
+            "sds",
+            "i18next"
+        ],
+        "reason":"Find the relevant description according to the search engine, determine it as js-related content, and search it in npm"
+    },
+    "CVE-2021-29469": {
+        "timescope": [
+            ["18h03m06s", "18h03m50s"]
+        ],
+        "tagged_library": [
+            "npm__split__Node-redis"
+        ],
+        "suggest component": [
+            "org.jenkins-ci.main_jenkins-core",
+            "apache-airflow",
+            "com.fasterxml.jackson.core_jackson-databind"
+        ],
+        "reason":"Find relevant descriptions through search engines, understand the relevant ecology and get answers"
+    },
+    "CVE-2021-32641": {
+        "timescope": [
+            ["18h04m45s", "18h05m37s"]
+        ],
+        "tagged_library": [
+            "npm__split__auth0-js"
+        ],
+        "suggest component": [
+            "shuup",
+            "auth0-js",
+            "froala-editor"
+        ],
+        "reason":"Find the relevant description according to the search engine, determine the influencing components according to the tool prompts, and find the relevant ecology on github"
+    },
+    "CVE-2017-16618": {
+        "timescope": [
+            ["18h07m05s", "18h09m10s"]
+        ],
+        "tagged_library": [
+            "pypi__split__owlmixin"
+        ],
+        "suggest component": [
+            "tensorflow",
+            "pillow",
+            "ansible"
+        ],
+        "reason":"Find the relevant description according to the search engine, guess on github that it may belong to pypi, search in pypi to confirm"
+    },
+    "CVE-2022-30284": {
+        "timescope": [
+            ["18h10m31s", "18h13m18s"]
+        ],
+        "tagged_library": [
+            "pypi__split__python-libnmap"
+        ],
+        "suggest component": [
+            "pillow",
+            "next",
+            "github.com/cloudflare/cfrpki"
+        ],
+        "reason":"Find the relevant description according to the search engine, and mark the ecological address with the reference"
+    }
+}
+
+

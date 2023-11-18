@@ -1,0 +1,18 @@
+#Ground Truth Construction. 
+
+To create the ground truth, we first randomly sampled 15% (i.e., 2,795 vulnerabilities) of the total 18,633 vulnerabilities using random API in Python (i.e., random.sample(<full_list>, <sample_size>)). Subsequently, the authors reached an agreement on the labeling specifications. Then, they labeled the ecosystems according to Step 1-4 and the affected library according to Step 5-6. We leverage the knowledge of patches and version differences on the level of source code to determine the affected libraries to ensure the quality of the ground truth, which is different than the related work.
+
+- Step 1: Collecting evidence from NVD: package names from NVD’s description, repository URLs or package registry URLs from NVD’s reference, product names in NVD’s CPE.
+
+- Step 2: Filter deleted vulnerabilities which are marked "REJECT" on NVD and deleted libraries whose repository URLs or package registry URLs is unavailable (e.g., unpublished due to maliciousness).
+
+- Step 3: Searching repositories in GitHub and search official websites using product names via Google search (e.g., https://spring.io/).
+
+- Step 4: Labeling ecosystems via type of package registries, and type of key elements from repository Readme or product guides. i.e., setup commands (e.g., apt install, pip install, composer require), package registry info from header badges (https://badge.fury.io/), dependency code, example code.
+
+- Step 5: Collecting patch commits from NVD’s reference, patch commits in issue reports of NVD’s reference and patch commits whose commit message contains the CVE identifier in searched repositories in Step 1&3. Confirming the correctness of the patch commits by comparing patched project with NVD’s CWE name, patched code with NVD’s description, patched code with NVD’s CWE (e.g., the code is patched on an infinite loop which will lead to a DoS attack).
+
+- Step 6: Labeling affected libraries with collected patch commits or without patch commits. On one hand, if the patch commits are collected, we identify library declaration files (e.g., Maven’s POM file) from the paths of patched files. On the other hand, if none of the patched commits is found, we obtain vulnerable versions and patched versions, and further obtain their code-level differences in searched repositories in Step 1&3. In that way, the repository of the affected library is located by vulnerable element’s existence in code differences. The affected library is concluded from the repository Readme and the library declaration files.
+
+In Step 2, we found xxx vulnerabilities whose record are marked as deleted and xxx vulnerabilities whose libraries are not available on the package registries. In Step 4, we obtained the ecosystem of xxx vulnerabilities. The top 5 ecosystems are NPM, Maven, PyPI, Composer , and Go Packages. To make fair comparison, we selected two ecosystems each based on programming language types where one represents interpreted language (i.e., JavaScript and Python) and the other represents compiled language (i.e., Java and Go). As a result, we filtered out vulnerabilities and label affected library for the xxx vulnerabilities in Step 5&6.
+Two authors independently assessed labeled results, with a third author resolving any disagreements. As a result, for the 696 vulnerabilities labeled with affected libraries, xxx of them are concluded by using evidences from patched code or code differences. It also indicates that our ground truth is constructed with high confidence. We provide the complete result for constructing the ground truth on our website.

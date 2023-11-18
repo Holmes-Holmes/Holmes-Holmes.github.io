@@ -1,0 +1,85 @@
+{
+    "CVE-2019-10856": {
+        "timescope": [
+            ["15h54m58s", "15h56m00s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__notebook"
+        ],
+        "suggest component": [
+            "pypi__split__notebook",
+            "npm__split__notebook",
+            "go__split__github.com:philipithomas:notebook"
+        ],
+        "reason":"Description Jupyter Notebook before 5.7.8"
+    },
+    "CVE-2019-10795": {
+        "timescope": [
+            ["15h56m14s", "15h56m56s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__undefsafe"
+        ],
+        "suggest component": [
+            "npm__split__undefsafe",
+            "npm__split__undefsafe-typed"
+        ],
+        "reason":"Description undefsafe before 2.0.3"
+    },
+    "CVE-2021-29469": {
+        "timescope": [
+            ["15h57m11s", "15h58m05s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__redis"
+        ],
+        "suggest component": [
+            "npm__split__redis",
+            "pypi__split__redis2",
+            "go__split__github.com:redis:redis"
+        ],
+        "reason":"Description Node-redis is a Node.js Redis client. Before version 3.1.1"
+    },
+    "CVE-2021-32641": {
+        "timescope": [
+            ["15h18m21s", "15h59m00s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__auth0-lock"
+        ],
+        "suggest component": [
+            "npm__split__auth0-lock",
+            "pypi__split__lock",
+            "npm__split__lock2"
+        ],
+        "reason":"Description nauth0-lock before and including `11.30.0`"
+    },
+    "CVE-2017-16618": {
+        "timescope": [
+            ["15h59m20s", "15h59m39s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__owlmixin"
+        ],
+        "suggest component": [
+            "pypi__split__owlmixin"
+        ],
+        "reason":"Description OwlMixin before 2.0.0a12"
+    },
+    "CVE-2022-30284": {
+        "timescope": [
+            ["16h00m00s", "16h00m30s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__python-libnmap"
+        ],
+        "suggest component": [
+            "pypi__split__python-libnmap",
+            "npm__split__python3",
+            "pypi__split__python123"
+        ],
+        "reason":"Description python-libnmap package through 0.7.2"
+    }
+}
+
+

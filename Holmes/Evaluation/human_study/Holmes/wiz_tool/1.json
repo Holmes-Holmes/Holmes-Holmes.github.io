@@ -1,0 +1,85 @@
+{
+    "CVE-2019-10856": {
+        "timescope": [
+            ["19h19m09s", "19h20m00s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__notebook"
+        ],
+        "suggest component": [
+            "pypi__split__notebook",
+            "npm__split__notebook",
+            "go__split__github.com:philipithomas:notebook"
+        ],
+        "reason":"https://github.com/jupyter/notebook/compare/16cf97c...b8e30ea"
+    },
+    "CVE-2019-10795": {
+        "timescope": [
+            ["19h21m51s", "19h22m44s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__undefsafe"
+        ],
+        "suggest component": [
+            "npm__split__undefsafe",
+            "npm__split__undefsafe-typed"
+        ],
+        "reason":"https://github.com/advisories/GHSA-332q-7ff2-57h2;https://github.com/remy/undefsafe/commit/f272681b3a50e2c4cbb6a8533795e1453382c822"
+    },
+    "CVE-2021-29469": {
+        "timescope": [
+            ["19h23m07s", "19h23m48s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__redis"
+        ],
+        "suggest component": [
+            "npm__split__redis",
+            "pypi__split__redis2",
+            "go__split__github.com:redis:redis"
+        ],
+        "reason":"https://github.com/redis/node-redis/security/advisories/GHSA-35q2-47q7-3pc3;https://github.com/redis/node-redis/commit/2d11b6dc9b9774464a91fb4b448bad8bf699629e"
+    },
+    "CVE-2021-32641": {
+        "timescope": [
+            ["19h24m25s", "19h25m06s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__auth0-lock"
+        ],
+        "suggest component": [
+            "npm__split__auth0-lock",
+            "pypi__split__lock",
+            "npm__split__lock2"
+        ],
+        "reason":"https://github.com/auth0/lock/security/advisories/GHSA-jr3j-whm4-9wwm"
+    },
+    "CVE-2017-16618": {
+        "timescope": [
+            ["19h25m24s", "19h25m54s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__owlmixin"
+        ],
+        "suggest component": [
+            "pypi__split__owlmixin"
+        ],
+        "reason":"https://github.com/tadashi-aikawa/owlmixin/commit/5d0575303f6df869a515ced4285f24ba721e0d4e"
+    },
+    "CVE-2022-30284": {
+        "timescope": [
+            ["19h26m16s", "19h26m52s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__python-libnmap"
+        ],
+        "suggest component": [
+            "pypi__split__python-libnmap",
+            "npm__split__python3",
+            "pypi__split__python123"
+        ],
+        "reason":"https://cve.mitre.org/cgi-bin/cvename.cgi?name=%27CVE-2022-30284"
+    }
+}
+
+

@@ -1,0 +1,85 @@
+{
+    "CVE-2019-10856": {
+        "timescope": [
+            ["13h46m35s", "13h48m20s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__notebook(https://pypi.org/project/notebook/)"
+        ],
+        "suggest component": [
+            "pypi__split__notebook",
+            "npm__split__notebook",
+            "go__split__github.com:philipithomas:notebook"
+        ],
+        "reason":"https://nvd.nist.gov/vuln/detail/CVE-2019-10856, https://github.com/jupyter/notebook, https://pypi.org/project/notebook/"
+    },
+    "CVE-2019-10795": {
+        "timescope": [
+            ["13h49m15s", "13h50m47s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__undefsafe(https://www.npmjs.com/package/undefsafe)"
+        ],
+        "suggest component": [
+            "npm__split__undefsafe",
+            "npm__split__undefsafe-typed"
+        ],
+        "reason":"https://nvd.nist.gov/vuln/detail/CVE-2019-10795, https://github.com/remy/undefsafe,https://www.npmjs.com/package/undefsafe"
+    },
+    "CVE-2021-29469": {
+        "timescope": [
+            ["13h51m25s", "13h53m09s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__redis(https://www.npmjs.com/package/redis)"
+        ],
+        "suggest component": [
+            "npm__split__redis",
+            "pypi__split__redis2",
+            "go__split__github.com:redis:redis"
+        ],
+        "reason":"https://nvd.nist.gov/vuln/detail/CVE-2021-29469, https://github.com/redis/node-redis, https://www.npmjs.com/package/redis"
+    },
+    "CVE-2021-32641": {
+        "timescope": [
+            ["13h53m58s", "13h55m17s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__auth0-lock(https://www.npmjs.com/package/auth0-lock)"
+        ],
+        "suggest component": [
+            "npm__split__auth0-lock",
+            "pypi__split__lock",
+            "npm__split__lock2"
+        ],
+        "reason":"https://nvd.nist.gov/vuln/detail/CVE-2021-32641, https://github.com/auth0/lock, https://www.npmjs.com/package/auth0-lock"
+    },
+    "CVE-2017-16618": {
+        "timescope": [
+            ["13h55m51s", "13h56m37s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__owlmixin(https://pypi.org/project/owlmixin/)"
+        ],
+        "suggest component": [
+            "pypi__split__owlmixin"
+        ],
+        "reason":"https://nvd.nist.gov/vuln/detail/CVE-2017-16618,https://github.com/tadashi-aikawa/owlmixin, https://pypi.org/project/owlmixin/"
+    },
+    "CVE-2022-30284": {
+        "timescope": [
+            ["13h57m25s", "13h58m40s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__python-libnmap(https://pypi.org/project/python-libnmap/)"
+        ],
+        "suggest component": [
+            "pypi__split__python-libnmap",
+            "npm__split__python3",
+            "pypi__split__python123"
+        ],
+        "reason":"https://nvd.nist.gov/vuln/detail/CVE-2022-30284,https://github.com/savon-noir/python-libnmap,https://pypi.org/project/python-libnmap/"
+    }
+}
+
+

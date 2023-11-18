@@ -1,0 +1,74 @@
+{
+    "CVE-2019-10856": {
+        "timescope": [
+            [
+                "10h59m11s",
+                "11h02m22s"
+            ]
+        ],
+        "tagged_library": [
+            "ubuntu__split__jupyter-notebook"
+        ],
+        "reason": "https://security.snyk.io/package/linux/ubuntu:20.04/jupyter-notebook"
+    },
+    "CVE-2019-10795": {
+        "timescope": [
+            [
+                "11h07m12s",
+                "11h09m30s"
+            ]
+        ],
+        "tagged_library": [
+            "npm__split__undefsafe"
+        ],
+        "reason": "https://github.com/advisories/GHSA-332q-7ff2-57h2"
+    },
+    "CVE-2021-29469": {
+        "timescope": [
+            [
+                "11h10m00s",
+                "11h13m34s"
+            ]
+        ],
+        "tagged_library": [
+            "npm__split__redis"
+        ],
+        "reason": "https://github.com/advisories/GHSA-35q2-47q7-3pc3"
+    },
+    "CVE-2021-32641": {
+        "timescope": [
+            [
+                "11h13m50s",
+                "11h16m40s"
+            ]
+        ],
+        "tagged_library": [
+            "npm__split__auth0-lock"
+        ],
+        "reason": "https://github.com/advisories/GHSA-jr3j-whm4-9wwm"
+    },
+    "CVE-2017-16618": {
+        "timescope": [
+            [
+                "11h17m16s",
+                "11h19m57s"
+            ]
+        ],
+        "tagged_library": [
+            "pypi__split__owlmixin"
+        ],
+        "reason": "https://nvd.nist.gov/vuln/detail/CVE-2017-16618 https://pypi.org/project/owlmixin/"
+    },
+    "CVE-2022-30284": {
+        "timescope": [
+            [
+                "11h20m40s",
+                "11h23m00s"
+            ]
+        ],
+        "tagged_library": [
+            "pypi__split__python-libnmap"
+        ],
+        "reason": "https://nvd.nist.gov/vuln/detail/CVE-2022-30284   https://pypi.org/project/python-libnmap/"
+    }
+}

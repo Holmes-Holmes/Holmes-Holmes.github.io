@@ -8,6 +8,7 @@ from ScorePackage import ScorePackage
 from version_matcher_lang import LanguageVersionMatcher, SUPPORTED_LANGUAGE_MATCHER, get_version_matcher
 from flask import Flask, jsonify, request
 
+
 class VersionMatcher:
     def __init__(self, lang_list: Optional[List[ProgLang]] = None):
         if lang_list is None:
@@ -37,27 +38,32 @@ class VersionMatcher:
         self._jvm.close()
         self._is_open = False
 
-    def search_detail(self, version: Optional[str], lang_list=None) -> Dict:
+    def search_detail(self, version: Optional[str], detail: Optional[str], lang_list=None) -> Dict:
         results = []
-        print(f'Request version: {version}, . ')
+        print(f'Request version: {version}, detail: {detail} language: {lang_list}. ')
+        # if not lang_list:
+        #     lang_list = [ProgLang.COMMON]
         for lang in self._lang_matchers:
-            res = self._lang_matchers[lang].search(version)
+            res = self._lang_matchers[lang].search(version, detail)
             results.extend(res)
         results = sorted(results, key=lambda x: float(x['score']), reverse=True)
         return results
-
 
 app = Flask(__name__)
 pm = VersionMatcher()
 pm.open()
 
+
 @app.route('/', methods=['GET'])
 def search():
     version = request.args.get('version')
+    # detail = request.args.get('detail')
     result = pm.search_detail(version, None)
     return jsonify(result)
 
+
 if __name__ == '__main__':
+    # app.run(host='127.0.0.1', port=10097)
     app.run(host='10.176.34.116', port=10097)
     # pm = VersionMatcher()
     # pm.open()

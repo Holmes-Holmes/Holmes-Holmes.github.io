@@ -1,0 +1,92 @@
+{
+    "CVE-2021-28681": {
+        "timescope": [
+            ["20h14m00s", "20h15m30s"],
+            ["20h14m00s", "20h15m30s"]
+        ],
+        "tagged_library": [
+            "go__split__webrtc"
+        ],
+        "suggest component": [
+            "total.js",
+            "shuup",
+            "next"
+        ],
+        "reason":"https://github.com/pion/webrtc"
+    },
+    "CVE-2021-29451": {
+        "timescope": [
+            ["20h15m40s", "20h17m00s"],
+            ["20h15m40s", "20h17m00s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__portofino"
+        ],
+        "suggest component": [
+            "pillow",
+            "github.com/cloudflare/cfrpki",
+            "apache-airflow"
+        ],
+        "reason":"https://mvnrepository.com/artifact/com.manydesigns/portofino  https://github.com/ManyDesigns/Portofino"
+    },
+    "CVE-2013-6430": {
+        "timescope": [
+            ["20h17m10s", "20h18m50s"],
+            ["20h17m10s", "20h18m50s"]
+        ],
+        "tagged_library": [
+            "maven__split__spring mvc" 
+        ],
+        "suggest component": [
+            "github.com/ethereum/go-ethereum",
+            "total.js",
+            "shuup"
+        ],
+        "reason":"https://spring.io/security/cve-2013-6430"
+    },
+    "CVE-2020-2305": {
+        "timescope": [
+            ["20h19m30s", "20h23m40s"],
+            ["20h19m30s", "20h23m40s"]
+        ],
+        "tagged_library": [
+            "maven__split__mercurial-plugin"
+        ],
+        "suggest component": [
+            "org.jenkins-ci.main_jenkins-core",
+            "selenium-chromedriver",
+            "org.jenkins-ci.plugins_git"
+        ],
+        "reason":"https://github.com/jenkinsci/mercurial-plugin"
+    },
+    "CVE-2017-1000043": {
+        "timescope": [
+            ["20h24m00s", "20h26m15s"],
+            ["20h24m00s", "20h26m15s"]
+        ],
+        "tagged_library": [
+            "npm__split__mapbox.js"
+        ],
+        "suggest component": [
+            "next",
+            "total.js",
+            "shuup"
+        ],
+        "reason":"https://hackerone.com/reports/99245  https://docs.mapbox.com/mapbox.js/api/v3.3.1/"
+    },
+    "CVE-2020-14343": {
+        "timescope": [
+            ["20h27m05s", "20h28m10s"],
+            ["20h27m05s", "20h28m10s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__pyyaml"
+        ],
+        "suggest component": [
+            "total.js",
+            "github.com/ethereum/go-ethereum",
+            "next"
+        ],
+        "reason":"https://pyyaml.org/wiki/PyYAMLDocumentation"
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "CVE-2021-28681": {
+        "timescope": [
+            ["15h29m20s", "15h33m44s"]
+        ],
+        "tagged_library": [
+            "go__split__github.com/pion/webrtc"
+        ],
+        "suggest component": [
+            "total.js",
+            "shuup",
+            "next"
+        ],
+        "reason":"Find the github repository in the nvd reference link and the go repository link in the readme."
+    },
+    "CVE-2021-29451": {
+        "timescope": [
+            ["15h49m45s", "15h54m46s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__com.manydesigns.portofino"
+        ],
+        "suggest component": [
+            "pillow",
+            "github.com/cloudflare/cfrpki",
+            "apache-airflow"
+        ],
+        "reason":"Find the github repository in the nvd reference link and the maven repository link in the readme."
+    },
+    "CVE-2013-6430": {
+        "timescope": [
+            ["15h50m51s", "15h55m05s"]
+        ],
+        "tagged_library": [
+            "maven__split__org.springframework.spring-web"
+        ],
+        "suggest component": [
+            "github.com/ethereum/go-ethereum",
+            "total.js",
+            "shuup"
+        ],
+        "reason":"Find the github repository in the nvd reference link and find that it is java. Search for the package in the maven repository."
+    },
+    "CVE-2020-2305": {
+        "timescope": [
+            ["15h51m18s", "15h57m56s"]
+        ],
+        "tagged_library": [ 
+            "maven__split__org.jenkins-ci.plugins.mercurial"
+        ],
+        "suggest component": [
+            "org.jenkins-ci.main_jenkins-core",
+            "selenium-chromedriver",
+            "org.jenkins-ci.plugins_git"
+        ],
+        "reason":"In the description of nvd, I found that it is related to jenkins, and then search for mercurial in the maven repository."
+    },
+    "CVE-2017-1000043": {
+        "timescope": [
+            ["15h55m09s", "16h00m25s"]
+        ],
+        "tagged_library": [ 
+            "npm__split__mapbox.js"
+        ],
+        "suggest component": [
+            "next",
+            "total.js",
+            "shuup"
+        ],
+        "reason":"I found it related to nodejs in the cpe of nvd, and then searched on the npm official website."
+    },
+    "CVE-2020-14343": {
+        "timescope": [
+            ["16h00m45s", "16h03m44s"]
+        ],
+        "tagged_library": [ 
+            "pypi__split__pyyaml"
+        ],
+        "suggest component": [
+            "total.js",
+            "github.com/ethereum/go-ethereum",
+            "next"
+        ],
+        "reason":"Find the github repository in the reference link of nvd and find that it is python. Search for the package in the pypi repository."
+    }
+}

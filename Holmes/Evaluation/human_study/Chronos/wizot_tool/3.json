@@ -1,0 +1,64 @@
+{
+    "CVE-2019-10856": {
+        "timescope": [
+            ["19h58m45s", "20h01m20s"], 
+            ["19h58m45s", "20h01m20s"]
+        ],
+        "tagged_library": [
+            "pypi__split__Jupyter Notebook"
+        ],
+        "reason":"https://blog.jupyter.org/open-redirect-vulnerability-in-jupyter-jupyterhub-adf43583f1e4"
+    },
+    "CVE-2019-10795": {
+        "timescope": [
+            ["20h03m25s", "20h04m20s"], 
+            ["20h02m50s", "20h03m25s"]
+        ],
+        "tagged_library": [
+            "npm__split__undefsafe"
+        ],
+        "reason":"https://github.com/remy/undefsafe  https://security.snyk.io/vuln/SNYK-JS-UNDEFSAFE-548940"
+    },
+    "CVE-2021-29469": {
+        "timescope": [
+            ["20h05m30s", "20h07m10s"], 
+            ["20h04m50s", "20h05m30s"]
+        ],
+        "tagged_library": [
+            "npm__split__node-redis"
+        ],
+        "reason":"https://www.npmjs.com/package/redis"
+    },
+    "CVE-2021-32641": {
+        "timescope": [
+            ["20h07m20s", "20h08m50s"], 
+            ["20h07m20s", "20h08m50s"]
+        ],
+        "tagged_library": [
+            "npm__split__auth0-lock"
+        ],
+        "reason":"https://www.npmjs.com/package/auth0-lock"
+    },
+    "CVE-2017-16618": {
+        "timescope": [
+            ["20h10m20s", "20h11m00s"], 
+            ["20h09m20s", "20h10m20s"]
+        ],
+        "tagged_library": [
+            "pypi__split__owlmixin"
+        ],
+        "reason":"https://joel-malwarebenchmark.github.io/blog/2017/11/08/cve-2017-16618-convert-through-owlmixin/  https://github.com/tadashi-aikawa/owlmixin"
+    },
+    "CVE-2022-30284": {
+        "timescope": [
+            ["20h11m20s", "20h12m10s"], 
+            ["20h11m20s", "20h12m10s"]
+        ],
+        "tagged_library": [
+            "pypi__split__python-libnmap"
+        ],
+        "reason":"https://pypi.org/project/python-libnmap/"
+    }
+}
+
+
