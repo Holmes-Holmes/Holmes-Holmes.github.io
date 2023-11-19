@@ -45,12 +45,12 @@ We've also provided [sample code](Holmes/GroundTruth/ground_truth_sample.py) and
 - **RQ 7: Usefulness Evaluation**
     - Compared additional experiments of Human Study with the aid of Chronos.
         - we show more details of our experiment setup in [Setup](Holmes/Evaluation/human_study/README.md) and [the human study of additional Chronos](Holmes/Evaluation/human_study/Chronos)
-    - We update the inaccurate results in GitHub, GitLab, Snyk and Veracode of more vulnerabilities and we also reported those results.
+    - We update the inaccurate results in [GitHub](Holmes/Evaluation/Reproting/email_send_second_round/github_wrong_component_2023_11_17.xlsx), [GitLab](Holmes/Evaluation/Reproting/email_send_second_round/gitlab_wrong_component_2023_11_17.xlsx), [Snyk](Holmes/Evaluation/Reproting/email_send_second_round/snyk_wrong_component_2023_11_17.xlsx) and [Veracode](Holmes/Evaluation/Reproting/email_send_second_round/veracode_wrong_component_2023_11_17.xlsx) of more vulnerabilities and we also reported those results to those vulnerability databases.
 - Besides, the tool of Chronos(docker pull holmes00/chronos_reproduce:v2), [FastXML](Holmes/Setup/FastXML.zip) and [LightXML](Holmes/Setup/LightXML.zip) update simultaneously.
 
 
 # Framework
-To facilitate the reproduction of RQ6, we've not only provided scores predicted by tools but also preprocessed datasets and included the pipeline for ease of access. You can find the updated files in their original locations.
+To facilitate the reproduction of RQ6, we've not only provided scores predicted by tools but also preprocessed datasets and included the pipeline for ease of access. You can find the updated files [here](Holmes/Setup).
 
 
 ![Octocat](approach.png)
