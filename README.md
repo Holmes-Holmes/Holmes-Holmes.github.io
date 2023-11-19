@@ -1,4 +1,17 @@
-# ⭐Update - Latest Information (2023-11-17)
+# Framework
+To facilitate the reproduction of RQ6, we've not only provided scores predicted by tools but also preprocessed datasets and included the pipeline for ease of access. You can find the updated files [here](Holmes/Setup).
+
+
+![Octocat](approach.png)
+    <center>*Framework of Holmes*</center>
+
+Software composition analysis (SCA) tools have been widely adopted to identify vulnerable libraries used in software applications. Such SCA tools depend on a vulnerability database to know affected libraries of each vulnerability. However, it is labor-intensive and error-prone for a security team to manually maintain the vulnerability database. While
+several approaches adopt extreme multi-label learning to predict affected libraries for vulnerabilities, they are practically ineffective due to the limited library labels and the unawareness of ecosystems. To address these problems, we first conduct an empirical study to assess the quality of two fields, i.e., affected libraries and their ecosystems, for four vulnerability databases. Our study reveals notable inconsistency and inaccuracy in these two fields. Then, we propose
+Holmes to identify affected libraries and their ecosystems for vulnerabilities via a learning-to-rank technique. The key idea of Holmes is to gather various evidences about affected libraries and their ecosystems from multiple sources, and learn to rank a pool of libraries based on their relevance to evidences. Our extensive experiments haveshown the effectiveness, efficiency and usefulness of Holmes.
+
+This paper has been submitted to ICSE 2024.
+
+# ⭐Holmes Update - Latest Information (2023-11-17)
 
 This section outlines the recent updates and enhancements to Holmes, tracking new experiments and features.
 
@@ -47,20 +60,6 @@ We've also provided [sample code](Holmes/GroundTruth/ground_truth_sample.py) and
         - we show more details of our experiment setup in [Setup](Holmes/Evaluation/human_study/README.md) and [the human study of additional Chronos](https://github.com/Holmes-Holmes/Holmes-Holmes.github.io/tree/main/Holmes/Evaluation/human_study/Chronos)
     - We update the inaccurate results in [GitHub](Holmes/Evaluation/Reproting/email_send_second_round/github_wrong_component_2023_11_17.xlsx), [GitLab](Holmes/Evaluation/Reproting/email_send_second_round/gitlab_wrong_component_2023_11_17.xlsx), [Snyk](Holmes/Evaluation/Reproting/email_send_second_round/snyk_wrong_component_2023_11_17.xlsx) and [Veracode](Holmes/Evaluation/Reproting/email_send_second_round/veracode_wrong_component_2023_11_17.xlsx) of more vulnerabilities and we also reported those results to those vulnerability databases.
 - Besides, the tool of Chronos(docker pull holmes00/chronos_reproduce:v2), [FastXML](Holmes/Setup/FastXML.zip) and [LightXML](Holmes/Setup/LightXML.zip) update simultaneously.
-
-
-# Framework
-To facilitate the reproduction of RQ6, we've not only provided scores predicted by tools but also preprocessed datasets and included the pipeline for ease of access. You can find the updated files [here](Holmes/Setup).
-
-
-![Octocat](approach.png)
-    <center>*Framework of Holmes*</center>
-
-Software composition analysis (SCA) tools have been widely adopted to identify vulnerable libraries used in software applications. Such SCA tools depend on a vulnerability database to know affected libraries of each vulnerability. However, it is labor-intensive and error-prone for a security team to manually maintain the vulnerability database. While
-several approaches adopt extreme multi-label learning to predict affected libraries for vulnerabilities, they are practically ineffective due to the limited library labels and the unawareness of ecosystems. To address these problems, we first conduct an empirical study to assess the quality of two fields, i.e., affected libraries and their ecosystems, for four vulnerability databases. Our study reveals notable inconsistency and inaccuracy in these two fields. Then, we propose
-Holmes to identify affected libraries and their ecosystems for vulnerabilities via a learning-to-rank technique. The key idea of Holmes is to gather various evidences about affected libraries and their ecosystems from multiple sources, and learn to rank a pool of libraries based on their relevance to evidences. Our extensive experiments haveshown the effectiveness, efficiency and usefulness of Holmes.
-
-This paper has been submitted to ICSE 2024.
 
 # Dataset
 
