@@ -1,5 +1,3 @@
-⭐Holmes Update
-
 # ⭐Holmes Update - Latest Information (2023-11-17)
 
 This section outlines the recent updates and enhancements to Holmes, tracking new experiments and features.
