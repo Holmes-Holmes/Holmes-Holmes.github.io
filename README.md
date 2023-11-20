@@ -15,16 +15,27 @@ This section outlines the recent updates and enhancements to Holmes, tracking ne
 
 Field Information:
 
-    ```
-    alias_ids: the alias of this vulnerability
-    eco: tagged ecosystems
-    eco_criteria: the reason of tagged ecosystems
-    library_names: the vulnerability affected library names
-    sources: the sources for judging the vulnerability affected library names
-    vulnerable_granularity: the granularity of vulnerable libraries
-    element: the vulnerable element of the vulnerability
-    detailed_reason: the reason of tagged library_names
-    ```
+<small>
+
+&emsp; **alias_ids:** the alias of this vulnerability
+
+&emsp; **eco:** tagged ecosystems
+
+
+&emsp; **eco_criteria:** the reason of tagged ecosystems
+
+
+&emsp; **library_names:** the vulnerability affected library names
+
+
+&emsp; **sources:** the sources for judging the vulnerability affected library names
+
+&emsp; **element:** the vulnerable element location of the vulnerability
+
+&emsp; **vulnerable_granularity:** the granularity of vulnerable libraries element
+
+&emsp; **detailed_reason:** the detailed reason of tagged library_names
+</small>
     
 We've also provided [sample code](Holmes/GroundTruth/ground_truth_sample.py) and [tagging criteria](Holmes/GroundTruth/README.md). This enables easy  reproduce sampling or tagging of affected libraries.
 
