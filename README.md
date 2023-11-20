@@ -21,12 +21,9 @@ Field Information:
 
 &emsp; **eco:** tagged ecosystems
 
-
 &emsp; **eco_criteria:** the reason of tagged ecosystems
 
-
 &emsp; **library_names:** the vulnerability affected library names
-
 
 &emsp; **sources:** the sources for judging the vulnerability affected library names
 
