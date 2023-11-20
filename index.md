@@ -13,7 +13,7 @@ This section outlines the recent updates and enhancements to Holmes, tracking ne
     - Tagging results for [General Dataset](Holmes/GroundTruth/general_dataset.xlsx), each with tagging decision reasons. 
 
 
-Field Information:
+Field Explanation:
 
 <small>
 
